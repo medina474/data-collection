@@ -1,60 +1,56 @@
-aubergine
-aubergine listada da Gandía
-aubergine blanche ronde à oeufs
-basilic vert
-batavia
-bette
-betterave rouge
-carotte
-carotte botte
-céleri rave
-chou blanc
-chou brocoli
-chou chinois
-chou de Bruxelles
-chou de Milan
-chou fleur
-chou pointu
-chou rave
-chou rouge
-choucroute
-claytone/pourpier
-concombre
-courge
-courgette
-échalote
-endive
-épinard
-fenouil
-haricot beurre
-haricot plat
-haricot vert
-mâche
-maïs
-mesclum de jeune pousse
-navet botte
-navet violet / jaune
-oignon blanc
-oignon jaune / rouge
-panais
-persil
-petit pois
-pissenlit
-pleurote
-poireau
-pois croquant
-pois mangetout
-poivron
-pomme de terre
-radis asiatique rouge
-radis noir long / rond
-radis rose
-rhubarbe
-roquette
-rutabaga
-shiitake
-tomate cerise
-tomate ronde
-tomate noire de Crimée
-tomate cuor di bue
-tomate la carotina
+vegetable_id,vegetable
+1,aubergine
+2,tomate
+3,pomme de terre
+4,carotte
+5,betterave rouge
+6,bette
+7,topinambour
+8,céleri rave
+9,chou blanc
+10,chou brocoli
+11,chou chinois
+12,chou de Bruxelles
+13,chou de Milan
+14,chou fleur
+15,chou pointu
+16,chou rave
+17,chou rouge
+18,choucroute
+19,claytone/pourpier
+20,concombre
+21,courge
+22,courgette
+23,échalote
+24,endive
+25,épinard
+26,fenouil
+27,haricot beurre
+28,haricot plat
+29,haricot vert
+30,mâche
+31,maïs
+32,mesclum de jeune pousse
+33,navet botte
+34,navet violet / jaune
+35,oignon blanc
+36,oignon jaune / rouge
+37,panais
+38,persil
+39,petit pois
+40,pissenlit
+41,pleurote
+42,poireau
+43,pois croquant
+44,pois mangetout
+45,poivron
+46,batavia
+47,radis asiatique rouge
+48,radis noir long / rond
+49,radis rose
+50,rhubarbe
+51,roquette
+52,rutabaga
+53,shiitake
+54,tomate cerise
+55,basilic vert
