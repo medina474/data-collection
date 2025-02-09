@@ -22,7 +22,7 @@ create materialized view detail_livraisons as
     l.distribution_id, d.depot_id, d2.depot,
     l.produit_id, p.produit,
     qte, livre, 
-    l.planning_id, p2.jour 
+    l.planning_id, p2.jour, date_part('week', p2.jour) as semaine, date_part('month', p2.jour) as mois
   from livraisons l 
     join distributions d on d.distribution_id = l.distribution_id
     join depots d2 on d2.depot_id = d.depot_id 

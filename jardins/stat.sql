@@ -59,7 +59,7 @@ create view stat_livraisons_semaines as
 select date_part('week',p.jour) as semaine, count(*), sum(qte)
   from livraisons l 
     join plannings p on l.planning_id = p.planning_id 
-  group by semaine
+  group by semaine;
 
 comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines.';
 
@@ -71,6 +71,20 @@ select date_part('week',p.jour) as semaine,
     join plannings p on l.planning_id = p.planning_id 
     join distributions d on l.distribution_id = d.distribution_id 
     join tournees t on t.tournee_id = d.tournee_id
-  group by semaine,d.tournee_id,t.tournee
+  group by semaine,d.tournee_id,t.tournee;
 
 comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines et par tournées.';
+
+create view stat_livraisons_semaines_tournees_depots as
+select date_part('week',p.jour) as semaine, 
+  d.tournee_id, t.tournee, d2.depot,
+  count(*), sum(qte)
+  from livraisons l 
+  join plannings p on l.planning_id = p.planning_id 
+  join distributions d on l.distribution_id = d.distribution_id
+  join depots d2 on d2.depot_id = d.depot_id
+  join tournees t on t.tournee_id = d.tournee_id
+  where date_part('week',p.jour) = 16
+  group by semaine,d.tournee_id,t.tournee,d2.depot;
+
+comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines par tournées et par dépôts.';
