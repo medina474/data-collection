@@ -20,12 +20,16 @@ create materialized view detail_livraisons as
   select l.livraison_id, l.jardin_id, 
     l.abonnement_id, a.adherent_id, a2.adherent,
     l.distribution_id, d.depot_id, d2.depot,
+    d.tournee_id, t.tournee,
+    t.preparation_id, pp.preparation, pp.jour as jsemaine,
     l.produit_id, p.produit,
     qte, livre, 
     l.planning_id, p2.jour, date_part('week', p2.jour) as semaine, date_part('month', p2.jour) as mois
   from livraisons l 
     join distributions d on d.distribution_id = l.distribution_id
     join depots d2 on d2.depot_id = d.depot_id 
+    join tournees t on t.tournee_id = d.tournee_id 
+    join preparations pp on pp.preparation_id = t.preparation_id 
     join produits p on p.produit_id  = l.produit_id 
     join abonnements a on a.abonnement_id = l.abonnement_id 
     join adherents a2 on a2.adherent_id = a.adherent_id 
