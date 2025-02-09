@@ -10,3 +10,4 @@ PGUSER=postgres.qjnieztpwnwroinqrolm
 
 psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f seed.sql
 psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f materialized.sql
+psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f stat.sql

@@ -5,9 +5,9 @@
 \COPY abonnements(abonnement_id,adherent_id,panier_id) FROM 'data/abonnements-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY propositions(frequence_id, planning_id) FROM 'propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 
+update abonnements set saison_id = 1;
+
 \COPY livraisons_import FROM 'livraisons-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
-
-
 
 insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id) 
 select 1 as jardin_id, 
