@@ -8,4 +8,4 @@ PGHOST=aws-0-eu-west-3.pooler.supabase.com
 PGPORT=6543
 PGUSER=postgres.qjnieztpwnwroinqrolm
 
-psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f seed.sql
+psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f backup.sql
