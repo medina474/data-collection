@@ -17,6 +17,18 @@ comment on view orphan_abonnements is 'Distributions dont le dépôt n''existe p
 create view orphan_abonnements_distributions as
 select a.* from abonnements a
   left join livraisons l on a.abonnement_id = l.abonnement_id 
-  where l.livraison_id is null
+  where l.livraison_id is null;
 
 comment on view orphan_abonnements_distributions is 'Abonnements sans livraisons associées';
+
+create view orphan_distributions_planning as
+select l.*
+  from livraisons l
+    left join plannings p on p.planning_id = l.planning_id
+  where p.planning_id is null;
+
+create view adherents_sans_abonnement as
+select a.* 
+  from adherents a
+    left join abonnements b on a.adherent_id = b.adherent_id
+  where b.abonnement_id is null;
