@@ -1,4 +1,4 @@
-﻿id_livraison,semaine,livre,qte,depot,annee,jour,panier,id_abonnement
+id_livraison,semaine,livre,qte,depot,annee,jour,panier,id_abonnement
 1985261,51,0,1,35,2025,2025-12-18,1,28126
 1985260,50,0,1,35,2025,2025-12-11,1,28126
 1985259,49,0,1,35,2025,2025-12-04,1,28126
