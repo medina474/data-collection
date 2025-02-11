@@ -81,10 +81,22 @@ comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines p
 
 create view stat_livraisons_depots as
 select depot, sum(qte) 
-from detail_livraisons l
+  from detail_livraisons l
 group by (depot);
 
 create view stat_depots_adherents as
 select depot, count(distinct adherent_id)
-from detail_livraisons l
+  from detail_livraisons l
 group by depot;
+
+create view stat_calendriers as 
+select c.calendrier_id,
+    c.calendrier,
+    s.saison,
+    count(p.*) as dates
+  from calendriers c
+    left join plannings p on p.calendrier_id = c.calendrier_id
+    join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
+  group by c.calendrier_id, s.saison_id, s.saison;
+
+comment on view stat_livraisons_produits is 'Nombre de jours dans le planning par calendrier.';
