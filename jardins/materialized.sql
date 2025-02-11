@@ -1,5 +1,5 @@
-create materialized view detail_depots
-as select d.depot_id,
+create materialized view detail_depots as
+select d.depot_id,
     d.jardin_id,
     d.depot,
     d.capacite,
@@ -16,6 +16,7 @@ as select d.depot_id,
 
 refresh materialized view detail_depots with data;
 
+create materialized view detail_livraisons as
 select l.livraison_id, l.jardin_id, 
     l.abonnement_id, a.adherent_id, a2.adherent, a2.adresse_id as adherent_adresse_id,
     l.distribution_id, d.depot_id, d2.depot, d2.adresse_id as depot_adresse_id,

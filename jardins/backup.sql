@@ -3,3 +3,4 @@
 \COPY tournees TO 'data/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY distributions TO 'data/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY abonnements(abonnement_id,adherent_id,panier_id) TO 'data/abonnements-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY (select adresse_id, jardin_id, adresse, codepostal, ville, ST_AsText(localisation) AS localisation FROM adresses) TO 'data/adresses.csv' (FORMAT CSV, header, ENCODING 'UTF8');
