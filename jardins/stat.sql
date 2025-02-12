@@ -101,6 +101,21 @@ select c.calendrier_id,
 
 comment on view stat_livraisons_produits is 'Nombre de jours dans le planning par calendrier.';
 
+create view gpao_preparer 
+  with (security_invoker=on)
+  as
+select l.semaine, p.jour, l.preparation_id, l.preparation, l.produit, sum(qte)
+from detail_livraisons l
+inner join preparations p on p.preparation_id = l.preparation_id
+group by l.semaine, p.jour, l.preparation_id, l.preparation, l.produit;
+
+create view gpao_livrer 
+  with (security_invoker=on)
+  as
+select semaine, preparation_id, preparation, tournee_id, tournee, produit, sum(qte)
+from detail_livraisons l
+group by semaine, preparation_id, preparation, tournee_id, tournee, produit;
+
 create view gpao_tournees
   with (security_invoker=on)
   as

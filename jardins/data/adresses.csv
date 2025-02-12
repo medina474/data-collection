@@ -60,3 +60,5 @@ adresse_id,jardin_id,adresse,codepostal,ville,localisation
 59,1,56 chemin du Moulin,88000,Épinal,POINT(6.475722 48.179868)
 60,1,43 rue du Centre,88200,Saint Nabord,POINT(6.583557 48.051127)
 61,1,19 rue de la Moselotte,88200,Saint Étienne les Remiremont,POINT(6.613694 48.020207)
+62,1,5 av. de Provence,88000,Épinal,POINT(6.4487861 48.1690093)
+63,1,5 rue du Chapitre,88000,Épinal,POINT(6.4511496 48.1736396)
