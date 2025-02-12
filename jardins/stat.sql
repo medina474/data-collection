@@ -100,3 +100,22 @@ select c.calendrier_id,
   group by c.calendrier_id, s.saison_id, s.saison;
 
 comment on view stat_livraisons_produits is 'Nombre de jours dans le planning par calendrier.';
+
+create view gpao_tournees
+as select tournee_id, tournee, jour, produit, sum(qte)
+  from detail_livraisons dl 
+where livre = 'à livrer'
+and semaine = date_part('week',now())
+group by tournee_id, tournee, jour, produit
+order by tournee_id;
+
+create view gpao_depots
+as select tournee_id, tournee, jour, depot, produit, sum(qte)
+  from detail_livraisons dl 
+where livre = 'à livrer'
+and semaine = date_part('week',now())
+group by tournee_id, tournee, jour, depot, produit
+order by dl.tournee_id ;
+
+update adherents a set profil_id = 3 
+where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);
