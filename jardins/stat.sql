@@ -1,4 +1,4 @@
-create view stat_adherents as
+create view stat_adherents  with (security_invoker=on) as
 select j.jardin_id, j.jardin,
     count(a.*) as nb_adherents
   from jardins j
@@ -7,32 +7,32 @@ select j.jardin_id, j.jardin,
 
 comment on view stat_adherents is 'Nombre total d''adhérents par jardins.';
 
-create view stat_adherents_profils as
-select j.jardin_id, j.jardin, p.profil, 
+create view stat_adherents_profils  with (security_invoker=on) as
+select j.jardin_id, j.jardin, p.profil,
     count(a.*) as nb_adherents
   from jardins j
     left join adherents a on a.jardin_id = j.jardin_id
-    left join profils p on p.profil_id = a.profil_id 
+    left join profils p on p.profil_id = a.profil_id
   group by j.jardin_id, p.profil;
 
 comment on view stat_adherents_profils is 'Nombre total d''adhérents par jardins et par profils.';
 
-create view stat_abonnements as
-select saison_id, count(*) 
+create view stat_abonnements  with (security_invoker=on) as
+select saison_id, count(*)
   from abonnements
   group by saison_id;
 
 comment on view stat_adherents_profils is 'Nombre total d''abonnements par saisons.';
 
-create view stat_abonnements_paniers as
-select saison_id, p.panier, count(quantite) 
+create view stat_abonnements_paniers  with (security_invoker=on) as
+select saison_id, p.panier, count(quantite)
   from abonnements a
     join paniers p on p.panier_id = a.panier_id
   group by a.saison_id, p.panier;
 
 comment on view stat_adherents_profils is 'Nombre total d''abonnements par saisons et par paniers.';
 
-create view stat_depots as
+create view stat_depots  with (security_invoker=on) as
 select j.jardin_id, j.jardin,
   count(d.*) as nb_depots
   from jardins j
@@ -41,55 +41,55 @@ select j.jardin_id, j.jardin,
 
 comment on view stat_depots is 'Nombre de dépôts par jardins.';
 
-create view stat_livraisons as 
-select count(*) 
+create view stat_livraisons  with (security_invoker=on) as
+select count(*)
   from livraisons l;
 
 comment on view stat_livraisons is 'Nombre de livraisons.';
 
-create view stat_livraisons_produits as 
-select produit, sum(qte) 
+create view stat_livraisons_produits  with (security_invoker=on) as
+select produit, sum(qte)
   from detail_livraisons l
 group by (produit);
 
 comment on view stat_livraisons_produits is 'Nombre de produits livrés.';
 
-create view stat_livraisons_semaines as
+create view stat_livraisons_semaines  with (security_invoker=on) as
 select semaine, count(*), sum(qte)
   from detail_livraisons l
   group by semaine;
 
 comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines.';
 
-create view stat_livraisons_semaines_tournees as
-select semaine, 
+create view stat_livraisons_semaines_tournees  with (security_invoker=on) as
+select semaine,
   tournee_id, tournee,
   count(*), sum(qte)
-  from detail_livraisons l 
+  from detail_livraisons l
   group by semaine, tournee_id, tournee;
 
 comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines et par tournées.';
 
-create view stat_livraisons_semaines_tournees_depots as
-select semaine, 
+create view stat_livraisons_semaines_tournees_depots  with (security_invoker=on) as
+select semaine,
   tournee_id, tournee, depot,
   count(*), sum(qte)
-  from detail_livraisons l  
+  from detail_livraisons l
   group by semaine, tournee_id, tournee, depot;
 
 comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines par tournées et par dépôts.';
 
-create view stat_livraisons_depots as
-select depot, sum(qte) 
+create view stat_livraisons_depots  with (security_invoker=on) as
+select depot, sum(qte)
   from detail_livraisons l
 group by (depot);
 
-create view stat_depots_adherents as
+create view stat_depots_adherents  with (security_invoker=on) as
 select depot, count(distinct adherent_id)
   from detail_livraisons l
 group by depot;
 
-create view stat_calendriers as 
+create view stat_calendriers  with (security_invoker=on) as
 select c.calendrier_id,
     c.calendrier,
     s.saison,
@@ -102,20 +102,24 @@ select c.calendrier_id,
 comment on view stat_livraisons_produits is 'Nombre de jours dans le planning par calendrier.';
 
 create view gpao_tournees
-as select tournee_id, tournee, jour, produit, sum(qte)
-  from detail_livraisons dl 
+  with (security_invoker=on)
+  as
+select tournee_id, tournee, jour, produit, sum(qte)
+  from detail_livraisons dl
 where livre = 'à livrer'
 and semaine = date_part('week',now())
 group by tournee_id, tournee, jour, produit
 order by tournee_id;
 
 create view gpao_depots
-as select tournee_id, tournee, jour, depot, produit, sum(qte)
-  from detail_livraisons dl 
+  with (security_invoker=on)
+  as
+select tournee_id, tournee, jour, depot, produit, sum(qte)
+  from detail_livraisons dl
 where livre = 'à livrer'
 and semaine = date_part('week',now())
 group by tournee_id, tournee, jour, depot, produit
 order by dl.tournee_id ;
 
-update adherents a set profil_id = 3 
+update adherents a set profil_id = 3
 where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);
