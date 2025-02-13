@@ -42,3 +42,20 @@ select a.*
   from adherents a
     left join abonnements b on a.adherent_id = b.adherent_id
   where b.abonnement_id is null;
+
+create view orphan_depots
+ with (security_invoker=on)
+  as
+select d.depot_id, d.depot from depots d
+left join distributions d2 on d2.depot_id = d.depot_id
+where d2.depot_id is null;
+
+comment on view orphan_depots is 'Dépôts sans distribution (non rattachés à une tournée).';
+
+create view depots_sans_adhérent
+ with (security_invoker=on)
+  as
+select d.depot_id, d.depot, d2.distribution_id, d2.tournee_id from depots d
+  join distributions d2 on d2.depot_id = d.depot_id
+  left join livraisons l on l.distribution_id = d2.distribution_id
+where l.livraison_id is null;

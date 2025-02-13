@@ -2,53 +2,53 @@
 
 #1
 99,,Livraison à Domicile,99,Mardi,1,4,,,,1
+2048,,RESERVE Mardi,ZMA,Mardi,0,16,,,,1
 70,,EGLISE St Antoine,70,Mardi,0,7,Eglise St Antoine Rue Armand Colle,EPINAL,88000,1
-71,,EGLISE St Antoine,71,Mardi,0,8,Eglise St Antoine Rue Armand Colle,EPINAL,88000,1
+  71,,EGLISE St Antoine,71,Mardi,0,8,Eglise St Antoine Rue Armand Colle,EPINAL,88000,1
 28,,Ligne Enseignement,28,Mardi,0,11,15 Rue Général de Reffye,EPINAL,88000,1
-58,,Ligue de l'Enseignement,58,Mardi,0,10,15 Rue du Général Reffye,EPINAL,88000,1
-41,,Centre Léo Lagrange,41,Mardi,0,15,6 av Salvador Allende,EPINAL,88000,1
+  58,,Ligue de l'Enseignement,58,Mardi,0,10,15 Rue du Général Reffye,EPINAL,88000,1
 62,,Léo Lagrange,62,Mardi,0,13,Chemin du Tambour Major,EPINAL,88 000,1
-67,,Léo Lagrange,67,Mardi,0,14,Chemin du Tambour Major,EPINAL,88000,1
+  41,,Centre Léo Lagrange,41,Mardi,0,15,6 av Salvador Allende,EPINAL,88000,1
+  67,,Léo Lagrange,67,Mardi,0,14,Chemin du Tambour Major,EPINAL,88000,1
 75,,APF Dinozé,75,Mardi,0,9,Rue de la Papeterie,DINOZE,88 000,1
 49,,Ecodenn'ergie,49,Mardi,0,12,36 bis Rue de la Plaine ,GOLBEY,88190,1
 23,,BOTANIC mardi,23,Mardi,0,1,Avenue des Terres St Jean,EPINAL,88000,1
 2,,Asso Etudiant Universitaire,2,Mardi,0,4,9 Rue de la Louvière,EPINAL,88000,1
 3,,Conseil Départemental des Vosges,3,Mardi,0,6,8 Rue de la Préfecture,EPINAL,88000,1
 4,,Asso RHYZOME,4,Mardi,0,5,15 Rue des Jardiniers,EPINAL,88000,1
-2048,,RESERVE Mardi,ZMA,Mardi,0,16,,,,1
 
 #2
 33,,JARDINS SALARIES MARDI,33,Mardi,0,1,Prairie Claudel,THAON LES VOSGES,88150,2
 
 #3
 0,,Livraison à domicile,0,Mercredi matin,1,1,,,,3
+2049,,RESERVE Mercredi Matin,ZMM,,0,21,,,,3
 42,,EGLISE St Antoine,42,Mercredi matin,0,6,Eglise St Antoine Rue Armand Colle,EPINAL,88000,3
-43,,EGLISE St Antoine,43,Mercredi matin,0,7,Eglise St Antoine Rue Armand Colle,EPINAL,88000,3
-72,,EGLISE St Antoine,72,Mardi,0,8,Eglise St Antoine Rue Armand Colle,EPINAL,88000,3
-10,,Crédit Agricole Epinal,10,Mercredi matin,0,19, Allée des Erables,EPINAL,88000,3
-25,,DVIS Epinal,25,Mercredi matin,0,17,1 Rue de la Préfecture,EPINAL,88000,3
-29,,DENNINGER,29,Mercredi matin,0,14,36 bis Rue de la Plaine,GOLBEY,88190,3
+  43,,EGLISE St Antoine,43,Mercredi matin,0,7,Eglise St Antoine Rue Armand Colle,EPINAL,88000,3
+  72,,EGLISE St Antoine,72,Mardi,0,8,Eglise St Antoine Rue Armand Colle,EPINAL,88000,3
+64,,Léo Lagrange  (Mercredi),64,,0,4,Chemin du Tambour Major,EPINAL,88000,3
+  69,,Léo Lagrange  ( Mercredi ),69,,0,3,Chemin du Tambour Major,EPINAL,88000,3
 31,,Chambre d'Agriculture,31,Mercredi matin,0,5,17 Rue André Vitu,EPINAL,88000,3
 14,,Ligue de L'Enseignement,14,Mercredi matin,0,13,15 Rue du Général de Reffye,EPINAL,88000,3
-54,,Ligue de l'enseignement,54,,0,12,15 Rue du général de Reffye,EPINAL,88000,3
+  54,,Ligue de l'enseignement,54,,0,12,15 Rue du général de Reffye,EPINAL,88000,3
+29,,Ecodenn'ergie,29,Mercredi matin,0,14,36 bis Rue de la Plaine,GOLBEY,88190,3
 46,,Maison de l'Environnement,46,Mercredi matin,0,16,12 Rue  Raymond Poincaré,EPINAL,88000,3
-64,,Léo Lagrange  (Mercredi),64,,0,4,Chemin du Tambour Major,EPINAL,88000,3
-69,,Léo Lagrange  ( Mercredi ),69,,0,3,Chemin du Tambour Major,EPINAL,88000,3
-2049,,RESERVE Mercredi Matin,ZMM,,0,21,,,,3
+10,,Crédit Agricole Epinal,10,Mercredi matin,0,19, Allée des Erables,EPINAL,88000,3
+25,,DVIS Epinal,25,Mercredi matin,0,17,1 Rue de la Préfecture,EPINAL,88000,3
 
 #4
 32,,Livraison à domicile,32,Mercredi après midi,1,5,,,,4
+50,,GACI,50,Mercredi après midi,0,4,28 Rue de la Joncherie,REMIREMONT,88200,4
+  51,,GACI,51,Mercredi après midi,0,5,28 Rue de la Joncherie,REMIREMONT,88200,4
+  52,,GACI,52,Mercredi après midi,0,6,28 Rue de la Joncherie,REMIREMONT,88200,4
+  53,,GACI,53,Mercredi après midi,0,7,28 Rue de la Joncherie,REMIREMONT,88200,4
 15,,Garage Renault- Station Service,15,Mercredi après midi,0,18,664 Rue de la Gare,POUXEUX,88550,4
 6,,Pharmacie St Nabord,6,Mercredi après midi,0,3,24 Rue du Général de Gaulle,SAINT-NABORD,88200,4
-50,,GACI,50,Mercredi après midi,0,4,28 Rue de la Joncherie,REMIREMONT,88200,4
+19,,BOTANIC,19,Mercredi après midi,0,2,Avenue des Terres St Jean,EPINAL,88000,4
+57,,Office du Tourisme,57,Mercredi après midi,0,9,6 Place Christian Poncelet,REMIREMONT,88200,4
+26,,PERIDON,26,Mercredi après midi,0,11,7 Rue du Savron,RAON AUX BOIS,88220,4
 13,,BOULASSEL Docelles,13,Mercredi après midi,0,17,1 Rue Moncey,DOCELLES,88460,4
 61,,LA QUARTERELLE,61,Mercredi après midi,0,10,3 Rue Carterelle,REMIREMONT,88200,4
-19,,BOTANIC,19,Mercredi après midi,0,2,Avenue des Terres St Jean,EPINAL,88000,4
-26,,PERIDON,26,Mercredi après midi,0,11,7 Rue du Savron,RAON AUX BOIS,88220,4
-51,,GACI,51,Mercredi après midi,0,5,28 Rue de la Joncherie,REMIREMONT,88200,4
-52,,GACI,52,Mercredi après midi,0,6,28 Rue de la Joncherie,REMIREMONT,88200,4
-53,,GACI,53,Mercredi après midi,0,7,28 Rue de la Joncherie,REMIREMONT,88200,4
-57,,Office du Tourisme,57,Mercredi après midi,0,9,6 Place Christian Poncelet,REMIREMONT,88200,4
 38,,VOSGELIS Remiremont (Mercredi),38,,0,8,4 Place de l'abbaye,REMIREMONT,88200,4
 65,,BOUVIER Emmanuel,65,,0,13,557 rue du Chêne,HADOL,88220,4
 2050,,RESERVE Remiremont,ZMR,,0,1,,,,4
@@ -61,22 +61,21 @@
 
 #7
 30,,Livraison à domicile,30,Vendredi,1,12,,,,7
-9,,3 ème Rive - Café Associatif,9,Mercredi matin,0,18,15 Rue Maréchal Lyautey,EPINAL,88000,7
-8,,DENNINGER,8,Vendredi,0,4,36 Bis Rue de la Plaine,GOLBEY,88190,7
-12,,Centre Léo Lagrange,12,Mercredi matin,0,24,6 av Salvador Allende,EPINAL,88000,7
-22,,BOTANIC,22,Vendredi,0,25,Avenue des Terres St Jean,EPINAL,88000,7
-16,,ADINOLFI,16,Vendredi,0,9,7 Allée des Primevères,LES FORGES,88390,7
-18,,Papeterie Golbey Norske Skog,18,Vendredi,0,3, ZI Route Charles Pellerin,GOLBEY,88190,7
 44,,EGLISE St Antoine,44,Vendredi,0,5,Eglise St Antoine Rue Armand Colle,EPINAL,88000,7
-45,,EGLISE St Antoine,45,Vendredi,0,6,Eglise St Antoine Rue Armand Colle,EPINAL,88000,7
-34,,BIOCOOP Epinal ,34,vendredi,0,19,7 Rue du Boudiou,EPINAL,88000,7
+  45,,EGLISE St Antoine,45,Vendredi,0,6,Eglise St Antoine Rue Armand Colle,EPINAL,88000,7
+  73,,EGLISE St Antoine,73,,0,7,Eglise St Antoine  Rue Armand Colle,EPINAL,88000,7
+22,,BOTANIC,22,Vendredi,0,25,Avenue des Terres St Jean,EPINAL,88000,7
+12,,Centre Léo Lagrange,12,Mercredi matin,0,24,6 av Salvador Allende,EPINAL,88000,7
 24,,LIGUE DE L'ENSEIGNEMENT,24,Vendredi,0,15,15 Rue du Général de Reffye,EPINAL,88000,7
+  74,,Ligue de l'Enseignement,74,,0,14,15 Rue du Général de Reffye,EPINAL,88000,7
+8,,Ecoden'ergie,8,Vendredi,0,4,36 Bis Rue de la Plaine,GOLBEY,88190,7
+9,,3 ème Rive - Café Associatif,9,Mercredi matin,0,18,15 Rue Maréchal Lyautey,EPINAL,88000,7
+34,,BIOCOOP Epinal ,34,vendredi,0,19,7 Rue du Boudiou,EPINAL,88000,7
+16,,ADINOLFI,16,Vendredi,0,9,7 Allée des Primevères,LES FORGES,88390,7
 47,,Maison de l'Environnement,47,Vendredi,0,20,12 Rue  Raymond Poincaré,EPINAL,88000,7
-48,,VOSGELIS ( Vendredi ),48,,0,8,Quai Barbier,Epinal,88000,7
+18,,Papeterie Golbey Norske Skog,18,Vendredi,0,3, ZI Route Charles Pellerin,GOLBEY,88190,7
+48,,VOSGELIS,48,Vendredi,0,8,Quai Barbier,Epinal,88000,7
 77,,La Tête à Toto,77,,0,26, 26 Quai des Bons Enfants,EPINAL,88000,7
-74,,Ligue de l'Enseignement,74,,0,14,15 Rue du Général de Reffye,EPINAL,88000,7
-73,,EGLISE St Antoine,73,,0,7,Eglise St Antoine  Rue Armand Colle,EPINAL,88000,7
-83,,FIVES,83,,0,2,2 Rue des Amériques,GOLBEY,88190,7
 2051,,RESERVE Vendredi,ZVe,,0,28,,,,7
 
 #8
@@ -89,17 +88,18 @@
 80,,Résidence du Moncey - 80 -,80,,0,3,Ruelle du Moncey,VINCEY,88450,9
 21,,Madame PIEROT Charmes,21,Vendredi,0,1,15 Rue Ste Barbe,CHARMES,88130,9
 81,,Complexe Sportif Charmes - 81 -,81,,0,5,Bld Georges Clemenceau,CHARMES,88130,9
-82,,Complexe Sportif Charmes - 82 -,82,,0,6,Bld Georges Clémenceau,CHARMES,88130,9
+ 82,,Complexe Sportif Charmes - 82 -,82,,0,6,Bld Georges Clémenceau,CHARMES,88130,9
 
 #10
 7,,Livraison  Domicile   Bruyères   ,7,,1,1,,,,10
 20,,Pro et Cie Gérardmer,20,Mercredi matin,0,3,7 Rue de la République ,GERARDMER,88530,10
-17,,LECOMTE François,17,Vendredi,0,5,24 Route de Noirpré,LE THOLY,88530,10
 40,,Pro et Cie Gérardmer,40,,0,4,7 Rue de la République,GERARDMER,88400,10
+17,,LECOMTE François,17,Vendredi,0,5,24 Route de Noirpré,LE THOLY,88530,10
 60,,Point VERT  Bruyères vendredi,60,,0,2,5 Rue des Résistants ZA Barbazan,BRUYERES,88600,10
 55,,Brico Marché,55,,0,1,2 Rue du Fraisne,BRUYERES,88600,10
 
 36,,Moustaches Bikes Mercredi,36,Mardi,0,2,Prairie Claudel,THAON LES VOSGES,88150,11
 78,,UIMM,78,,0,1,Label Initiative,Thaon les Vosges,88150,11
 
+83,,FIVES,83,,0,2,2 Rue des Amériques,GOLBEY,88190,12
 37,,Moustaches Bikes Vendredi,37,Vendredi,0,1,Prairie Claudel,THAON LES VOSGES,88150,12

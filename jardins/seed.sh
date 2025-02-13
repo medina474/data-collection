@@ -15,4 +15,4 @@ psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f stat.sql
 psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f orphan.sql
 
 psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f data_import.sql
-psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f data_compy.sql
+psql -h $PGHOST -p $PGPORT -d postgres -U $PGUSER -f data_copy.sql
