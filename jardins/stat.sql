@@ -159,6 +159,3 @@ select semaine, preparation_id, preparation,
 from detail_livraisons l
 group by semaine, preparation_id, preparation, tournee_id, tournee, produit;
 
--- Adhérents profil salariés sont ceux qui sont livrés lors de la tournée 6
-update adherents a set profil_id = 3
-where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);

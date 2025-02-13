@@ -14,7 +14,7 @@ create view orphan_distributions
 select d.*
   from distributions d
     left join depots d2 on d2.depot_id = d.depot_id
-  where d2.depot_id is null;
+  where d2.depot_id is null and d2.adherent_id is not null;
 
 comment on view orphan_abonnements is 'Distributions dont le dépôt n''existe pas.';
 

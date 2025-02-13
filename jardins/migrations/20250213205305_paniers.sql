@@ -6,7 +6,6 @@ create table compositions (
   prix numeric
 );
 
-
 alter table compositions
   add foreign key (panier_id) references paniers not valid;
 

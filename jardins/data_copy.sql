@@ -92,3 +92,7 @@ where abonnement_id not in (28568, 29534, 28758, 29171,29561,28232,28263,28546,2
 
 refresh materialized view detail_depots with data;
 refresh materialized view detail_livraisons with data;
+
+-- Adhérents profil salariés sont ceux qui sont livrés lors de la tournée 6
+update adherents a set profil_id = 3
+where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);
