@@ -9,7 +9,7 @@ begin
 
 with insertion as (
 select a.adherent_id
-from adherents a
+from adherents a,
   LATERAL adherer(a.adherent_id)
   where a.date_sortie is null)
 select count(*) into _nb from insertion;
