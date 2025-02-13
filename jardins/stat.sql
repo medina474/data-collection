@@ -104,7 +104,7 @@ comment on view stat_livraisons_produits is 'Nombre de jours dans le planning pa
 create view livraisons_preparations
 with (security_invoker=on)
   as
-select l.semaine, p.jour, l.preparation_id, l.preparation, 
+select l.semaine, p.jour, l.preparation_id, l.preparation,
   l.produit, sum(qte)
   from detail_livraisons l
     inner join preparations p on p.preparation_id = l.preparation_id
@@ -113,7 +113,7 @@ select l.semaine, p.jour, l.preparation_id, l.preparation,
 create view gpao_preparations
   with (security_invoker=on)
   as
-select l.semaine, p.jour, l.preparation_id, l.preparation, 
+select l.semaine, p.jour, l.preparation_id, l.preparation,
   l.produit, sum(l.qte)
   from detail_livraisons l
     inner join preparations p on p.preparation_id = l.preparation_id
@@ -123,38 +123,38 @@ select l.semaine, p.jour, l.preparation_id, l.preparation,
 create view gpao_tournees
   with (security_invoker=on)
   as
-select l.semaine, l.preparation_id, l.tournee_id, l.tournee, l.jour, 
+select l.semaine, l.preparation_id, l.tournee_id, l.tournee, l.jour,
   l.produit, sum(l.qte)
   from detail_livraisons l
 where livre = 'à livrer'
 and semaine = date_part('week',now())
-group by tournee_id, tournee, jour, produit
+group by l.semaine, l.preparation_id, tournee_id, tournee, jour, produit
 order by tournee_id;
 
 create view gpao_depots
   with (security_invoker=on)
   as
-select l.semaine, l.tournee_id, l.tournee, l.jour, l.depot, 
-  l.produit, sum(qte)
+select l.semaine, l.tournee_id, l.tournee, l.jour, l.depot,
+  l.produit, sum(l.qte)
   from detail_livraisons l
 where livre = 'à livrer'
-group by tournee_id, tournee, jour, depot, produit
-order by dl.tournee_id;
+group by l.semaine, l.tournee_id, tournee, jour, depot, produit
+order by l.tournee_id;
 
 create view gpao_adherents
   with (security_invoker=on)
   as
-select l.semaine, l.depot, l.adherent_id, l.adherent 
-  l.produit, sum(qte)
+select l.semaine, l.tournee_id, l.tournee, l.depot, l.adherent_id, l.adherent,
+  l.produit, sum(l.qte)
   from detail_livraisons l
 where livre = 'à livrer'
-group by tournee_id, tournee, jour, depot, produit
-order by dl.tournee_id;
+group by l.semaine, tournee_id, tournee, jour, depot, l.adherent_id, l.adherent, produit
+order by l.tournee_id;
 
-create view gpao_livrer 
+create view gpao_livrer
   with (security_invoker=on)
   as
-select semaine, preparation_id, preparation, 
+select semaine, preparation_id, preparation,
   tournee_id, tournee, produit, sum(qte)
 from detail_livraisons l
 group by semaine, preparation_id, preparation, tournee_id, tournee, produit;
