@@ -39,7 +39,6 @@ echo "Tous les scripts SQL ont été exécutés avec succès."
 
 psql -h $PGHOST -p $PGPORT -d $DB_NAME -U $PGUSER -f seed.sql
 psql -h $PGHOST -p $PGPORT -d $DB_NAME -U $PGUSER -f materialized.sql
-psql -h $PGHOST -p $PGPORT -d $DB_NAME -U $PGUSER -f details.sql
 psql -h $PGHOST -p $PGPORT -d $DB_NAME -U $PGUSER -f stat.sql
 psql -h $PGHOST -p $PGPORT -d $DB_NAME -U $PGUSER -f orphan.sql
 
