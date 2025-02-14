@@ -39,7 +39,7 @@ create view detail_tournees
   as
 select t.tournee_id,
   t.tournee,
-  pr.preparation_id,
+  p.preparation_id,
   p.preparation,
   d.ordre,
   d.distribution_id,
