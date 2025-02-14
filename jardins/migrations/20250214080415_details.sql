@@ -15,6 +15,8 @@ from jardins j
   left join adresses a on a.adresse_id = j.adresse_id
   left join contacts c on c.contact_id = j.contact_id;
 
+comment on view detail_jardins is 'Tous les détails d''un jardin : adresse et contact.';
+
 create view detail_distributions
   with (security_invoker=on)
   as
@@ -48,5 +50,5 @@ select t.tournee_id,
   d.localisation
 from tournees t
   join detail_distributions d on d.tournee_id = t.tournee_id
-  joinn preparations p on p.preparation_id = t.preparation_id
+  join preparations p on p.preparation_id = t.preparation_id
 order by t.ordre, d.ordre;

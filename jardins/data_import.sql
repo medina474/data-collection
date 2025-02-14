@@ -3,11 +3,12 @@ create table livraisons_import (
   semaine smallint,
   livre smallint,
   qte numeric,
-  depot int,
+  depot_id int,
   annee int,
   jour date,
   produit text,
   produit_id int,
+  panier_id int,
   depot_text text,
   abonnement_id bigint
 );
