@@ -8,7 +8,6 @@ create table livraisons_import (
   jour date,
   produit text,
   produit_id int,
-  panier_id int,
   depot_text text,
   abonnement_id bigint
 );

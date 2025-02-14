@@ -1,3 +1,39 @@
+
+create temporary table if not exists t (id_abonnement int,produit text,id_adherent int,annee int,qte int,reglt_mois_depart int,MR_No int ,reglt_mois_nb int,nb int,nb_initial int,DO_Piece text,id_abonnement_prec int,reste_precedent int);
+\COPY t FROM 'data/abonnements.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+ALTER TABLE t ADD produit_id int NULL;
+
+update t set produit_id = 1 where produit in ('APS');
+update t set produit_id = 2 where produit in ('APS15');
+update t set produit_id = 3 where produit in ('APF');
+update t set produit_id = 4 where produit in ('APF15');
+update t set produit_id = 7 where produit in ('MPSSO');
+update t set produit_id = 8 where produit in ('ABF1');
+update t set produit_id = 9 where produit in ('ABF2');
+update t set produit_id = 10 where produit in ('ABF3');
+update t set produit_id = 11 where produit in ('ABOEUF6');
+update t set produit_id = 12 where produit in ('ABF4');
+
+update t set produit_id = 13 where produit in ('APDS');
+update t set produit_id = 14 where produit in ('APDS15');
+update t set produit_id = 15 where produit in ('APDF');
+update t set produit_id = 16 where produit in ('APDF15c');
+
+update t set produit_id = 17 where produit in ('APSS12');
+update t set produit_id = 18 where produit in ('APSS6');
+update t set produit_id = 19 where produit in ('APSF12');
+update t set produit_id = 20 where produit in ('APSF6');
+
+INSERT INTO abonnements (abonnement_id, adherent_id, panier_id, nombre, montant, saison_id)
+select t.id_abonnement, t.id_adherent, t.produit_id, t.nb, p.prix * (t.nb / p.quantite), 1
+  from t
+  inner join adherents a on a.adherent_id = t.id_adherent
+  inner join paniers p on p.panier_id = t.produit_id;
+
+drop table t;
+
+
 update livraisons_import set produit_id = 1 where produit in ('APS', 'APDS', 'APS15', 'APDS15','APSS12', 'APDSS12', 'APSS6', 'APDSS6', 'MPSSO', 'MPSH');
 update livraisons_import set produit_id = 2 where produit in ('APF', 'APDF', 'APF15', 'APDF15', 'APSF12', 'MPFH');
 update livraisons_import set produit_id = 3 where produit in ('ABF1');
@@ -5,17 +41,6 @@ update livraisons_import set produit_id = 4 where produit in ('ABF2');
 update livraisons_import set produit_id = 5 where produit in ('ABF3');
 update livraisons_import set produit_id = 6 where produit in ('ABOEUF6');
 update livraisons_import set produit_id = 7 where produit in ('ABF4');
-
-update livraisons_import set panier_id = 1 where produit in ('APS');
-update livraisons_import set panier_id = 2 where produit in ('APS15');
-update livraisons_import set panier_id = 3 where produit in ('APF');
-update livraisons_import set panier_id = 4 where produit in ('APF15');
-update livraisons_import set panier_id = 7 where produit in ('MPSSO');
-update livraisons_import set panier_id = 8 where produit in ('ABF1');
-update livraisons_import set panier_id = 9 where produit in ('ABF2');
-update livraisons_import set panier_id = 10 where produit in ('ABF3');
-update livraisons_import set panier_id = 11 where produit in ('ABOEUF6');
-update livraisons_import set panier_id = 12 where produit in ('ABF4');
 
 update livraisons_import set depot_id = 99 where depot_text in ('99');
 update livraisons_import set depot_id = 99 where depot_text = 'ZMA';
@@ -97,9 +122,7 @@ select 1 as jardin_id,
   p.planning_id  as planning_id
 from livraisons_import import
 join plannings p on p.jour = import.jour
-where abonnement_id not in (28568, 29534, 28758, 29171,29561,28232,28263,28546,29560,
-28585,28588,29337,29591,28407,28408,28415,28405,28406,29438,28409,28544,29584,29592,
-28361,28690,28179,28694,29276,28798,29419,28623,28573,29511,28398,29501);
+join abonnements a on a.abonnement_id = import.abonnement_id;
 
 refresh materialized view detail_depots with data;
 refresh materialized view detail_livraisons with data;
