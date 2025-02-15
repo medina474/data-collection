@@ -30,11 +30,6 @@ create view check_plannings_semaine
 
 comment on view check_plannings_semaine is 'Vérifie qu''un jour n''est pas planifié pendant une semaine de fermeture.';
 
---create view check_livraisons_feries as
---  select l.jour
---   from (livraisons l
---     join feries f on ((f.jour = l.jour)));
-
 create view check_abonnements_qte
   with (security_invoker=on)
   as
@@ -44,3 +39,5 @@ from abonnements a
 left join livraisons l on l.abonnement_id = a.abonnement_id
 group by a.abonnement_id, a.panier_id
 having a.nombre <> sum(qte)
+
+comment on view check_plannings_semaine is 'Vérifie le nombre de livraisons planifiées par rapport au nombre prévu par l''abonnement.';
