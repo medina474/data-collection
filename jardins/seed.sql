@@ -4,6 +4,6 @@
 \COPY tournees FROM 'data/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY distributions FROM 'data/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 
-\COPY propositions(frequence_id, planning_id) FROM 'propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY propositions(frequence_id, planning_id) FROM 'data/propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 
 update abonnements set saison_id = 1;
