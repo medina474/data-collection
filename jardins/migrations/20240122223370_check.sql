@@ -38,6 +38,6 @@ select a.abonnement_id, a.panier_id,
 from abonnements a
 left join livraisons l on l.abonnement_id = a.abonnement_id
 group by a.abonnement_id, a.panier_id
-having a.nombre <> sum(qte)
+having a.nombre <> sum(qte);
 
 comment on view check_plannings_semaine is 'Vérifie le nombre de livraisons planifiées par rapport au nombre prévu par l''abonnement.';
