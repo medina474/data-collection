@@ -111,18 +111,21 @@ update livraisons_import set depot_id = 13 where depot_text in ('34');
 
 insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id)
 select 1 as jardin_id,
-  import.abonnement_id as abonnement_id,
-  depot_id as distribution_id,
-  import.produit_id,
-  import.qte,
+  i.abonnement_id as abonnement_id,
+  i.depot_id as distribution_id,
+  i.produit_id,
+  i.qte,
   CASE
     WHEN livre = 0 THEN 'à livrer'::livraison
     WHEN livre = 1 THEN 'livré'::livraison
   END,
   p.planning_id  as planning_id
-from livraisons_import import
-join plannings p on p.jour = import.jour
-join abonnements a on a.abonnement_id = import.abonnement_id;
+from livraisons_import i
+join distributions d on d.distribution_id = i.depot_id
+join tournees t on t.tournee_id = d.tournee_id
+join plannings p on p.jour = i.jour and p.calendrier_id = t.calendrier_id
+join abonnements a on a.abonnement_id = i.abonnement_id
+where i.qte <> 0;
 
 refresh materialized view detail_depots with data;
 refresh materialized view detail_livraisons with data;
