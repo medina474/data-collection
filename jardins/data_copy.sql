@@ -133,3 +133,8 @@ refresh materialized view detail_livraisons with data;
 -- Adhérents profil salariés sont ceux qui sont livrés lors de la tournée 6
 update adherents a set profil_id = 3
 where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);
+
+
+select distinct a.adherent_id from livraisons_import li
+join abonnements a on a.abonnement_id = li.abonnement_id,
+lateral adherer(a.adherent_id);
