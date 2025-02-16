@@ -1,3 +1,67 @@
+-- Chercher si des propositions existent pour la fréquence de ce panier
+-- sinon prendre toutes les dates du planning
+create or replace function proposer_dates(_calendrier_id bigint, _frequence_id bigint, _date_debut date, _date_fin date)
+  returns table (planning_id bigint)
+  language plpgsql
+as $function$
+declare
+begin
+	return query
+  with
+  une_proposition as (
+	  select p.planning_id
+    from propositions pp
+      join plannings p on p.planning_id = pp.planning_id
+    where frequence_id = _frequence_id
+      and calendrier_id = _calendrier_id
+      and jour between _date_debut and _date_fin
+  ),
+  final_selection as (
+    select *
+      from une_proposition
+    union all
+      select p.planning_id
+        from plannings p
+        where calendrier_id = _calendrier_id
+          and jour between _date_fin and _date_fin
+          and not exists (select 1 from une_proposition)
+  )
+  select * from une_proposition;
+end; $function$;
+
+CREATE OR REPLACE FUNCTION selectionner_dates(n int, _calendrier_id bigint, _frequence_id bigint, _date_debut date, _date_fin date)
+RETURNS TABLE(selected_id bigint, qt numeric) AS $$
+DECLARE
+    total_dates INTEGER;
+    interval_size numeric;
+    remainder INTEGER;
+    div_ent bigint;
+BEGIN
+
+		select count(*) into total_dates from proposer_dates(_calendrier_id, _frequence_id, _date_debut, _date_fin);
+
+    div_ent := FLOOR(n::FLOAT / total_dates)::INT;
+    n := n - div_ent * total_dates;
+    interval_size := total_dates / n::numeric;
+
+      RETURN QUERY
+      with cte as
+		 (
+      SELECT planning_id, 1 as qte
+      FROM (
+          SELECT planning_id, ((row_number() OVER () - 1) % interval_size - (interval_size / 2.0)) as row_num
+          FROM proposer_dates(_calendrier_id, _frequence_id, _date_debut, _date_fin)
+          ORDER BY planning_id
+      ) sub
+      WHERE row_num < 0.5 and row_num >= -0.5
+      UNION ALL
+	    SELECT planning_id, div_ent as qte
+      FROM proposer_dates(_calendrier_id, _frequence_id, _date_debut, _date_fin)
+    ) select planning_id, sum(qte) from cte group by planning_id;
+
+END; $$
+LANGUAGE plpgsql;
+
 create or replace function abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default null)
  returns bigint
  language plpgsql
@@ -54,8 +118,6 @@ begin
     where calendrier_id = _calendrier_id
     and jour between _date and _date_fin;
 
-  BEGIN;
-  
   -- Insérer l'abonnement
   insert into abonnements
     (adherent_id, panier_id, montant, nombre, date_debut, saison_id)
@@ -63,32 +125,9 @@ begin
     returning abonnement_id into _abonnement_id;
 
 -- Insérer les dates de livraisons
--- Chercher si des propositions existent pour la fréquence de ce panier
--- sinon prendre toutes les dates du planning
-  with
-  une_proposition as (
-	  select p.planning_id
-    from propositions pp
-      join plannings p on p.planning_id = pp.planning_id
-    where frequence_id = _frequence_id
-      and calendrier_id = _calendrier_id
-      and jour between _date and _date_fin
-  ),
-  final_selection as (
-    select *
-      from une_proposition
-    union all
-      select p.planning_id
-        from plannings p
-        where calendrier_id = _calendrier_id
-          and jour between _date and _date_fin
-          and not exists (select 1 from une_proposition)
-  )
   insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id)
-	select _jardin_id, _abonnement_id, _distribution_id, _produit_id, 1, 'à livrer'::livraison, planning_id
-    from final_selection;
-
-  COMMIT;
+  select _jardin_id, _abonnement_id, _distribution_id, _produit_id, 1, 'à livrer'::livraison, planning_id
+    from proposer_dates(_calendrier_id, _frequence_id, _date, _date_fin);
 
   return _abonnement_id;
 end; $function$;
