@@ -243,3 +243,440 @@ insert into paniers (panier_id,produit_id,panier,frequence_id,quantite,prix) val
 insert into preparations (preparation_id,jardin_id,preparation,jour) values
 (1,1,'Mardi',1),
 (2,1,'Jeudi',3);
+
+\COPY adherents(adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id) FROM '/backup/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+\COPY plannings FROM '/backup/plannings-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY tournees FROM '/backup/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY distributions FROM '/backup/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+\COPY propositions(frequence_id, planning_id) FROM '/backup/propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+create materialized view detail_depots as
+select d.depot_id,
+    d.jardin_id,
+    d.depot,
+    d.capacite,
+    a.adresse,
+    a.codepostal,
+    a.ville,
+    a.localisation,
+    c.contact,
+    c.telephone,
+    c.email
+  from depots d
+    left join adresses a on a.adresse_id = d.adresse_id
+    left join contacts c on c.contact_id = d.contact_id;
+
+create materialized view detail_livraisons as
+select l.livraison_id, l.jardin_id,
+    l.abonnement_id, a.adherent_id, a2.adherent, a2.adresse_id as adherent_adresse_id,
+    l.distribution_id, d.depot_id, d2.depot, d2.adresse_id as depot_adresse_id,
+    CASE
+    WHEN d2.adresse_id is not null THEN d2.adresse_id
+    WHEN a2.adresse_id is not null THEN a2.adresse_id
+    else NULL
+    end as adresse_id,
+    d.tournee_id, t.tournee,
+    t.preparation_id, pp.preparation, pp.jour as jsemaine,
+    l.produit_id, p.produit,
+    qte, livre,
+    l.planning_id, p2.jour, date_part('week', p2.jour) as semaine, date_part('month', p2.jour) as mois
+  from livraisons l
+    join distributions d on d.distribution_id = l.distribution_id
+    join depots d2 on d2.depot_id = d.depot_id
+    join tournees t on t.tournee_id = d.tournee_id
+    join preparations pp on pp.preparation_id = t.preparation_id
+    join produits p on p.produit_id  = l.produit_id
+    join abonnements a on a.abonnement_id = l.abonnement_id
+    join adherents a2 on a2.adherent_id = a.adherent_id
+    join plannings p2 on p2.planning_id = l.planning_id;
+
+create view stat_adherents  with (security_invoker=on) as
+select j.jardin_id, j.jardin,
+    count(a.*) as nb_adherents
+  from jardins j
+    left join adherents a on a.jardin_id = j.jardin_id
+  group by j.jardin_id;
+
+comment on view stat_adherents is 'Nombre total d''adhérents par jardins.';
+
+create view stat_adherents_profils  with (security_invoker=on) as
+select j.jardin_id, j.jardin, p.profil,
+    count(a.*) as nb_adherents
+  from jardins j
+    left join adherents a on a.jardin_id = j.jardin_id
+    left join profils p on p.profil_id = a.profil_id
+  group by j.jardin_id, p.profil;
+
+comment on view stat_adherents_profils is 'Nombre total d''adhérents par jardins et par profils.';
+
+create view stat_abonnements  with (security_invoker=on) as
+select saison_id, count(*)
+  from abonnements
+  group by saison_id;
+
+comment on view stat_adherents_profils is 'Nombre total d''abonnements par saisons.';
+
+create view stat_abonnements_paniers  with (security_invoker=on) as
+select saison_id, p.panier, count(quantite)
+  from abonnements a
+    join paniers p on p.panier_id = a.panier_id
+  group by a.saison_id, p.panier;
+
+comment on view stat_adherents_profils is 'Nombre total d''abonnements par saisons et par paniers.';
+
+create view stat_depots  with (security_invoker=on) as
+select j.jardin_id, j.jardin,
+  count(d.*) as nb_depots
+  from jardins j
+    left join depots d on d.jardin_id = j.jardin_id
+  group by j.jardin_id;
+
+comment on view stat_depots is 'Nombre de dépôts par jardins.';
+
+create view stat_livraisons  with (security_invoker=on) as
+select count(*)
+  from livraisons l;
+
+comment on view stat_livraisons is 'Nombre de livraisons.';
+
+create view stat_livraisons_produits  with (security_invoker=on) as
+select produit, sum(qte)
+  from detail_livraisons l
+group by (produit);
+
+comment on view stat_livraisons_produits is 'Nombre de produits livrés.';
+
+create view stat_livraisons_semaines  with (security_invoker=on) as
+select semaine, count(*), sum(qte)
+  from detail_livraisons l
+  group by semaine;
+
+comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines.';
+
+create view stat_livraisons_semaines_tournees  with (security_invoker=on) as
+select semaine,
+  tournee_id, tournee,
+  count(*), sum(qte)
+  from detail_livraisons l
+  group by semaine, tournee_id, tournee;
+
+comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines et par tournées.';
+
+create view stat_livraisons_semaines_tournees_depots  with (security_invoker=on) as
+select semaine,
+  tournee_id, tournee, depot,
+  count(*), sum(qte)
+  from detail_livraisons l
+  group by semaine, tournee_id, tournee, depot;
+
+comment on view stat_livraisons_produits is 'Nombre de livraisons par semaines par tournées et par dépôts.';
+
+create view stat_livraisons_depots  with (security_invoker=on) as
+select depot, sum(qte)
+  from detail_livraisons l
+group by (depot);
+
+create view stat_depots_adherents  with (security_invoker=on) as
+select depot, count(distinct adherent_id)
+  from detail_livraisons l
+group by depot;
+
+create view stat_calendriers  with (security_invoker=on) as
+select c.calendrier_id,
+    c.calendrier,
+    s.saison,
+    count(p.*) as dates
+  from calendriers c
+    left join plannings p on p.calendrier_id = c.calendrier_id
+    join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
+  group by c.calendrier_id, s.saison_id, s.saison;
+
+comment on view stat_livraisons_produits is 'Nombre de jours dans le planning par calendrier.';
+
+create view livraisons_preparations
+with (security_invoker=on)
+  as
+select l.semaine, p.jour, l.preparation_id, l.preparation,
+  l.produit, sum(qte)
+  from detail_livraisons l
+    inner join preparations p on p.preparation_id = l.preparation_id
+  group by l.semaine, p.jour, l.preparation_id, l.preparation, l.produit;
+
+create view gpao_preparations
+  with (security_invoker=on)
+  as
+select l.semaine, p.jour, l.preparation_id, l.preparation,
+  l.produit, sum(l.qte)
+  from detail_livraisons l
+    inner join preparations p on p.preparation_id = l.preparation_id
+    where livre = 'à livrer'
+  group by l.semaine, p.jour, l.preparation_id, l.preparation, l.produit;
+
+create view gpao_tournees
+  with (security_invoker=on)
+  as
+select l.semaine, l.preparation_id, l.tournee_id, l.tournee, l.jour,
+  l.produit, sum(l.qte)
+  from detail_livraisons l
+where livre = 'à livrer'
+and semaine = date_part('week',now())
+group by l.semaine, l.preparation_id, tournee_id, tournee, jour, produit
+order by tournee_id;
+
+create view gpao_depots
+  with (security_invoker=on)
+  as
+select l.semaine, l.tournee_id, l.tournee, l.jour, l.depot,
+  l.produit, sum(l.qte)
+  from detail_livraisons l
+where livre = 'à livrer'
+group by l.semaine, l.tournee_id, tournee, jour, depot, produit
+order by l.tournee_id;
+
+create view gpao_adherents
+  with (security_invoker=on)
+  as
+select l.semaine, l.tournee_id, l.tournee, l.depot, l.adherent_id, l.adherent,
+  l.produit, sum(l.qte)
+  from detail_livraisons l
+where livre = 'à livrer'
+group by l.semaine, tournee_id, tournee, jour, depot, l.adherent_id, l.adherent, produit
+order by l.tournee_id;
+
+create view gpao_livrer
+  with (security_invoker=on)
+  as
+select semaine, preparation_id, preparation,
+  tournee_id, tournee, produit, sum(qte)
+from detail_livraisons l
+group by semaine, preparation_id, preparation, tournee_id, tournee, produit;
+
+create view orphan_abonnements
+  with (security_invoker=on)
+  as
+select b.*
+  from abonnements b
+    left join adherents a on a.adherent_id = b.adherent_id
+  where a.adherent_id is null;
+
+comment on view orphan_abonnements is 'Abonnements dont l''adhérent n''existe pas.';
+
+create view orphan_distributions
+  with (security_invoker=on)
+  as
+select d.*
+  from distributions d
+    left join depots d2 on d2.depot_id = d.depot_id
+  where d2.depot_id is null and d.adherent_id is null;
+
+comment on view orphan_abonnements is 'Distributions dont le dépôt n''existe pas.';
+
+create view orphan_abonnements_distributions
+  with (security_invoker=on)
+  as
+select a.* from abonnements a
+  left join livraisons l on a.abonnement_id = l.abonnement_id
+  where l.livraison_id is null;
+
+comment on view orphan_abonnements_distributions is 'Abonnements sans livraisons associées';
+
+create view orphan_distributions_planning
+  with (security_invoker=on)
+  as
+  select l.*
+  from livraisons l
+    left join plannings p on p.planning_id = l.planning_id
+  where p.planning_id is null;
+
+create view adherents_sans_abonnement
+  with (security_invoker=on)
+  as
+select a.*
+  from adherents a
+    left join abonnements b on a.adherent_id = b.adherent_id
+  where b.abonnement_id is null;
+
+create view orphan_depots
+ with (security_invoker=on)
+  as
+select d.depot_id, d.depot from depots d
+left join distributions d2 on d2.depot_id = d.depot_id
+where d2.depot_id is null;
+
+comment on view orphan_depots is 'Dépôts sans distribution (non rattachés à une tournée).';
+
+create view depots_sans_adhérent
+ with (security_invoker=on)
+  as
+select d.depot_id, d.depot, d2.distribution_id, d2.tournee_id from depots d
+  join distributions d2 on d2.depot_id = d.depot_id
+  left join livraisons l on l.distribution_id = d2.distribution_id
+where l.livraison_id is null;
+
+create table livraisons_import (
+  id_livraison bigint,
+  semaine smallint,
+  livre smallint,
+  qte numeric,
+  depot_id int,
+  annee int,
+  jour date,
+  produit text,
+  produit_id int,
+  depot_text text,
+  abonnement_id bigint
+);
+
+alter table livraisons_import enable row level security;
+
+create policy "Lecture publique"
+on livraisons_import
+as permissive
+for select
+to public
+using (true);
+
+\COPY livraisons_import(id_livraison,semaine,livre,qte,depot_text,annee,jour,produit,abonnement_id) FROM '/backup/livraisons-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+
+create temporary table if not exists t (id_abonnement int,produit text,id_adherent int,annee int,qte int,reglt_mois_depart int,MR_No int ,reglt_mois_nb int,nb int,nb_initial int,DO_Piece text,id_abonnement_prec int,reste_precedent int);
+\COPY t FROM '/backup/abonnements.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+
+ALTER TABLE t ADD produit_id int NULL;
+
+update t set produit_id = 1 where produit in ('APS');
+update t set produit_id = 2 where produit in ('APS15');
+update t set produit_id = 3 where produit in ('APF');
+update t set produit_id = 4 where produit in ('APF15');
+update t set produit_id = 7 where produit in ('MPSSO');
+update t set produit_id = 8 where produit in ('ABF1');
+update t set produit_id = 9 where produit in ('ABF2');
+update t set produit_id = 10 where produit in ('ABF3');
+update t set produit_id = 11 where produit in ('ABOEUF6');
+update t set produit_id = 12 where produit in ('ABF4');
+
+update t set produit_id = 13 where produit in ('APDS');
+update t set produit_id = 14 where produit in ('APDS15');
+update t set produit_id = 15 where produit in ('APDF');
+update t set produit_id = 16 where produit in ('APDF15c');
+
+update t set produit_id = 17 where produit in ('APSS12');
+update t set produit_id = 18 where produit in ('APSS6');
+update t set produit_id = 19 where produit in ('APSF12');
+update t set produit_id = 20 where produit in ('APSF6');
+
+INSERT INTO abonnements (abonnement_id, adherent_id, panier_id, nombre, montant, saison_id)
+select t.id_abonnement, t.id_adherent, t.produit_id, t.nb, p.prix * (t.nb / p.quantite), 1
+  from t
+  inner join adherents a on a.adherent_id = t.id_adherent
+  inner join paniers p on p.panier_id = t.produit_id;
+
+drop table t;
+
+
+update livraisons_import set produit_id = 1 where produit in ('APS', 'APDS', 'APS15', 'APDS15','APSS12', 'APDSS12', 'APSS6', 'APDSS6', 'MPSSO', 'MPSH');
+update livraisons_import set produit_id = 2 where produit in ('APF', 'APDF', 'APF15', 'APDF15', 'APSF12', 'MPFH');
+update livraisons_import set produit_id = 3 where produit in ('ABF1');
+update livraisons_import set produit_id = 4 where produit in ('ABF2');
+update livraisons_import set produit_id = 5 where produit in ('ABF3');
+update livraisons_import set produit_id = 6 where produit in ('ABOEUF6');
+update livraisons_import set produit_id = 7 where produit in ('ABF4');
+
+update livraisons_import set depot_id = 99 where depot_text in ('99');
+update livraisons_import set depot_id = 99 where depot_text = 'ZMA';
+update livraisons_import set depot_id = 70 where depot_text in ('70','71');
+update livraisons_import set depot_id = 28 where depot_text in ('28', '58');
+update livraisons_import set depot_id = 62 where depot_text in ('41', '67', '62');
+update livraisons_import set depot_id = 75 where depot_text = '75';
+update livraisons_import set depot_id = 49 where depot_text in ('49');
+update livraisons_import set depot_id = 23 where depot_text in ('23');
+update livraisons_import set depot_id = 2 where depot_text in ('02');
+update livraisons_import set depot_id = 3 where depot_text in ('03');
+update livraisons_import set depot_id = 4 where depot_text in ('04');
+update livraisons_import set depot_id = 33 where depot_text = '33';
+update livraisons_import set depot_id = 37 where depot_text = '00';
+update livraisons_import set depot_id = 37 where depot_text in ('ZMM');
+update livraisons_import set depot_id = 42 where depot_text in ('42','43','72');
+update livraisons_import set depot_id = 64 where depot_text in ('64','69');
+update livraisons_import set depot_id = 31 where depot_text in ('31');
+update livraisons_import set depot_id = 14 where depot_text in ('14','54');
+update livraisons_import set depot_id = 29 where depot_text in ('29');
+update livraisons_import set depot_id = 46 where depot_text in ('46');
+update livraisons_import set depot_id = 10 where depot_text = '10';
+update livraisons_import set depot_id = 25 where depot_text in ('25');
+update livraisons_import set depot_id = 32 where depot_text in ('32');
+update livraisons_import set depot_id = 15 where depot_text in ('15');
+update livraisons_import set depot_id = 6 where depot_text in ('06');
+update livraisons_import set depot_id = 50 where depot_text in ('50', '51','52','53');
+update livraisons_import set depot_id = 57 where depot_text in ('57');
+update livraisons_import set depot_id = 38 where depot_text in ('38');
+update livraisons_import set depot_id = 65 where depot_text in ('65');
+update livraisons_import set depot_id = 32 where depot_text in ('ZMR');
+update livraisons_import set depot_id = 27 where depot_text in ('27');
+update livraisons_import set depot_id = 35 where depot_text in ('35');
+update livraisons_import set depot_id = 9 where depot_text in ('09');
+update livraisons_import set depot_id = 8 where depot_text in ('08');
+update livraisons_import set depot_id = 13 where depot_text in ('13');
+update livraisons_import set depot_id = 61 where depot_text in ('61');
+update livraisons_import set depot_id = 19 where depot_text in ('19');
+update livraisons_import set depot_id = 26 where depot_text in ('26');
+update livraisons_import set depot_id = 12 where depot_text in ('12');
+update livraisons_import set depot_id = 22 where depot_text in ('22');
+update livraisons_import set depot_id = 16 where depot_text in ('16');
+update livraisons_import set depot_id = 18 where depot_text in ('18');
+update livraisons_import set depot_id = 44 where depot_text in ('44','45', '73');
+update livraisons_import set depot_id = 30 where depot_text in ('30');
+update livraisons_import set depot_id = 24 where depot_text in ('24', '74');
+update livraisons_import set depot_id = 47 where depot_text in ('47');
+update livraisons_import set depot_id = 48 where depot_text in ('48');
+update livraisons_import set depot_id = 77 where depot_text in ('77');
+update livraisons_import set depot_id = 11 where depot_text in ('11');
+update livraisons_import set depot_id = 35 where depot_text in ('35');
+update livraisons_import set depot_id = 5 where depot_text in ('05');
+update livraisons_import set depot_id = 1 where depot_text in ('01');
+update livraisons_import set depot_id = 80 where depot_text in ('80');
+update livraisons_import set depot_id = 21 where depot_text in ('21');
+update livraisons_import set depot_id = 81 where depot_text in ('81','82');
+update livraisons_import set depot_id = 7 where depot_text in ('07');
+update livraisons_import set depot_id = 20 where depot_text in ('20', '40');
+update livraisons_import set depot_id = 17 where depot_text in ('17');
+update livraisons_import set depot_id = 60 where depot_text in ('60');
+update livraisons_import set depot_id = 55 where depot_text in ('55');
+update livraisons_import set depot_id = 36 where depot_text in ('36');
+update livraisons_import set depot_id = 78 where depot_text in ('78');
+update livraisons_import set depot_id = 83 where depot_text in ('83');
+update livraisons_import set depot_id = 37 where depot_text in ('37');
+update livraisons_import set depot_id = 13 where depot_text in ('34');
+
+
+insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id)
+select 1 as jardin_id,
+  i.abonnement_id as abonnement_id,
+  i.depot_id as distribution_id,
+  i.produit_id,
+  i.qte,
+  CASE
+    WHEN livre = 0 THEN 'à livrer'::livraison
+    WHEN livre = 1 THEN 'livré'::livraison
+  END,
+  p.planning_id  as planning_id
+from livraisons_import i
+join distributions d on d.distribution_id = i.depot_id
+join tournees t on t.tournee_id = d.tournee_id
+join plannings p on p.jour = i.jour and p.calendrier_id = t.calendrier_id
+join abonnements a on a.abonnement_id = i.abonnement_id
+where i.qte <> 0;
+
+refresh materialized view detail_depots with data;
+refresh materialized view detail_livraisons with data;
+
+-- Adhérents profil salariés sont ceux qui sont livrés lors de la tournée 6
+update adherents a set profil_id = 3
+where exists (select 1 from detail_livraisons dl where dl.adherent_id = a.adherent_id and dl.tournee_id = 6);
+
+
+select distinct a.adherent_id from livraisons_import li
+join abonnements a on a.abonnement_id = li.abonnement_id,
+lateral adherer(a.adherent_id);
