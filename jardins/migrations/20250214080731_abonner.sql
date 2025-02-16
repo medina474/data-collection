@@ -54,6 +54,8 @@ begin
     where calendrier_id = _calendrier_id
     and jour between _date and _date_fin;
 
+  BEGIN;
+  
   -- Insérer l'abonnement
   insert into abonnements
     (adherent_id, panier_id, montant, nombre, date_debut, saison_id)
@@ -85,6 +87,8 @@ begin
   insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id)
 	select _jardin_id, _abonnement_id, _distribution_id, _produit_id, 1, 'à livrer'::livraison, planning_id
     from final_selection;
+
+  COMMIT;
 
   return _abonnement_id;
 end; $function$;
