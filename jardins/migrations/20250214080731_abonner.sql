@@ -1,3 +1,5 @@
+\connect jardins;
+
 -- Chercher si des propositions existent pour la fréquence de ce panier
 -- sinon prendre toutes les dates du planning
 create or replace function proposer_dates(_calendrier_id bigint, _frequence_id bigint, _date_debut date, _date_fin date)

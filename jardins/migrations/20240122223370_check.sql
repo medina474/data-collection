@@ -1,3 +1,5 @@
+\connect jardins;
+
 create view check_adherent_jardin
  with (security_invoker=on)
  as
@@ -13,10 +15,10 @@ create view check_plannings_feries
   with (security_invoker=on)
   as
   select p.jour
-  from (plannings p
-    join feries f on ((f.jour = p.jour)));
+  from plannings p
+    join feries f on f.jour = p.jour;
 
-comment on view check_plannings_feries is 'Vérifie qu''un jour n''est pas planifié un jour férié.';
+comment on view check_plannings_feries is 'Vérifie qu''un jour du planning n''est pas planifié un jour férié.';
 
 create view check_plannings_semaine
   with (security_invoker=on)
@@ -36,7 +38,7 @@ create view check_abonnements_qte
 select a.abonnement_id, a.panier_id,
   a.nombre as prévu, sum(qte) as plannifié
 from abonnements a
-left join livraisons l on l.abonnement_id = a.abonnement_id
+  left join livraisons l on l.abonnement_id = a.abonnement_id
 group by a.abonnement_id, a.panier_id
 having a.nombre <> sum(qte);
 

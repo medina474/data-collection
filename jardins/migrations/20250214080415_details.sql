@@ -1,3 +1,5 @@
+\connect jardins;
+
 create view detail_jardins
   with (security_invoker=on)
   as

@@ -1,3 +1,5 @@
+\connect jardins;
+
 create table compositions (
   composition bigint not null,
   panier_id bigint not null,

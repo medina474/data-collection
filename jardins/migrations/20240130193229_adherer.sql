@@ -1,3 +1,5 @@
+\connect jardins;
+
 create or replace function reconduire()
  returns integer
  language plpgsql
