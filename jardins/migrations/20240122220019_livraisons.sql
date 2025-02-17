@@ -1,6 +1,6 @@
 \connect jardins;
 
-create type livraison as enum (
+create type etat_livraison as enum (
   'à livrer',
   'livré',
   'non pris',
@@ -14,7 +14,7 @@ create table livraisons (
   distribution_id bigint not null, -- depot
   produit_id bigint not null,
   qte numeric  not null default '1'::numeric,
-  livre livraison not null default  'à livrer',
+  livre etat_livraison not null default  'à livrer',
   planning_id bigint not null -- jour
 );
 

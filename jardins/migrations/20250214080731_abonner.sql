@@ -128,7 +128,7 @@ begin
 
 -- Insérer les dates de livraisons
   insert into livraisons (jardin_id, abonnement_id, distribution_id, produit_id, qte, livre, planning_id)
-  select _jardin_id, _abonnement_id, _distribution_id, _produit_id, 1, 'à livrer'::livraison, planning_id
+  select _jardin_id, _abonnement_id, _distribution_id, _produit_id, 1, 'à livrer'::etat_livraison, planning_id
     from proposer_dates(_calendrier_id, _frequence_id, _date, _date_fin);
 
   return _abonnement_id;

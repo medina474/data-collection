@@ -670,8 +670,8 @@ select 1 as jardin_id,
   i.produit_id,
   i.qte,
   CASE
-    WHEN livre = 0 THEN 'à livrer'::livraison
-    WHEN livre = 1 THEN 'livré'::livraison
+    WHEN livre = 0 THEN 'à livrer'::etat_livraison
+    WHEN livre = 1 THEN 'livré'::etat_livraison
   END,
   p.planning_id  as planning_id
 from livraisons_import i
