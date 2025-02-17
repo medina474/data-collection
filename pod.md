@@ -9,3 +9,6 @@ podman container rm PostgreSQL
 podman volume prune -f
 
 podman logs PostgreSQL
+
+
+podman run --detach --name PostgREST -p 3000:3000 -e PGRST_DB_URI="postgres://postgrest:motdepasse@localhost/jardins" -e PGRST_DB_SCHEMAS=public -e PGRST_DB_ANON_ROLE=role_web postgrest/postgrest:v12.2.8

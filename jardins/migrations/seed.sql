@@ -245,12 +245,24 @@ insert into preparations (preparation_id,jardin_id,preparation,jour) values
 (2,1,'Jeudi',3);
 
 \COPY adherents(adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id) FROM '/backup/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+select setval(pg_get_serial_sequence('adherents', 'adherent_id'), MAX(adherent_id))
+from adherents;
 
 \COPY plannings FROM '/backup/plannings-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+select setval(pg_get_serial_sequence('plannings', 'planning_id'), MAX(planning_id))
+from plannings;
+
 \COPY tournees FROM '/backup/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+select setval(pg_get_serial_sequence('tournees', 'tournee_id'), MAX(tournee_id))
+from tournees;
+
 \COPY distributions FROM '/backup/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+select setval(pg_get_serial_sequence('distributions', 'distribution_id'), MAX(distribution_id))
+from distributions;
 
 \COPY propositions(frequence_id, planning_id) FROM '/backup/propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+select setval(pg_get_serial_sequence('propositions', 'proposition_id'), MAX(proposition_id))
+from propositions;
 
 create materialized view detail_depots as
 select d.depot_id,
