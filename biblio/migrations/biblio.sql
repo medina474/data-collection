@@ -30,12 +30,6 @@ create table biblio.participe (
 
 create table biblio.editions (
   edition_id integer not null,
-  editeur_id integer not null,
-  isbn13 text,
-  publication_date date,
-  num_pages integer,
-  num_catalogue integer,
-  langue_code text,
   titre text,
   infos json
 );
@@ -120,9 +114,9 @@ alter table biblio.exemplaires
 
 
 -- editions -> editeurs
-create index on biblio.editions
-  using btree (editeur_id);
+--create index on biblio.editions
+--  using btree (editeur_id);
 
-alter table biblio.editions
-  add foreign key (editeur_id)
-  references biblio.editeurs;
+--alter table biblio.editions
+--  add foreign key (editeur_id)
+--  references biblio.editeurs;
