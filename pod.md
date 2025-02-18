@@ -1,7 +1,6 @@
+```shell
 podman pod create --name Jardins -p 3000:3000 -p 3001:3001 -p 27017:27017 -p 5432:5432
-
-podman build -f postgresql/Dockerfile --tag medina5/postgres:2025-04
-
+```
 
 podman container rm PostgreSQL
 
@@ -14,7 +13,11 @@ podman logs PostgreSQL
 ### PostgreSQL
 
 ```shell
-podman run --detach --pod Jardins --name PostgreSQL -e POSTGRES_PASSWORD=1234 -v ./jardins/migrations/:/docker-entrypoint-initdb.d/ -v ./jardins/backup/:/backup/:z medina5/postgres:2025-04
+podman build -f postgresql/Dockerfile --tag medina5/postgres:2025-04
+```
+
+```shell
+podman run --detach --pod Jardins --name PostgreSQL -e POSTGRES_PASSWORD=1234 -v ./migrations/jardins/:/docker-entrypoint-initdb.d/ -v ./backup/:/backup/:z medina5/postgres:2025-04
 ```
 
 ### PostgREST
@@ -32,9 +35,9 @@ podman run --detach --pod Jardins --name PostGraphile -e PGHOST=localhost -e PGP
 ### FerretDB
 
 ```shell
-podman pull ghcr.io/ferretdb/ferretdb:2 
+podman pull ghcr.io/ferretdb/ferretdb:2
 ```
 
 ```shell
-podman run --detach --pod Jardins --name FerretDB -e FERRETDB_POSTGRESQL_URL=postgres://username:password@postgres:5432/postgres ferretdb:2 
+podman run --detach --pod Jardins --name FerretDB -e FERRETDB_POSTGRESQL_URL=postgres://username:password@postgres:5432/postgres ferretdb:2
 ```

@@ -18,7 +18,7 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 update jardins set adresse_id = 1 where jardin_id = 1;
 update jardins set adresse_id = 34 where jardin_id = 2;
 
-insert into profils (profil_id, profil) values 
+insert into profils (profil_id, profil) values
 (1, 'adhérent'),
 (2, 'employé'),
 (3, 'étudiant'),
@@ -47,7 +47,7 @@ insert into feries (ferie_id,jardin_id,ferie,jour) values
 (8,1,'Toussaint','2025-11-01'),
 (9,1,'Armistice 1918','2025-11-11');
 
-insert into cotisations (cotisation_id, saison_id, profil_id, montant) values 
+insert into cotisations (cotisation_id, saison_id, profil_id, montant) values
 (1, 1, 1, 25.0),
 (2, 1, 2, 0.0),
 (3, 1, 3, 5.0),
@@ -244,23 +244,23 @@ insert into preparations (preparation_id,jardin_id,preparation,jour) values
 (1,1,'Mardi',1),
 (2,1,'Jeudi',3);
 
-\COPY adherents(adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id) FROM '/backup/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY adherents(adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id) FROM '/backup/jardins/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 select setval(pg_get_serial_sequence('adherents', 'adherent_id'), MAX(adherent_id))
 from adherents;
 
-\COPY plannings FROM '/backup/plannings-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY plannings FROM '/backup/jardins/plannings-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 select setval(pg_get_serial_sequence('plannings', 'planning_id'), MAX(planning_id))
 from plannings;
 
-\COPY tournees FROM '/backup/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY tournees FROM '/backup/jardins/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 select setval(pg_get_serial_sequence('tournees', 'tournee_id'), MAX(tournee_id))
 from tournees;
 
-\COPY distributions FROM '/backup/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY distributions FROM '/backup/jardins/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 select setval(pg_get_serial_sequence('distributions', 'distribution_id'), MAX(distribution_id))
 from distributions;
 
-\COPY propositions(frequence_id, planning_id) FROM '/backup/propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY propositions(frequence_id, planning_id) FROM '/backup/jardins/propositions-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 select setval(pg_get_serial_sequence('propositions', 'proposition_id'), MAX(proposition_id))
 from propositions;
 

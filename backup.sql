@@ -1,7 +1,7 @@
 \connect jardins
 set search_path to public, extensions;
 
-\COPY adherents(adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id) TO 'backup/jardins/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY (select adherent_id,jardin_id,adherent,profil_id,depot_id,email,date_sortie,adresse_id from adherents order by adherent_id) TO 'backup/jardins/adherents.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY plannings TO 'backup/jardins/plannings-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY tournees TO 'backup/jardins/tournees.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 \COPY distributions TO 'backup/jardins/distributions.csv' (FORMAT CSV, header, ENCODING 'UTF8');
