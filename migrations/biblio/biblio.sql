@@ -1,3 +1,4 @@
+drop schema biblio cascade;
 create schema biblio;
 
 create table biblio.auteurs (

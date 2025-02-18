@@ -1,4 +1,4 @@
-"oeuvre_id","titre","langue_code","genre_id","infos"
+oeuvre_id,titre,langue_code,genre_id,infos
 11266,The Skies Discrowned,eng,878,"{""première parution"":""1976""}"
 11267,The Drawing of the Dark,eng,878,"{""première parution"":""1979""}"
 11268,The Anubis Gates,eng,878,"{""première parution"":""1983"",""récompenses"":[""Philip K. Dick"",""Apollo"",""Science Fiction Chronicle""]}"
