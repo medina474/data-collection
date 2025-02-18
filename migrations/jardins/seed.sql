@@ -550,11 +550,11 @@ for select
 to public
 using (true);
 
-\COPY livraisons_import(id_livraison,semaine,livre,qte,depot_text,annee,jour,produit,abonnement_id) FROM '/backup/livraisons-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY livraisons_import(id_livraison,semaine,livre,qte,depot_text,annee,jour,produit,abonnement_id) FROM '/backup/jardins/livraisons-2025.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 
 
 create temporary table if not exists t (id_abonnement int,produit text,id_adherent int,annee int,qte int,reglt_mois_depart int,MR_No int ,reglt_mois_nb int,nb int,nb_initial int,DO_Piece text,id_abonnement_prec int,reste_precedent int);
-\COPY t FROM '/backup/abonnements.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY t FROM '/backup/jardins/abonnements.csv' (FORMAT CSV, header, ENCODING 'UTF8');
 
 ALTER TABLE t ADD produit_id int NULL;
 
