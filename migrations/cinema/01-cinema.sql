@@ -11,7 +11,7 @@ create role iutsd with
 alter database iutsd owner to iutsd;
 grant connect on database iutsd to iutsd;
 
-\connect iutsd;
+\connect jardin;
 
 create schema if not exists cinema
   authorization iutsd;

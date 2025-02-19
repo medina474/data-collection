@@ -8,4 +8,4 @@ PGPORT=5432
 PGUSER=postgres
 DB_NAME=jardins
 
-./migrations.sh migrations/biblio $PGHOST $PGPORT $PGUSER $DB_NAME
+./migrations.sh migrations/cinema $PGHOST $PGPORT $PGUSER $DB_NAME
