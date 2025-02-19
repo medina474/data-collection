@@ -1,3 +1,4 @@
+\connect iutsd;
 
 CREATE MATERIALIZED VIEW cinema.acteur AS
   SELECT p.id,

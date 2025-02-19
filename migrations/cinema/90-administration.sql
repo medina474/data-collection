@@ -1,3 +1,5 @@
+\connect iutsd;
+
 CREATE OR REPLACE VIEW cinema.personne_sans_role
  AS
  SELECT personne.id,

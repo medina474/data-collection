@@ -1,3 +1,5 @@
+\connect iutsd;
+
 drop table if exists cinema.personne;
 
 create table cinema.personne

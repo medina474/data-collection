@@ -1,3 +1,5 @@
+\connect iutsd;
+
 alter table cinema.film
   add column vote_votants integer,
   add column vote_moyenne decimal(4,2);

@@ -1,3 +1,5 @@
+\connect iutsd;
+
 drop table if exists cinema.equipe;
 
 create table if not exists cinema.equipe (
@@ -19,4 +21,3 @@ create index equipe_personne_fki
 
 comment on table cinema.equipe is
   e'@foreignkey (personne) references cinema.acteur(id)|@fieldname rolebyacteur';
-

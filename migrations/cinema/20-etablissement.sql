@@ -1,3 +1,5 @@
+\connect iutsd;
+
 create table cinema.etablissement (
   id integer not null,
   nom text,

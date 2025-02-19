@@ -1,3 +1,5 @@
+\connect iutsd;
+
 drop table if exists cinema.salle;
 
 create table if not exists cinema.salle (

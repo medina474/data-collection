@@ -1,3 +1,5 @@
+\connect iutsd;
+
 create table if not exists cinema.genre
 (
   id integer not null primary key,

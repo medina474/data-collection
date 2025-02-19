@@ -1,3 +1,5 @@
+\connect iutsd;
+
 drop table if exists cinema.film_genre;
 
 create table if not exists cinema.film_genre
