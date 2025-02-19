@@ -1,0 +1,72 @@
+code,hierarchie,region,francais,administration,capitale
+LT,T.EUR.EUN.BLT.LT,Lituanie,,1,Vilnius
+LT-AL,T.EUR.EUN.BLT.LT.LT-AL,Alytus,,,Alytus
+LT-KL,T.EUR.EUN.BLT.LT.LT-KL,Klaipeda,,,Klaipėda
+LT-KU,T.EUR.EUN.BLT.LT.LT-KU,Kaunas,,,Kaunas
+LT-MR,T.EUR.EUN.BLT.LT.LT-MR,Marijampole,,,Marijampolė
+LT-PN,T.EUR.EUN.BLT.LT.LT-PN,Panevezys,,,Panevėžys
+LT-SA,T.EUR.EUN.BLT.LT.LT-SA,Siauliai,,,Šiauliai
+LT-TA,T.EUR.EUN.BLT.LT.LT-TA,Taurage,,,Tauragė
+LT-TE,T.EUR.EUN.BLT.LT.LT-TE,Telsiai,,,Telšiai
+LT-UT,T.EUR.EUN.BLT.LT.LT-UT,Utena,,,Utena
+LT-VL,T.EUR.EUN.BLT.LT.LT-VL,Vilnius,,,Vilnius
+LT-01,T.EUR.EUN.BLT.LT.LT-SA.LT-01,Akmenė,,district municipality,Akmenė
+LT-02,T.EUR.EUN.BLT.LT.LT-AL.LT-02,Alytaus miestas,,city municipality,Alytus
+LT-03,T.EUR.EUN.BLT.LT.LT-AL.LT-03,Alytus,,district municipality,Alytus
+LT-04,T.EUR.EUN.BLT.LT.LT-UT.LT-04,Anykščiai,,district municipality,
+LT-05,T.EUR.EUN.BLT.LT.LT-KU.LT-05,Birštono,,municipality,
+LT-06,T.EUR.EUN.BLT.LT.LT-PN.LT-06,Biržai,,district municipality,
+LT-07,T.EUR.EUN.BLT.LT.LT-AL.LT-07,Druskininkai,,municipality,Druskininkai
+LT-08,T.EUR.EUN.BLT.LT.LT-VL.LT-08,Elektrėnai,,municipality,
+LT-09,T.EUR.EUN.BLT.LT.LT-UT.LT-09,Ignalina,,district municipality,Ignalina
+LT-10,T.EUR.EUN.BLT.LT.LT-KU.LT-10,Jonava,,district municipality,Jonava
+LT-11,T.EUR.EUN.BLT.LT.LT-SA.LT-11,Joniškis,,district municipality,Joniškis
+LT-12,T.EUR.EUN.BLT.LT.LT-TA.LT-12,Jurbarkas,,district municipality,Jurbarkas
+LT-13,T.EUR.EUN.BLT.LT.LT-KU.LT-13,Kaišiadorys,,district municipality,Kaišiadorys
+LT-14,T.EUR.EUN.BLT.LT.LT-MR.LT-14,Kalvarijos,,municipality,
+LT-15,T.EUR.EUN.BLT.LT.LT-KU.LT-15,Kauno miestas,,city municipality,Kaunas
+LT-16,T.EUR.EUN.BLT.LT.LT-KU.LT-16,Kaunas,,district municipality,Kaunas
+LT-17,T.EUR.EUN.BLT.LT.LT-MR.LT-17,Kazlų Rūdos,,municipality,Skuodas
+LT-18,T.EUR.EUN.BLT.LT.LT-KU.LT-18,Kėdainiai,,district municipality,Kėdainiai
+LT-19,T.EUR.EUN.BLT.LT.LT-SA.LT-19,Kelmė,,district municipality,Kelmė
+LT-20,T.EUR.EUN.BLT.LT.LT-KL.LT-20,Klaipėdos miestas,,city municipality,Klaipėda
+LT-21,T.EUR.EUN.BLT.LT.LT-KL.LT-21,Klaipėda,,district municipality,Klaipėda
+LT-22,T.EUR.EUN.BLT.LT.LT-KL.LT-22,Kretinga,,district municipality,Kretinga
+LT-23,T.EUR.EUN.BLT.LT.LT-PN.LT-23,Kupiškis,,district municipality,Kupiskis
+LT-24,T.EUR.EUN.BLT.LT.LT-AL.LT-24,Lazdijai,,district municipality,Lazdijai
+LT-25,T.EUR.EUN.BLT.LT.LT-MR.LT-25,Marijampolė,,district municipality,Marijampolė
+LT-26,T.EUR.EUN.BLT.LT.LT-TE.LT-26,Mažeikiai,,district municipality,Joniškis
+LT-27,T.EUR.EUN.BLT.LT.LT-UT.LT-27,Molėtai,,district municipality,Molėtai
+LT-28,T.EUR.EUN.BLT.LT.LT-KL.LT-28,Neringa,,municipality,Nida
+LT-29,T.EUR.EUN.BLT.LT.LT-TA.LT-29,Pagėgiai,,municipality,Pagėgiai
+LT-30,T.EUR.EUN.BLT.LT.LT-SA.LT-30,Pakruojis,,district municipality,Pakruojis
+LT-31,T.EUR.EUN.BLT.LT.LT-KL.LT-31,Palangos miestas,,city municipality,
+LT-32,T.EUR.EUN.BLT.LT.LT-PN.LT-32,Panevėžio miestas,,city municipality,Panevėžys
+LT-33,T.EUR.EUN.BLT.LT.LT-PN.LT-33,Panevėžys,,district municipality,
+LT-34,T.EUR.EUN.BLT.LT.LT-PN.LT-34,Pasvalys,,district municipality,Pasvalys
+LT-35,T.EUR.EUN.BLT.LT.LT-TE.LT-35,Plungė,,district municipality,
+LT-36,T.EUR.EUN.BLT.LT.LT-KU.LT-36,Prienai,,district municipality,Prienai
+LT-37,T.EUR.EUN.BLT.LT.LT-SA.LT-37,Radviliškis,,district municipality,
+LT-38,T.EUR.EUN.BLT.LT.LT-KU.LT-38,Raseiniai,,district municipality,Raseiniai
+LT-39,T.EUR.EUN.BLT.LT.LT-TE.LT-39,Rietavo,,municipality,Rietavas
+LT-40,T.EUR.EUN.BLT.LT.LT-PN.LT-40,Rokiškis,,district municipality,Rokiškis
+LT-41,T.EUR.EUN.BLT.LT.LT-MR.LT-41,Šakiai,,district municipality,Šakiai
+LT-42,T.EUR.EUN.BLT.LT.LT-VL.LT-42,Šalčininkai,,district municipality,Šalčininkai
+LT-43,T.EUR.EUN.BLT.LT.LT-SA.LT-43,Šiaulių miestas,,city municipality,Šiauliai
+LT-44,T.EUR.EUN.BLT.LT.LT-SA.LT-44,Šiauliai,,district municipality,Šiauliai
+LT-45,T.EUR.EUN.BLT.LT.LT-TA.LT-45,Šilalė,,district municipality,Šilalė
+LT-46,T.EUR.EUN.BLT.LT.LT-KL.LT-46,Šilutė,,district municipality,
+LT-47,T.EUR.EUN.BLT.LT.LT-VL.LT-47,Širvintos,,district municipality,Širvintos
+LT-48,T.EUR.EUN.BLT.LT.LT-KL.LT-48,Skuodas,,district municipality,Skuodas
+LT-49,T.EUR.EUN.BLT.LT.LT-VL.LT-49,Švenčionys,,district municipality,
+LT-50,T.EUR.EUN.BLT.LT.LT-TA.LT-50,Tauragė,,district municipality,Taurage
+LT-51,T.EUR.EUN.BLT.LT.LT-TE.LT-51,Telšiai,,district municipality,Telsiai
+LT-52,T.EUR.EUN.BLT.LT.LT-VL.LT-52,Trakai,,district municipality,
+LT-53,T.EUR.EUN.BLT.LT.LT-VL.LT-53,Ukmergė,,district municipality,
+LT-54,T.EUR.EUN.BLT.LT.LT-UT.LT-54,Utena,,district municipality,Utena
+LT-55,T.EUR.EUN.BLT.LT.LT-AL.LT-55,Varėna,,district municipality,Varėna
+LT-56,T.EUR.EUN.BLT.LT.LT-MR.LT-56,Vilkaviškis,,district municipality,Vilkaviskis
+LT-57,T.EUR.EUN.BLT.LT.LT-VL.LT-57,Vilniaus miestas,,city municipality,Vilnius
+LT-58,T.EUR.EUN.BLT.LT.LT-VL.LT-58,Vilnius,,district municipality,Vilnius
+LT-59,T.EUR.EUN.BLT.LT.LT-UT.LT-59,Visaginas,,municipality,Visaginas
+LT-60,T.EUR.EUN.BLT.LT.LT-UT.LT-60,Zarasai,,district municipality,Zarasai

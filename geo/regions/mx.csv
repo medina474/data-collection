@@ -1,0 +1,34 @@
+code,hierarchie,region,francais,administration,capitale
+MX,T.AME.AML.AMC.MX,Mexique,,1,Mexico
+MX-AGU,T.AME.AML.AMC.MX.MX-AGU,Aguascalientes,Aguascalientes,14,Aguascalientes
+MX-BCN,T.AME.AML.AMC.MX.MX-BCN,Baja California,Basse-Californie,14,Mexicali
+MX-BCS,T.AME.AML.AMC.MX.MX-BCS,Baja California Sur,Basse-Californie du Sud,14,La Paz
+MX-CAM,T.AME.AML.AMC.MX.MX-CAM,Campeche,Campeche,14,San Francisco de Campeche
+MX-CHH,T.AME.AML.AMC.MX.MX-CHH,Chihuahua,Chihuahua,14,Chihuahua
+MX-CHP,T.AME.AML.AMC.MX.MX-CHP,Chiapas,Chiapas,14,Tuxtla Gutiérrez
+MX-COA,T.AME.AML.AMC.MX.MX-COA,Coahuila de Zaragoza,Coahuila,14,Saltillo
+MX-COL,T.AME.AML.AMC.MX.MX-COL,Colima,Colima,14,Colima
+MX-CMX,T.AME.AML.AMC.MX.MX-CMX,Ciudad de México,Ville de Mexico,Ciudad de México,Mexico
+MX-DUR,T.AME.AML.AMC.MX.MX-DUR,Durango,Durango,14,Victoria de Durango
+MX-GRO,T.AME.AML.AMC.MX.MX-GRO,Guerrero,Guerrero,14,Chilpancingo de los Bravo
+MX-GUA,T.AME.AML.AMC.MX.MX-GUA,Guanajuato,Guanajuato,14,Guanajuato
+MX-HID,T.AME.AML.AMC.MX.MX-HID,Hidalgo,Hidalgo,14,Pachuca de Soto
+MX-JAL,T.AME.AML.AMC.MX.MX-JAL,Jalisco,Jalisco,14,Guadalajara
+MX-MEX,T.AME.AML.AMC.MX.MX-MEX,État de Mexico,,14,Toluca de Lerdo
+MX-MIC,T.AME.AML.AMC.MX.MX-MIC,Michoacán de Ocampo,Michoacán,14,Morelia
+MX-MOR,T.AME.AML.AMC.MX.MX-MOR,Morelos,Morelos,14,Cuernavaca
+MX-NAY,T.AME.AML.AMC.MX.MX-NAY,Nayarit,Nayarit,14,Tepic
+MX-NLE,T.AME.AML.AMC.MX.MX-NLE,Nuevo León,Nuevo León,14,Monterrey
+MX-OAX,T.AME.AML.AMC.MX.MX-OAX,Oaxaca,Oaxaca,14,Oaxaca de Juárez
+MX-PUE,T.AME.AML.AMC.MX.MX-PUE,Puebla,Puebla,14,Puebla de Zaragoza
+MX-QUE,T.AME.AML.AMC.MX.MX-QUE,Querétaro,Querétaro,14,Santiago de Querétaro
+MX-ROO,T.AME.AML.AMC.MX.MX-ROO,Quintana Roo,Quintana Roo,14,Chetumal
+MX-SIN,T.AME.AML.AMC.MX.MX-SIN,Sinaloa,Sinaloa,14,Culiacán Rosales
+MX-SLP,T.AME.AML.AMC.MX.MX-SLP,San Luis Potosí,San Luis Potosí,14,San Luis Potosí
+MX-SON,T.AME.AML.AMC.MX.MX-SON,Sonora,Sonora,14,Hermosillo
+MX-TAB,T.AME.AML.AMC.MX.MX-TAB,Tabasco,Tabasco,14,Villahermosa
+MX-TAM,T.AME.AML.AMC.MX.MX-TAM,Tamaulipas,Tamaulipas,14,Ciudad Victoria
+MX-TLA,T.AME.AML.AMC.MX.MX-TLA,Tlaxcala,Tlaxcala,14,Tlaxcala de Xicohténcatl
+MX-VER,T.AME.AML.AMC.MX.MX-VER,Veracruz de Ignacio de la Llave,Veracruz,14,Xalapa-Enríquez
+MX-YUC,T.AME.AML.AMC.MX.MX-YUC,Yucatán,Yucatán,14,Mérida
+MX-ZAC,T.AME.AML.AMC.MX.MX-ZAC,Zacatecas,Zacatecas,14,Zacatecas

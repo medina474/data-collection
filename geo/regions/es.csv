@@ -1,0 +1,71 @@
+code,hierarchie,region,francais,administration,capitale
+ES,T.EUR.EUS.ES,Espagne,,1,Madrid
+ES-AN,T.EUR.EUS.ES.ES-AN,Andalucía,Andalousie,comunidad autónoma,Sevilla
+ES-AR,T.EUR.EUS.ES.ES-AR,Aragón,,comunidad autónoma,Zaragoza
+ES-AS,T.EUR.EUS.ES.ES-AS,"Asturias, Principado de",,comunidad autónoma,Oviedo
+ES-CN,T.EUR.EUS.ES.ES-CN,Canarias,,comunidad autónoma,Las Palmas de Gran Canaria
+ES-CB,T.EUR.EUS.ES.ES-CB,Cantabria,,comunidad autónoma,Santander
+ES-CM,T.EUR.EUS.ES.ES-CM,Castilla-La Mancha,,comunidad autónoma,Toledo
+ES-CL,T.EUR.EUS.ES.ES-CL,Castilla y León,,comunidad autónoma,Valladolid
+ES-CT,T.EUR.EUS.ES.ES-CT,Catalunya,,comunidad autónoma,Barcelona
+ES-EX,T.EUR.EUS.ES.ES-EX,Extremadura,,comunidad autónoma,Mérida
+ES-GA,T.EUR.EUS.ES.ES-GA,Galicia,,comunidad autónoma,Santiago de Compostela
+ES-IB,T.EUR.EUS.ES.ES-IB,Islas Baleares,,comunidad autónoma,Palma
+ES-RI,T.EUR.EUS.ES.ES-RI,La Rioja,,comunidad autónoma,Logroño
+ES-MD,T.EUR.EUS.ES.ES-MD,"Madrid, Comunidad de",,comunidad autónoma,Madrid
+ES-MC,T.EUR.EUS.ES.ES-MC,"Murcia, Región de",,comunidad autónoma,Murcia
+ES-NC,T.EUR.EUS.ES.ES-NC,"Navarra, Comunidad Foral de",,comunidad autónoma,Pamplona / Iruñea
+ES-PV,T.EUR.EUS.ES.ES-PV,Euskadi,,Autonomia Erkidegoa,Vitoria-Gasteiz
+ES-VC,T.EUR.EUS.ES.ES-VC,"Valenciana, Comunitat",,comunidad autónoma,Valencia
+ES-CE,T.EUR.EUS.ES.ES-CE,Ceuta,,ciudades autónomas en el Norte de África,Ceuta
+ES-ML,T.EUR.EUS.ES.ES-ML,Melilla,,ciudades autónomas en el Norte de África,Melilla
+ES-A,T.EUR.EUS.ES.ES-VC.ES-A,Alicante,,provincia,Alicante
+ES-AB,T.EUR.EUS.ES.ES-CM.ES-AB,Albacete,,provincia,Albacete
+ES-AL,T.EUR.EUS.ES.ES-AN.ES-AL,Almería,,provincia,Almería
+ES-AV,T.EUR.EUS.ES.ES-CL.ES-AV,Ávila,,provincia,Ávila
+ES-B,T.EUR.EUS.ES.ES-CT.ES-B,Barcelona,,provincia,Barcelona
+ES-BA,T.EUR.EUS.ES.ES-EX.ES-BA,Badajoz,,provincia,Mérida
+ES-BI,T.EUR.EUS.ES.ES-PV.ES-BI,Vizcaya,,provincia,Bilbao
+ES-BU,T.EUR.EUS.ES.ES-CL.ES-BU,Burgos,,provincia,Burgos
+ES-C,T.EUR.EUS.ES.ES-GA.ES-C,A Coruña,,provincia,Santiago de Compostela
+ES-CA,T.EUR.EUS.ES.ES-AN.ES-CA,Cádiz,,provincia,Cádiz
+ES-CC,T.EUR.EUS.ES.ES-EX.ES-CC,Cáceres,,provincia,Cáceres
+ES-CO,T.EUR.EUS.ES.ES-AN.ES-CO,Córdoba,,provincia,Córdoba
+ES-CR,T.EUR.EUS.ES.ES-CM.ES-CR,Ciudad Real,,provincia,Ciudad Real
+ES-CS,T.EUR.EUS.ES.ES-VC.ES-CS,Castellón,,provincia,Castelló de la Plana
+ES-CU,T.EUR.EUS.ES.ES-CM.ES-CU,Cuenca,,provincia,Cuenca
+ES-GC,T.EUR.EUS.ES.ES-CN.ES-GC,Las Palmas,,provincia,Las Palmas de Gran Canaria
+ES-GI,T.EUR.EUS.ES.ES-CT.ES-GI,Girona,,provincia,Girona
+ES-GR,T.EUR.EUS.ES.ES-AN.ES-GR,Granada,,provincia,Granada
+ES-GU,T.EUR.EUS.ES.ES-CM.ES-GU,Guadalajara,,provincia,Guadalajara
+ES-H,T.EUR.EUS.ES.ES-AN.ES-H,Huelva,,provincia,Huelva
+ES-HU,T.EUR.EUS.ES.ES-AR.ES-HU,Huesca,,provincia,Huesca
+ES-J,T.EUR.EUS.ES.ES-AN.ES-J,Jaén,,provincia,Jaén
+ES-L,T.EUR.EUS.ES.ES-CT.ES-L,Lleida,,provincia,Lleida
+ES-LE,T.EUR.EUS.ES.ES-CL.ES-LE,León,,provincia,León
+ES-LO,T.EUR.EUS.ES.ES-RI.ES-LO,La Rioja,,provincia,Logroño
+ES-LU,T.EUR.EUS.ES.ES-GA.ES-LU,Lugo,,provincia,Lugo
+ES-M,T.EUR.EUS.ES.ES-MD.ES-M,Madrid,,provincia,Madrid
+ES-MA,T.EUR.EUS.ES.ES-AN.ES-MA,Málaga,,provincia,Málaga
+ES-MU,T.EUR.EUS.ES.ES-MC.ES-MU,Murcia,,provincia,Murcia
+ES-NA,T.EUR.EUS.ES.ES-NC.ES-NA,Navarra,,provincia,Pamplona
+ES-O,T.EUR.EUS.ES.ES-AS.ES-O,Asturias,,provincia,Oviedo
+ES-OR,T.EUR.EUS.ES.ES-GA.ES-OR,Ourense,,provincia,Ourense
+ES-P,T.EUR.EUS.ES.ES-CL.ES-P,Palencia,,provincia,Palencia
+ES-PM,T.EUR.EUS.ES.ES-IB.ES-PM,Baleares,,provincia,Palma
+ES-PO,T.EUR.EUS.ES.ES-GA.ES-PO,Pontevedra,,provincia,Pontevedra
+ES-S,T.EUR.EUS.ES.ES-CB.ES-S,Cantabria,,provincia,Santander
+ES-SA,T.EUR.EUS.ES.ES-CL.ES-SA,Salamanca,,provincia,Salamanca
+ES-SE,T.EUR.EUS.ES.ES-AN.ES-SE,Sevilla,,provincia,Sevilla
+ES-SG,T.EUR.EUS.ES.ES-CL.ES-SG,Segovia,,provincia,Segovia
+ES-SO,T.EUR.EUS.ES.ES-CL.ES-SO,Soria,,provincia,Soria
+ES-SS,T.EUR.EUS.ES.ES-PV.ES-SS,Guipúzcoa,,provincia,Donostia / San Sebastián
+ES-T,T.EUR.EUS.ES.ES-CT.ES-T,Tarragona,,provincia,Tarragona
+ES-TE,T.EUR.EUS.ES.ES-AR.ES-TE,Teruel,,provincia,Teruel
+ES-TF,T.EUR.EUS.ES.ES-CN.ES-TF,Santa Cruz de Tenerife,,provincia,Santa Cruz de Tenerife
+ES-TO,T.EUR.EUS.ES.ES-CM.ES-TO,Toledo,,provincia,Toledo
+ES-V,T.EUR.EUS.ES.ES-VC.ES-V,Valencia,,provincia,Valencia
+ES-VA,T.EUR.EUS.ES.ES-CL.ES-VA,Valladolid,,provincia,Valladolid
+ES-VI,T.EUR.EUS.ES.ES-PV.ES-VI,Álava,,provincia,Gasteiz / Vitoria
+ES-Z,T.EUR.EUS.ES.ES-AR.ES-Z,Zaragoza,,provincia,Zaragoza
+ES-ZA,T.EUR.EUS.ES.ES-CL.ES-ZA,Zamora,,provincia,Zamora

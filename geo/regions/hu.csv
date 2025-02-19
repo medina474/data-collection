@@ -1,0 +1,45 @@
+code,hierarchie,region,francais,administration,capitale
+HU,T.EUR.EUE.HU,Hongrie,,1,Budapest
+HU-BA,T.EUR.EUE.HU.HU-BA,Baranya,,megye,Pécs
+HU-BE,T.EUR.EUE.HU.HU-BE,Békés,,megye,Békéscsaba
+HU-BK,T.EUR.EUE.HU.HU-BK,Bács-Kiskun,,megye,Kecskemét
+HU-BU,T.EUR.EUE.HU.HU-BU,Budapest főváros,,főváros,Budapest
+HU-BZ,T.EUR.EUE.HU.HU-BZ,Borsod-Abaúj-Zemplén,,megye,Miskolc
+HU-CS,T.EUR.EUE.HU.HU-CS,Csongrád,,megye,Szeged
+HU-FE,T.EUR.EUE.HU.HU-FE,Fejér,,megye,Székesfehérvár
+HU-GS,T.EUR.EUE.HU.HU-GS,Győr-Moson-Sopron,,megye,Győr
+HU-HB,T.EUR.EUE.HU.HU-HB,Hajdú-Bihar,,megye,Debrecen
+HU-HE,T.EUR.EUE.HU.HU-HE,Heves,,megye,Eger
+HU-JN,T.EUR.EUE.HU.HU-JN,Jász-Nagykun-Szolnok,,megye,Szolnok
+HU-KE,T.EUR.EUE.HU.HU-KE,Komárom-Esztergom,,megye,Tatabánya
+HU-NO,T.EUR.EUE.HU.HU-NO,Nógrád,,megye,Salgótarján
+HU-PE,T.EUR.EUE.HU.HU-PE,Pest,,megye,Budapest
+HU-SO,T.EUR.EUE.HU.HU-SO,Somogy,,megye,Kaposvár
+HU-SZ,T.EUR.EUE.HU.HU-SZ,Szabolcs-Szatmár-Bereg,,megye,Nyíregyháza
+HU-TO,T.EUR.EUE.HU.HU-TO,Tolna,,megye,Szekszárd
+HU-VA,T.EUR.EUE.HU.HU-VA,Vas,,megye,Szombathely
+HU-VE,T.EUR.EUE.HU.HU-VE,Veszprém,,megye,Veszprém
+HU-ZA,T.EUR.EUE.HU.HU-ZA,Zala,,megye,Zalaegerszeg
+HU-BC,T.EUR.EUE.HU.HU-BC,Békéscsaba,,megyei város,
+HU-DE,T.EUR.EUE.HU.HU-DE,Debrecen,,megyei város,
+HU-DU,T.EUR.EUE.HU.HU-DU,Dunaújváros,,megyei város,
+HU-EG,T.EUR.EUE.HU.HU-EG,Eger,,megyei város,
+HU-ER,T.EUR.EUE.HU.HU-ER,Erd,,megyei város,
+HU-GY,T.EUR.EUE.HU.HU-GY,Győr,,megyei város,
+HU-HV,T.EUR.EUE.HU.HU-HV,Hódmezővásárhely,,megyei város,
+HU-KM,T.EUR.EUE.HU.HU-KM,Kecskemét,,megyei város,
+HU-KV,T.EUR.EUE.HU.HU-KV,Kaposvár,,megyei város,
+HU-MI,T.EUR.EUE.HU.HU-MI,Miskolc,,megyei város,
+HU-NK,T.EUR.EUE.HU.HU-NK,Nagykanizsa,,megyei város,
+HU-NY,T.EUR.EUE.HU.HU-NY,Nyíregyháza,,megyei város,
+HU-PS,T.EUR.EUE.HU.HU-PS,Pécs,,megyei város,
+HU-SD,T.EUR.EUE.HU.HU-SD,Szeged,,megyei város,
+HU-SF,T.EUR.EUE.HU.HU-SF,Székesfehérvár,,megyei város,
+HU-SH,T.EUR.EUE.HU.HU-SH,Szombathely,,megyei város,
+HU-SK,T.EUR.EUE.HU.HU-SK,Szolnok,,megyei város,
+HU-SN,T.EUR.EUE.HU.HU-SN,Sopron,,megyei város,
+HU-SS,T.EUR.EUE.HU.HU-SS,Szekszárd,,megyei város,
+HU-ST,T.EUR.EUE.HU.HU-ST,Salgótarján,,megyei város,
+HU-TB,T.EUR.EUE.HU.HU-TB,Tatabánya,,megyei város,
+HU-VM,T.EUR.EUE.HU.HU-VM,Veszprém,,megyei város,
+HU-ZE,T.EUR.EUE.HU.HU-ZE,Zalaegerszeg,,megyei város,

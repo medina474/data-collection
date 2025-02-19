@@ -1,0 +1,214 @@
+iso,hierarchie,region,francais,administration,capitale
+001,T,Terre,,,
+002,T.AFR,Afrique,,,
+015,T.AFR.AFN,Afrique septentrionale,,,
+022,T.AFR.AFN.MGB,Maghreb,,,
+202,T.AFR.AFS,Afrique subsaharienne,,,
+018,T.AFR.AFS.AFA,Afrique australe,,,
+017,T.AFR.AFS.AFC,Afrique centrale,,,
+011,T.AFR.AFS.AFO,Afrique occidentale,,,
+014,T.AFR.AFS.AFE,Afrique orientale,,,
+019,T.AME,Amériques,,,
+021,T.AME.AMN,Amérique septentrionale,,,
+419,T.AME.AML,Amérique latine et Caraïbes,,,
+013,T.AME.AML.AMC,Amérique centrale,,,
+005,T.AME.AML.AMS,Amérique du Sud,,,
+029,T.AME.AML.CRB,Caraïbes,,,
+AQ,T.AQ,Antarctique,,,
+142,T.ASI,Asie,,,
+143,T.ASI.ASC,Asie centrale,,,
+035,T.ASI.ASS,Asie du Sud-Est,,,
+034,T.ASI.ASM,Asie méridionale,,,
+145,T.ASI.ASO,Asie occidentale,,,
+030,T.ASI.ASE,Asie orientale,,,
+009,T.OCE,Océanie,,,
+053,T.OCE.OAZ,Australie et Nouvelle-Zélande,,,
+054,T.OCE.MLN,Mélanésie,,,
+057,T.OCE.MCN,Micronésie,,,
+061,T.OCE.PLN,Polynésie,,,
+150,T.EUR,Europe,,,
+039,T.EUR.EUS,Europe méridionale,,,
+155,T.EUR.EUO,Europe occidentale,,,
+151,T.EUR.EUE,Europe orientale,,,
+154,T.EUR.EUN,Europe septentrionale,,,
+BLT,T.EUR.EUN.BLT,Pays baltes,,,
+SCD,T.EUR.EUN.SCD,Scandinavie,,,
+MA,T.AFR.AFN.MGB.MA,Maroc,,1,Rabbat
+DZ,T.AFR.AFN.MGB.DZ,Algérie,,1,Alger
+TN,T.AFR.AFN.MGB.TN,Tunisie,,1,Tunis
+LY,T.AFR.AFN.MGB.LY,Libye,,1,Tripoli
+EG,T.AFR.AFN.EG,Égypte,,1,Le Caire
+EH,T.AFR.AFN.EH,Sahara occidental,,territoire,Laâyoune
+SD,T.AFR.AFN.SD,Soudan,,1,Khartoum
+BI,T.AFR.AFS.AFE.BI,Burundi,,1,Bujumbura
+KM,T.AFR.AFS.AFE.KM,Comores,,1,Moroni
+DJ,T.AFR.AFS.AFE.DJ,Djibouti,,1,Djibouti
+ER,T.AFR.AFS.AFE.ER,Érythrée,,1,Asmara
+ET,T.AFR.AFS.AFE.ET,Éthiopie,,1,Addis-Abeba
+KE,T.AFR.AFS.AFE.KE,Kenya,,1,Nairobi
+MG,T.AFR.AFS.AFE.MG,Madagascar,,1,Antananarivo
+MW,T.AFR.AFS.AFE.MW,Malawi,,1,Lilongwe
+MU,T.AFR.AFS.AFE.MU,Maurice,,1,Port-Louis
+MZ,T.AFR.AFS.AFE.MZ,Mozambique,,1,Maputo
+RW,T.AFR.AFS.AFE.RW,Rwanda,,1,Kigali
+SC,T.AFR.AFS.AFE.SC,Seychelles,,1,Victoria
+SO,T.AFR.AFS.AFE.SO,Somalie,,1,Mogadiscio
+SS,T.AFR.AFS.AFE.SS,Soudan du Sud,,1,Djouba
+UG,T.AFR.AFS.AFE.UG,Ouganda,,1,Kampala
+TZ,T.AFR.AFS.AFE.TZ,Tanzanie,,1,Dar es Salam
+ZM,T.AFR.AFS.AFE.ZM,Zambie,,1,Lusaka
+ZW,T.AFR.AFS.AFE.ZW,Zimbabwe,,1,Harare
+AO,T.AFR.AFS.AFC.AO,Angola,,1,Luanda
+CM,T.AFR.AFS.AFC.CM,Cameroun,,1,Yaoundé
+CF,T.AFR.AFS.AFC.CF,Centrafrique,,1,Bangui
+TD,T.AFR.AFS.AFC.TD,Tchad,,1,N'Djaména
+CG,T.AFR.AFS.AFC.CG,Congo,,1,Brazzaville
+CD,T.AFR.AFS.AFC.CD,République démocratique du Congo,,1,Kinshasa
+GQ,T.AFR.AFS.AFC.GQ,Guinée équatoriale,,1,Malabo
+GA,T.AFR.AFS.AFC.GA,Gabon,,1,Libreville
+ST,T.AFR.AFS.AFC.ST,Sao Tomé-et-Principe,,1,São Tomé
+BW,T.AFR.AFS.AFA.BW,Botswana,,1,Gaborone
+SZ,T.AFR.AFS.AFA.SZ,Eswatini,,1,Mbabane
+LS,T.AFR.AFS.AFA.LS,Lesotho,,1,Maseru
+NA,T.AFR.AFS.AFA.NA,Namibie,,1,Windhoek
+ZA,T.AFR.AFS.AFA.ZA,Afrique du Sud,,1,Pretoria
+BJ,T.AFR.AFS.AFO.BJ,Bénin,,1,Cotonou
+BF,T.AFR.AFS.AFO.BF,Burkina Faso,,1,Ouagadougou
+CV,T.AFR.AFS.AFO.CV,Cabo Verde,,1,Praia
+CI,T.AFR.AFS.AFO.CI,Côte d’Ivoire,,1,Yamoussoukro
+GM,T.AFR.AFS.AFO.GM,Gambie,,1,Banjul
+GH,T.AFR.AFS.AFO.GH,Ghana,,1,Accra
+GN,T.AFR.AFS.AFO.GN,Guinée,,1,Conakry
+GW,T.AFR.AFS.AFO.GW,Guinée-Bissau,,1,Bissau
+LR,T.AFR.AFS.AFO.LR,Libéria,,1,Monrovia
+ML,T.AFR.AFS.AFO.ML,Mali,,1,Bamako
+MR,T.AFR.AFS.AFO.MR,Mauritanie,,1,Nouakchott
+NE,T.AFR.AFS.AFO.NE,Niger,,1,Niamey
+NG,T.AFR.AFS.AFO.NG,Nigéria,,1,Abuja
+SN,T.AFR.AFS.AFO.SN,Sénégal,,1,Dakar
+SL,T.AFR.AFS.AFO.SL,Sierra Leone,,1,Freetown
+TG,T.AFR.AFS.AFO.TG,Togo,,1,Lomé
+AG,T.AME.AML.CRB.AG,Antigua-et-Barbuda,,1,Saint John's
+BS,T.AME.AML.CRB.BS,Bahamas,,1,Nassau
+BB,T.AME.AML.CRB.BB,Barbade,,1,Bridgetown
+BQ,T.AME.AML.CRB.BQ,"Bonaire, Saint-Eustache et Saba",,1,
+KN,T.AME.AML.CRB.KN,Saint-Kitts-et-Nevis,,1,
+CU,T.AME.AML.CRB.CU,Cuba,,1,La Havane
+DM,T.AME.AML.CRB.DM,Dominique,,1,Roseau
+DO,T.AME.AML.CRB.DO,République dominicaine,,1,Saint-Domingue
+GD,T.AME.AML.CRB.GD,Grenade,,1,Saint-Georges
+HT,T.AME.AML.CRB.HT,Haïti,,1,Port-au-Prince
+JM,T.AME.AML.CRB.JM,Jamaïque,,1,Kingston
+LC,T.AME.AML.CRB.LC,Sainte-Lucie,,1,Castries
+VC,T.AME.AML.CRB.VC,Saint-Vincent-et-les Grenadines,,1,Kingstown
+TT,T.AME.AML.CRB.TT,Trinité-et-Tobago,,1,Port-d'Espagne
+BZ,T.AME.AML.AMC.BZ,Belize,,1,Belmopan
+CR,T.AME.AML.AMC.CR,Costa Rica,,1,San José
+SV,T.AME.AML.AMC.SV,El Salvador,,1,San Salvador
+GT,T.AME.AML.AMC.GT,Guatemala,,1,Guatemala
+HN,T.AME.AML.AMC.HN,Honduras,,1,Tegucigalpa
+NI,T.AME.AML.AMC.NI,Nicaragua,,1,Managua
+PA,T.AME.AML.AMC.PA,Panama,,1,Panama
+AR,T.AME.AML.AMS.AR,Argentine,,1,Buenos Aires
+BO,T.AME.AML.AMS.BO,Bolivie,,1,La Paz
+BV,T.AME.AML.AMS.BV,Île Bouvet,,1,
+BR,T.AME.AML.AMS.BR,Brésil,,1,Brasilia
+CL,T.AME.AML.AMS.CL,Chili,,1,Santiago
+CO,T.AME.AML.AMS.CO,Colombie,,1,Bogota
+EC,T.AME.AML.AMS.EC,Équateur,,1,Quito
+GY,T.AME.AML.AMS.GY,Guyana,,1,Georgetown
+PY,T.AME.AML.AMS.PY,Paraguay,,1,Asuncion
+PE,T.AME.AML.AMS.PE,Pérou,,1,Lima
+SR,T.AME.AML.AMS.SR,Suriname,,1,Paramaribo
+UY,T.AME.AML.AMS.UY,Uruguay,,1,Montevideo
+VE,T.AME.AML.AMS.VE,Venezuela,,1,Caracas
+CA,T.AME.AMN.CA,Canada,,1,Ottawa
+KZ,T.ASI.ASC.KZ,Kazakhstan,,1,Astana
+KG,T.ASI.ASC.KG,Kirghizistan,,1,Bichkek
+TJ,T.ASI.ASC.TJ,Tadjikistan,,1,Douchanbé
+TM,T.ASI.ASC.TM,Turkménistan,,1,Achgabat
+UZ,T.ASI.ASC.UZ,Ouzbékistan,,1,Tachkent
+CN,T.ASI.ASE.CN,Chine,,1,Pékin
+KP,T.ASI.ASE.KP,Corée du Nord,,1,Pyongyang
+MN,T.ASI.ASE.MN,Mongolie,,1,Oulan-Bator
+BN,T.ASI.ASS.BN,Brunéi Darussalam,,1,Bandar Seri Begawan
+KH,T.ASI.ASS.KH,Cambodge,,1,Phnom Penh
+ID,T.ASI.ASS.ID,Indonésie,,1,Jakarta
+LA,T.ASI.ASS.LA,Laos,,1,Vientiane
+MY,T.ASI.ASS.MY,Malaisie,,1,Kuala Lumpur
+MM,T.ASI.ASS.MM,Myanmar,,1,Naypyidaw
+PH,T.ASI.ASS.PH,Philippines,,1,Manille
+SG,T.ASI.ASS.SG,Singapour,,1,Singapour
+TH,T.ASI.ASS.TH,Thaïlande,,1,Bangkok
+TL,T.ASI.ASS.TL,Timor-Leste,,1,Dili
+VN,T.ASI.ASS.VN,Viêt Nam,,1,Hanoï
+AF,T.ASI.ASM.AF,Afghanistan,,1,Kaboul
+BD,T.ASI.ASM.BD,Bangladesh,,1,Dacca
+BT,T.ASI.ASM.BT,Bhoutan,,1,Thimphou
+IN,T.ASI.ASM.IN,Inde,,1,New Delhi
+IR,T.ASI.ASM.IR,Iran,,1,Téhéran
+MV,T.ASI.ASM.MV,Maldives,,1,Malé
+NP,T.ASI.ASM.NP,Népal,,1,Katmandou
+PK,T.ASI.ASM.PK,Pakistan,,1,Islamabad
+LK,T.ASI.ASM.LK,Sri Lanka,,1,Colombo
+AM,T.ASI.ASO.AM,Arménie,,1,Erevan
+AZ,T.ASI.ASO.AZ,Azerbaïdjan,,1,Bakou
+BH,T.ASI.ASO.BH,Bahreïn,,1,Manama
+CY,T.ASI.ASO.CY,Chypre,,1,Nicosie
+GE,T.ASI.ASO.GE,Géorgie,,1,Tbilissi
+IQ,T.ASI.ASO.IQ,Iraq,,1,Bagdad
+IL,T.ASI.ASO.IL,Israël,,1,Jérusalem
+JO,T.ASI.ASO.JO,Jordanie,,1,Amman
+KW,T.ASI.ASO.KW,Koweït,,1,Koweït
+LB,T.ASI.ASO.LB,Liban,,1,Beyrouth
+OM,T.ASI.ASO.OM,Oman,,1,Mascate
+QA,T.ASI.ASO.QA,Qatar,,1,Doha
+SA,T.ASI.ASO.SA,Arabie saoudite,,1,Riyad
+SY,T.ASI.ASO.SY,Syrie,,1,Damas
+TR,T.ASI.ASO.TR,Türkiye,,1,Ankara
+AE,T.ASI.ASO.AE,Émirats arabes unis,,1,Abou Dabi
+YE,T.ASI.ASO.YE,Yémen,,1,Aden
+BY,T.EUR.EUE.BY,Bélarus,,1,Minsk
+BG,T.EUR.EUE.BG,Bulgarie,,1,Sofia
+CZ,T.EUR.EUE.CZ,Tchéquie,,1,Prague
+MD,T.EUR.EUE.MD,Moldavie,,1,Chișinău
+RU,T.EUR.EUE.RU,Russie,,1,Moscou
+SK,T.EUR.EUE.SK,Slovaquie,,1,Bratislava
+IS,T.EUR.EUN.IS,Islande,,1,Reykjavik
+IE,T.EUR.EUN.IE,Irlande,,1,Dublin
+EE,T.EUR.EUN.BLT.EE,Estonie,,1,Tallinn
+LV,T.EUR.EUN.BLT.LV,Lettonie,,1,Riga
+SJ,T.EUR.EUN.SJ,Îles Svalbard-et-Jan Mayen,,1,
+AL,T.EUR.EUS.AL,Albanie,,1,Tirana
+AD,T.EUR.EUS.AD,Andorre,,1,Andorre-la-Vieille
+BA,T.EUR.EUS.BA,Bosnie-Herzégovine,,1,Sarajevo
+VA,T.EUR.EUS.VA,Saint-Siège,,1,Vatican
+MT,T.EUR.EUS.MT,Malte,,1,La Valette
+ME,T.EUR.EUS.ME,Monténégro,,1,Podgorica
+MK,T.EUR.EUS.MK,Macédoine du Nord,,1,Skopje
+SM,T.EUR.EUS.SM,Saint-Marin,,1,Saint-Marin
+RS,T.EUR.EUS.RS,Serbie,,1,Belgrade
+SI,T.EUR.EUS.SI,Slovénie,,1,Ljubljana
+LI,T.EUR.EUO.LI,Liechtenstein,,1,Vaduz
+MC,T.EUR.EUO.MC,Monaco,,1,Monaco
+HM,T.OCE.OAZ.HM,Île Heard-et-Îles MacDonald,,1,
+NZ,T.OCE.OAZ.NZ,Nouvelle-Zélande,,1,Wellington
+FJ,T.OCE.MLN.FJ,Fidji,,1,Suva
+PG,T.OCE.MLN.PG,Papouasie-Nouvelle-Guinée,,1,Port Moresby
+SB,T.OCE.MLN.SB,Îles Salomon,,1,Honiara
+VU,T.OCE.MLN.VU,Vanuatu,,1,Port-Vila
+KI,T.OCE.MCN.KI,Kiribati,,1,Tarawa-Sud
+MH,T.OCE.MCN.MH,Îles Marshall,,1,Majuro
+FM,T.OCE.MCN.FM,Micronésie,,1,Palikir
+NR,T.OCE.MCN.NR,Nauru,,1,Yaren
+PW,T.OCE.MCN.PW,Palaos,,1,Melekeok
+CK,T.OCE.PLN.CK,Îles Cook,,1,Avarua
+NU,T.OCE.PLN.NU,Nioué,,1,
+TK,T.OCE.PLN.TK,Tokélaou,,1,
+TO,T.OCE.PLN.TO,Tonga,,1,Nukuʻalofa
+TV,T.OCE.PLN.TV,Tuvalu,,1,Funafuti
+WS,T.OCE.PLN.WS,Samoa,,1,Apia
+PS,T.ASI.ASO.PS,État de Palestine,,territoire,Ramallah
+HK,T.ASI.ASE.HK,Hong Kong,,région administrative spéciale,Hong Kong
+MO,T.ASI.ASE.MO,Macao,,région administrative spéciale,Macao
+TW,T.ASI.ASE.TW,Taïwan,,1,Taipei

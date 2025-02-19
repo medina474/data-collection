@@ -1,0 +1,15 @@
+code,hierarchie,region,francais,administration,capitale
+BE,T.EUR.EUO.BE,Belgique,,1,Bruxelles
+BE-BRU,T.EUR.EUO.BE.BE-BRU,Brussels,,Bruxelles-Capitale,Brussels
+BE-VLG,T.EUR.EUO.BE.BE-VLG,Vlaams Gewest,,region,Brussels
+BE-WAL,T.EUR.EUO.BE.BE-WAL,Wallonie,,region,Namur
+BE-VAN,T.EUR.EUO.BE.BE-VLG.BE-VAN,Antwerpen,,8,Antwerp
+BE-VBR,T.EUR.EUO.BE.BE-VLG.BE-VBR,Vlaams Brabant,,8,Leuven
+BE-VLI,T.EUR.EUO.BE.BE-VLG.BE-VLI,Limburg,,8,Hasselt
+BE-VOV,T.EUR.EUO.BE.BE-VLG.BE-VOV,Oost-Vlaanderen,,8,Gent
+BE-VWV,T.EUR.EUO.BE.BE-VLG.BE-VWV,West-Vlaanderen,,8,Brugge
+BE-WBR,T.EUR.EUO.BE.BE-WAL.BE-WBR,Brabant Wallon,,8,Wavre
+BE-WHT,T.EUR.EUO.BE.BE-WAL.BE-WHT,Hainaut,,8,Mons
+BE-WLG,T.EUR.EUO.BE.BE-WAL.BE-WLG,Liège,,8,Liège
+BE-WLX,T.EUR.EUO.BE.BE-WAL.BE-WLX,Luxembourg,,8,Arlon
+BE-WNA,T.EUR.EUO.BE.BE-WAL.BE-WNA,Namur,,8,Namur

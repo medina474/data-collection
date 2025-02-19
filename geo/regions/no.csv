@@ -1,0 +1,15 @@
+code,hierarchie,region,francais,administration,capitale
+NO,T.EUR.EUN.SCD.NO,Norvège,,1,Oslo
+NO-03,T.EUR.EUN.SCD.NO.NO-03,Oslo,,county,
+NO-11,T.EUR.EUN.SCD.NO.NO-11,Rogaland,,county,Stavanger
+NO-15,T.EUR.EUN.SCD.NO.NO-15,Møre og Romsdal,,county,
+NO-18,T.EUR.EUN.SCD.NO.NO-18,Nordland,,county,
+NO-30,T.EUR.EUN.SCD.NO.NO-30,Viken,,county,
+NO-34,T.EUR.EUN.SCD.NO.NO-34,Innlandet,,county,
+NO-38,T.EUR.EUN.SCD.NO.NO-38,Vestfold og Telemark,,county,
+NO-42,T.EUR.EUN.SCD.NO.NO-42,Agder,,county,
+NO-46,T.EUR.EUN.SCD.NO.NO-46,Vestland,,county,
+NO-50,T.EUR.EUN.SCD.NO.NO-50,Trøndelag,,county,
+NO-54,T.EUR.EUN.SCD.NO.NO-54,Troms og Finnmark,,county,
+NO-21,T.EUR.EUN.SCD.NO.NO-21,Svalbard,,arctic region,
+NO-22,T.EUR.EUN.SCD.NO.NO-22,Jan Mayen,,arctic region,

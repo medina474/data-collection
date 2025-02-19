@@ -1,0 +1,44 @@
+code,hierarchie,region,francais,administration,capitale
+RO,T.EUR.EUE.RO,Roumanie,,1,Bucarest
+RO-B,T.EUR.EUE.RO.RO-B,București,,municipiu,București
+RO-AB,T.EUR.EUE.RO.RO-AB,Alba,,9,Alba Iulia
+RO-AR,T.EUR.EUE.RO.RO-AR,Arad,,9,Arad
+RO-AG,T.EUR.EUE.RO.RO-AG,Argeș,,9,Pitești
+RO-BC,T.EUR.EUE.RO.RO-BC,Bacău,,9,Bacău
+RO-BH,T.EUR.EUE.RO.RO-BH,Bihor,,9,Oradea
+RO-BN,T.EUR.EUE.RO.RO-BN,Bistrița-Năsăud,,9,Bistrița
+RO-BT,T.EUR.EUE.RO.RO-BT,Botoșani,,9,Botoșani
+RO-BV,T.EUR.EUE.RO.RO-BV,Brașov,,9,Brașov
+RO-BR,T.EUR.EUE.RO.RO-BR,Brăila,,9,Brăila
+RO-BZ,T.EUR.EUE.RO.RO-BZ,Buzău,,9,Buzău
+RO-CS,T.EUR.EUE.RO.RO-CS,Caraș-Severin,,9,Reșița
+RO-CL,T.EUR.EUE.RO.RO-CL,Călărași,,9,Călărași
+RO-CJ,T.EUR.EUE.RO.RO-CJ,Cluj,,9,Cluj-Napoca
+RO-CT,T.EUR.EUE.RO.RO-CT,Constanța,,9,Constanța
+RO-CV,T.EUR.EUE.RO.RO-CV,Covasna,,9,Sfântu Gheorghe
+RO-DB,T.EUR.EUE.RO.RO-DB,Dâmbovița,,9,Târgoviște
+RO-DJ,T.EUR.EUE.RO.RO-DJ,Dolj,,9,Craiova
+RO-GL,T.EUR.EUE.RO.RO-GL,Galați,,9,Galați
+RO-GR,T.EUR.EUE.RO.RO-GR,Giurgiu,,9,Giurgiu
+RO-GJ,T.EUR.EUE.RO.RO-GJ,Gorj,,9,Târgu Jiu
+RO-HR,T.EUR.EUE.RO.RO-HR,Harghita,,9,Miercurea Ciuc
+RO-HD,T.EUR.EUE.RO.RO-HD,Hunedoara,,9,Deva
+RO-IL,T.EUR.EUE.RO.RO-IL,Ialomița,,9,Slobozia
+RO-IS,T.EUR.EUE.RO.RO-IS,Iași,,9,Iași
+RO-IF,T.EUR.EUE.RO.RO-IF,Ilfov,,9,Bucharest
+RO-MM,T.EUR.EUE.RO.RO-MM,Maramureș,,9,Baia Mare
+RO-MH,T.EUR.EUE.RO.RO-MH,Mehedinți,,9,Drobeta-Turnu Severin
+RO-MS,T.EUR.EUE.RO.RO-MS,Mureș,,9,Târgu Mureș
+RO-NT,T.EUR.EUE.RO.RO-NT,Neamț,,9,Piatra Neamț
+RO-OT,T.EUR.EUE.RO.RO-OT,Olt,,9,Slatina
+RO-PH,T.EUR.EUE.RO.RO-PH,Prahova,,9,Ploiești
+RO-SM,T.EUR.EUE.RO.RO-SM,Satu Mare,,9,Satu Mare
+RO-SJ,T.EUR.EUE.RO.RO-SJ,Sălaj,,9,Zalău
+RO-SB,T.EUR.EUE.RO.RO-SB,Sibiu,,9,Sibiu
+RO-SV,T.EUR.EUE.RO.RO-SV,Suceava,,9,Suceava
+RO-TR,T.EUR.EUE.RO.RO-TR,Teleorman,,9,Alexandria
+RO-TM,T.EUR.EUE.RO.RO-TM,Timiș,,9,Timișoara
+RO-TL,T.EUR.EUE.RO.RO-TL,Tulcea,,9,Tulcea
+RO-VS,T.EUR.EUE.RO.RO-VS,Vaslui,,9,Vaslui
+RO-VL,T.EUR.EUE.RO.RO-VL,Vâlcea,,9,Râmnicu Vâlcea
+RO-VN,T.EUR.EUE.RO.RO-VN,Vrancea,,9,Focșani

@@ -1,0 +1,17 @@
+code,hierarchie,region,francais,administration,capitale
+NL,T.EUR.EUO.NL,Pays-bas,,1,La Haye
+NL-DR,T.EUR.EUO.NL.NL-DR,Drenthe,,province,Assen
+NL-FL,T.EUR.EUO.NL.NL-FL,Flevoland,,province,Lelystad
+NL-FR,T.EUR.EUO.NL.NL-FR,Friesland,,province,Leeuwarden
+NL-GE,T.EUR.EUO.NL.NL-GE,Gelderland,,province,Arnhem
+NL-GR,T.EUR.EUO.NL.NL-GR,Groningen,,province,Groningen
+NL-LI,T.EUR.EUO.NL.NL-LI,Limburg,,province,Maastricht
+NL-NB,T.EUR.EUO.NL.NL-NB,Noord Brabant,,province,'s-Hertogenbosch
+NL-NH,T.EUR.EUO.NL.NL-NH,Noord Holland,,province,Haarlem
+NL-OV,T.EUR.EUO.NL.NL-OV,Overijssel,,province,Zwolle
+NL-UT,T.EUR.EUO.NL.NL-UT,Utrecht,,province,Utrecht
+NL-ZE,T.EUR.EUO.NL.NL-ZE,Zeeland,,province,Middelburg
+NL-ZH,T.EUR.EUO.NL.NL-ZH,Zuid Holland,,province,Den Haag
+AW,T.AME.AML.CRB.AW,Aruba,,pays constitutif du royaume des Pays-Bas,Oranjestad
+CW,T.AME.AML.CRB.CW,Curaçao,,pays constitutif du royaume des Pays-Bas,Willemstad
+SX,T.AME.AML.CRB.SX,Sint Maarten,,état autonome dépendant du royaume des Pays-Bas,Philipsburg

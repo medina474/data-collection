@@ -1,0 +1,9 @@
+code,hierarchie,region,francais,administration,capitale
+DK,T.EUR.EUN.SCD.DK,Danemark,,1,Copenhagen
+DK-81,T.EUR.EUN.SCD.DK.DK-81,Nordjylland,,2,Aalborg
+DK-82,T.EUR.EUN.SCD.DK.DK-82,Midtjylland,,2,Viborg
+DK-83,T.EUR.EUN.SCD.DK.DK-83,Syddanmark,,2,Ribe
+DK-84,T.EUR.EUN.SCD.DK.DK-84,Hovedstaden,,2,Copenhagen
+DK-85,T.EUR.EUN.SCD.DK.DK-85,Sjælland,Seeland,2,Sorø
+FO,T.EUR.EUN.FO,Îles Féroé,,pays constitutif du royaume du Danemark,Tórshavn
+GL,T.AME.AMN.GL,Kalaallit Nunaat,Groenland,pays constitutif du royaume du Danemark,Nuuk

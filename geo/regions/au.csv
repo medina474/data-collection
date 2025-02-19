@@ -1,0 +1,13 @@
+code,hierarchie,region,francais,administration,capitale
+AU,T.OCE.OAZ.AU,Australie,,1,Canberra
+AU-ACT,T.OCE.OAZ.AU.AU-ACT,Australian Capital Territory,Territoire de la capitale australienne,territory,Canberra
+AU-NSW,T.OCE.OAZ.AU.AU-NSW,New South Wales,Nouvelle-Galles du Sud,7,Sydney
+AU-NT,T.OCE.OAZ.AU.AU-NT,Northern Territory,Territoire du Nord,territory,Darwin
+AU-QLD,T.OCE.OAZ.AU.AU-QLD,Queensland,Queensland,7,Brisbane
+AU-SA,T.OCE.OAZ.AU.AU-SA,South Australia,Australie-Méridionale,7,Adelaide
+AU-TAS,T.OCE.OAZ.AU.AU-TAS,Tasmania,Tasmanie,7,Hobart
+AU-VIC,T.OCE.OAZ.AU.AU-VIC,Victoria,Victoria,7,Melbourne
+AU-WA,T.OCE.OAZ.AU.AU-WA,Western Australia,Australie-Occidentale,7,Perth
+CX,T.OCE.OAZ.CX,Île Christmas,,territoire extérieur,Flying Fish Cove
+NF,T.OCE.OAZ.NF,Île Norfolk,,territoire extérieur,Kingston
+CC,T.OCE.OAZ.CC,Îles des Cocos (Keeling),,territoire extérieur,West Island

@@ -1,0 +1,23 @@
+code,hierarchie,region,francais,administration,capitale
+HR,T.EUR.EUS.HR,Croatie,,1,Zagreb
+HR-01,T.EUR.EUS.HR.HR-01,Zagreb,,županija,
+HR-02,T.EUR.EUS.HR.HR-02,Krapina-Zagorje,,županija,Krapina
+HR-03,T.EUR.EUS.HR.HR-03,Sisak-Moslavina,,županija,Sisak
+HR-04,T.EUR.EUS.HR.HR-04,Karlovac,,županija,Karlovac
+HR-05,T.EUR.EUS.HR.HR-05,Varazdin,,županija,Varaždin
+HR-06,T.EUR.EUS.HR.HR-06,Koprivnica-Krizevci,,županija,Koprivnica
+HR-07,T.EUR.EUS.HR.HR-07,Bjelovar-Bilogora,,županija,Bjelovar
+HR-08,T.EUR.EUS.HR.HR-08,Primorje-Gorski Kotar,,županija,Rijeka
+HR-09,T.EUR.EUS.HR.HR-09,Lika-Senj,,županija,Gospić
+HR-10,T.EUR.EUS.HR.HR-10,Virovitica-Podravina,,županija,Virovitica
+HR-11,T.EUR.EUS.HR.HR-11,Pozega-Slavonia,,županija,Požega
+HR-12,T.EUR.EUS.HR.HR-12,Brod-Posavina,,županija,Slavonski Brod
+HR-13,T.EUR.EUS.HR.HR-13,Zadar,,županija,Zadar
+HR-14,T.EUR.EUS.HR.HR-14,Osijek-Baranja,,županija,Osijek
+HR-15,T.EUR.EUS.HR.HR-15,Sibenik-Knin,,županija,Šibenik
+HR-16,T.EUR.EUS.HR.HR-16,Vukovar-Srijem,,županija,Vukovar
+HR-17,T.EUR.EUS.HR.HR-17,Split-Dalmatia,,županija,Split
+HR-18,T.EUR.EUS.HR.HR-18,Istria,,županija,Pazin
+HR-19,T.EUR.EUS.HR.HR-19,Dubrovnik-Neretva,,županija,Dubrovnik
+HR-20,T.EUR.EUS.HR.HR-20,Medjimurje,,županija,Čakovec
+HR-21,T.EUR.EUS.HR.HR-21,Zagreb,,grad,Zagreb

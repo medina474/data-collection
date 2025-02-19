@@ -1,0 +1,22 @@
+code,hierarchie,region,francais,administration,capitale
+FI,T.EUR.EUN.FI,Finland,,1,Helsinki
+FI-01,T.EUR.EUN.FI.FI-01,Ahvenanmaan maakunta,,maakunnan,Mariehamn
+FI-02,T.EUR.EUN.FI.FI-02,Etelä-Karjala,,maakunnan,Lappeenranta
+FI-03,T.EUR.EUN.FI.FI-03,Etelä-Pohjanmaa,,maakunnan,Seinäjoki
+FI-04,T.EUR.EUN.FI.FI-04,Etelä-Savo,,maakunnan,Polvijärvi
+FI-05,T.EUR.EUN.FI.FI-05,Kainuu,,maakunnan,Kajaani
+FI-06,T.EUR.EUN.FI.FI-06,Kanta-Häme,,maakunnan,Hämeenlinna
+FI-07,T.EUR.EUN.FI.FI-07,Keski-Pohjanmaa,,maakunnan,Kokkola
+FI-08,T.EUR.EUN.FI.FI-08,Keski-Suomi,,maakunnan,Helsinki
+FI-09,T.EUR.EUN.FI.FI-09,Kymenlaakso,,maakunnan,Kouvola
+FI-10,T.EUR.EUN.FI.FI-10,Lappi,,maakunnan,Rovaniemi
+FI-11,T.EUR.EUN.FI.FI-11,Pirkanmaa,,maakunnan,Rovaniemi
+FI-12,T.EUR.EUN.FI.FI-12,Pohjanmaa,,maakunnan,Vaasa
+FI-13,T.EUR.EUN.FI.FI-13,Pohjois-Karjala,,maakunnan,Joensuu
+FI-14,T.EUR.EUN.FI.FI-14,Pohjois-Pohjanmaa,,maakunnan,Oulu
+FI-15,T.EUR.EUN.FI.FI-15,Pohjois-Savo,,maakunnan,Kuopio
+FI-16,T.EUR.EUN.FI.FI-16,Päijät-Häme,,maakunnan,Lahti
+FI-17,T.EUR.EUN.FI.FI-17,Satakunta,,maakunnan,Pori
+FI-18,T.EUR.EUN.FI.FI-18,Uusimaa,,maakunnan,Helsinki
+FI-19,T.EUR.EUN.FI.FI-19,Varsinais-Suomi,,maakunnan,Turku
+AX,T.EUR.EUN.AX,Îles d’Åland,,province autonome,Mariehamn

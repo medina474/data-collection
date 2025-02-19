@@ -1,0 +1,129 @@
+code,hierarchie,region,francais,administration,capitale
+IT,T.EUR.EUS.IT,Italie,,1,Rome
+IT-21,T.EUR.EUS.IT.IT-21,Piemonte,,regione,Torino
+IT-25,T.EUR.EUS.IT.IT-25,Lombardia,,regione,Milan
+IT-34,T.EUR.EUS.IT.IT-34,Veneto,,regione,Venice
+IT-42,T.EUR.EUS.IT.IT-42,Liguria,,regione,Genova
+IT-45,T.EUR.EUS.IT.IT-45,Emilia-Romagna,,regione,Bologna
+IT-52,T.EUR.EUS.IT.IT-52,Toscana,,regione,Florence
+IT-55,T.EUR.EUS.IT.IT-55,Umbria,,regione,Perugia
+IT-57,T.EUR.EUS.IT.IT-57,Marche,,regione,Ancona
+IT-62,T.EUR.EUS.IT.IT-62,Lazio,,regione,Rome
+IT-65,T.EUR.EUS.IT.IT-65,Abruzzo,,regione,L'Aquila
+IT-67,T.EUR.EUS.IT.IT-67,Molise,,regione,Campobasso
+IT-72,T.EUR.EUS.IT.IT-72,Campania,,regione,Campobasso
+IT-75,T.EUR.EUS.IT.IT-75,Puglia,,regione,Bari
+IT-77,T.EUR.EUS.IT.IT-77,Basilicata,,regione,Potenza
+IT-78,T.EUR.EUS.IT.IT-78,Calabria,,regione,Catanzaro
+IT-23,T.EUR.EUS.IT.IT-23,Valle d'Aosta,,Regione Autonoma,Aosta
+IT-32,T.EUR.EUS.IT.IT-32,Trentino-Alto Adige,,Regione Autonoma,Trento
+IT-36,T.EUR.EUS.IT.IT-36,Friuli-Venezia Giulia,,Regione Autonoma,Trieste
+IT-82,T.EUR.EUS.IT.IT-82,Sicilia,,Regione Autonoma,Palermo
+IT-88,T.EUR.EUS.IT.IT-88,Sardegna,,Regione Autonoma,Cagliari
+IT-AL,T.EUR.EUS.IT.IT-21.IT-AL,Alessandria,,province,Alessandria
+IT-AN,T.EUR.EUS.IT.IT-57.IT-AN,Ancona,,province,Ancona
+IT-AR,T.EUR.EUS.IT.IT-52.IT-AR,Arezzo,,province,Arezzo
+IT-AP,T.EUR.EUS.IT.IT-57.IT-AP,Ascoli Piceno,,province,Ascoli Piceno
+IT-AT,T.EUR.EUS.IT.IT-21.IT-AT,Asti,,province,Asti
+IT-AV,T.EUR.EUS.IT.IT-72.IT-AV,Avellino,,province,Avellino
+IT-BT,T.EUR.EUS.IT.IT-75.IT-BT,Barletta-Andria-Trani,,province,Trani
+IT-BL,T.EUR.EUS.IT.IT-34.IT-BL,Belluno,,province,Belluno
+IT-BN,T.EUR.EUS.IT.IT-72.IT-BN,Benevento,,province,Benevento
+IT-BG,T.EUR.EUS.IT.IT-25.IT-BG,Bergamo,,province,Bergamo
+IT-BI,T.EUR.EUS.IT.IT-21.IT-BI,Biella,,province,Biella
+IT-BS,T.EUR.EUS.IT.IT-25.IT-BS,Brescia,,province,Brescia
+IT-BR,T.EUR.EUS.IT.IT-75.IT-BR,Brindisi,,province,Brindisi
+IT-CB,T.EUR.EUS.IT.IT-67.IT-CB,Campobasso,,province,Campobasso
+IT-CE,T.EUR.EUS.IT.IT-72.IT-CE,Caserta,,province,Caserta
+IT-CZ,T.EUR.EUS.IT.IT-78.IT-CZ,Catanzaro,,province,Catanzaro
+IT-CH,T.EUR.EUS.IT.IT-65.IT-CH,Chieti,,province,Chieti
+IT-CO,T.EUR.EUS.IT.IT-25.IT-CO,Como,,province,Como
+IT-CS,T.EUR.EUS.IT.IT-78.IT-CS,Cosenza,,province,Cosenza
+IT-CR,T.EUR.EUS.IT.IT-25.IT-CR,Cremona,,province,Cremona
+IT-KR,T.EUR.EUS.IT.IT-78.IT-KR,Crotone,,province,Crotone
+IT-CN,T.EUR.EUS.IT.IT-21.IT-CN,Cuneo,,province,Cuneo
+IT-FM,T.EUR.EUS.IT.IT-57.IT-FM,Fermo,,province,Fermo
+IT-FE,T.EUR.EUS.IT.IT-45.IT-FE,Ferrara,,province,Ferrara
+IT-FG,T.EUR.EUS.IT.IT-75.IT-FG,Foggia,,province,Foggia
+IT-FC,T.EUR.EUS.IT.IT-45.IT-FC,Forlì-Cesena,,province,Forlì
+IT-FR,T.EUR.EUS.IT.IT-62.IT-FR,Frosinone,,province,Frosinone
+IT-GR,T.EUR.EUS.IT.IT-52.IT-GR,Grosseto,,province,Grosseto
+IT-IM,T.EUR.EUS.IT.IT-42.IT-IM,Imperia,,province,Imperia
+IT-IS,T.EUR.EUS.IT.IT-67.IT-IS,Isernia,,province,Isernia
+IT-SP,T.EUR.EUS.IT.IT-42.IT-SP,La Spezia,,province,La Spezia
+IT-AQ,T.EUR.EUS.IT.IT-65.IT-AQ,L'Aquila,,province,L'Aquila
+IT-LT,T.EUR.EUS.IT.IT-62.IT-LT,Latina,,province,Latina
+IT-LE,T.EUR.EUS.IT.IT-75.IT-LE,Lecce,,province,Lecce
+IT-LC,T.EUR.EUS.IT.IT-25.IT-LC,Lecco,,province,Lecco
+IT-LI,T.EUR.EUS.IT.IT-52.IT-LI,Livorno,,province,Livorno
+IT-LO,T.EUR.EUS.IT.IT-25.IT-LO,Lodi,,province,Lodi
+IT-LU,T.EUR.EUS.IT.IT-52.IT-LU,Lucca,,province,Lucca
+IT-MC,T.EUR.EUS.IT.IT-57.IT-MC,Macerata,,province,Macerata
+IT-MN,T.EUR.EUS.IT.IT-25.IT-MN,Mantova,,province,Mantova
+IT-MS,T.EUR.EUS.IT.IT-52.IT-MS,Massa-Carrara,,province,Massa
+IT-MT,T.EUR.EUS.IT.IT-77.IT-MT,Matera,,province,Matera
+IT-MO,T.EUR.EUS.IT.IT-45.IT-MO,Modena,,province,Modena
+IT-MB,T.EUR.EUS.IT.IT-25.IT-MB,Monza e Brianza,,province,Monza
+IT-NO,T.EUR.EUS.IT.IT-21.IT-NO,Novara,,province,Novara
+IT-NU,T.EUR.EUS.IT.IT-88.IT-NU,Nuoro,,province,Nuoro
+IT-OR,T.EUR.EUS.IT.IT-88.IT-OR,Oristano,,province,Oristano
+IT-PD,T.EUR.EUS.IT.IT-34.IT-PD,Padova,,province,Padova
+IT-PR,T.EUR.EUS.IT.IT-45.IT-PR,Parma,,province,Parma
+IT-PV,T.EUR.EUS.IT.IT-25.IT-PV,Pavia,,province,Pavia
+IT-PG,T.EUR.EUS.IT.IT-55.IT-PG,Perugia,,province,Perugia
+IT-PU,T.EUR.EUS.IT.IT-57.IT-PU,Pesaro e Urbino,,province,Pesaro
+IT-PE,T.EUR.EUS.IT.IT-65.IT-PE,Pescara,,province,Pescara
+IT-PC,T.EUR.EUS.IT.IT-45.IT-PC,Piacenza,,province,Piacenza
+IT-PI,T.EUR.EUS.IT.IT-52.IT-PI,Pisa,,province,Pisa
+IT-PT,T.EUR.EUS.IT.IT-52.IT-PT,Pistoia,,province,Pistoia
+IT-PZ,T.EUR.EUS.IT.IT-77.IT-PZ,Potenza,,province,Potenza
+IT-PO,T.EUR.EUS.IT.IT-52.IT-PO,Prato,,province,Prato
+IT-RA,T.EUR.EUS.IT.IT-45.IT-RA,Ravenna,,province,Ravenna
+IT-RE,T.EUR.EUS.IT.IT-45.IT-RE,Reggio Emilia,,province,Reggio nell'Emilia
+IT-RI,T.EUR.EUS.IT.IT-62.IT-RI,Rieti,,province,Rieti
+IT-RN,T.EUR.EUS.IT.IT-45.IT-RN,Rimini,,province,Rimini
+IT-RO,T.EUR.EUS.IT.IT-34.IT-RO,Rovigo,,province,Rovigo
+IT-SA,T.EUR.EUS.IT.IT-72.IT-SA,Salerno,,province,Salerno
+IT-SS,T.EUR.EUS.IT.IT-88.IT-SS,Sassari,,province,Sassari
+IT-SV,T.EUR.EUS.IT.IT-42.IT-SV,Savona,,province,Savona
+IT-SI,T.EUR.EUS.IT.IT-52.IT-SI,Siena,,province,Siena
+IT-SO,T.EUR.EUS.IT.IT-25.IT-SO,Sondrio,,province,Sondrio
+IT-VS,T.EUR.EUS.IT.IT-88.IT-VS,Medio Campidano,,province,Villacidro
+IT-CI,T.EUR.EUS.IT.IT-88.IT-CI,Sulcis Iglesiente,,province,Carbonia e Iglesias
+IT-TA,T.EUR.EUS.IT.IT-75.IT-TA,Taranto,,province,Taranto
+IT-TE,T.EUR.EUS.IT.IT-65.IT-TE,Teramo,,province,Teramo
+IT-TR,T.EUR.EUS.IT.IT-55.IT-TR,Terni,,province,Terni
+IT-TV,T.EUR.EUS.IT.IT-34.IT-TV,Treviso,,province,Treviso
+IT-VA,T.EUR.EUS.IT.IT-25.IT-VA,Varese,,province,Varese
+IT-VB,T.EUR.EUS.IT.IT-21.IT-VB,Verbano-Cusio-Ossola,,province,Verbania
+IT-VC,T.EUR.EUS.IT.IT-21.IT-VC,Vercelli,,province,Vercelli
+IT-VR,T.EUR.EUS.IT.IT-34.IT-VR,Verona,,province,Verona
+IT-VV,T.EUR.EUS.IT.IT-78.IT-VV,Vibo Valentia,,province,Vibo Valentia
+IT-VI,T.EUR.EUS.IT.IT-34.IT-VI,Vicenza,,province,Vicenza
+IT-VT,T.EUR.EUS.IT.IT-62.IT-VT,Viterbo,,province,Viterbo
+IT-BZ,T.EUR.EUS.IT.IT-32.IT-BZ,Bolzano,,autonomous province,Bolzano
+IT-TN,T.EUR.EUS.IT.IT-32.IT-TN,Trento,,autonomous province,Trento
+IT-GO,T.EUR.EUS.IT.IT-36.IT-GO,Gorizia,,ente di decentramento regionale,Gorizia
+IT-PN,T.EUR.EUS.IT.IT-36.IT-PN,Pordenone,,ente di decentramento regionale,Pordenone
+IT-TS,T.EUR.EUS.IT.IT-36.IT-TS,Trieste,,ente di decentramento regionale,Trieste
+IT-UD,T.EUR.EUS.IT.IT-36.IT-UD,Udine,,ente di decentramento regionale,Udine
+IT-AG,T.EUR.EUS.IT.IT-82.IT-AG,Agrigento,,libero consorzio comunale,Agrigento
+IT-CL,T.EUR.EUS.IT.IT-82.IT-CL,Caltanissetta,,libero consorzio comunale,Caltanissetta
+IT-EN,T.EUR.EUS.IT.IT-82.IT-EN,Enna,,libero consorzio comunale,Enna
+IT-RG,T.EUR.EUS.IT.IT-82.IT-RG,Ragusa,,libero consorzio comunale,Ragusa
+IT-SR,T.EUR.EUS.IT.IT-82.IT-SR,Siracusa,,libero consorzio comunale,Siracusa
+IT-TP,T.EUR.EUS.IT.IT-82.IT-TP,Trapani,,libero consorzio comunale,Trapani
+IT-BA,T.EUR.EUS.IT.IT-75.IT-BA,Bari,,metropolitan city,Bari
+IT-BO,T.EUR.EUS.IT.IT-45.IT-BO,Bologna,,metropolitan city,Bologna
+IT-CA,T.EUR.EUS.IT.IT-88.IT-CA,Cagliari,,metropolitan city,Cagliari
+IT-CT,T.EUR.EUS.IT.IT-82.IT-CT,Catania,,metropolitan city,Catania
+IT-FI,T.EUR.EUS.IT.IT-52.IT-FI,Firenze,,metropolitan city,Florence
+IT-GE,T.EUR.EUS.IT.IT-42.IT-GE,Genova,,metropolitan city,Genoa
+IT-ME,T.EUR.EUS.IT.IT-82.IT-ME,Messina,,metropolitan city,Messina
+IT-MI,T.EUR.EUS.IT.IT-25.IT-MI,Milano,,metropolitan city,Milan
+IT-NA,T.EUR.EUS.IT.IT-72.IT-NA,Napoli,,metropolitan city,Naples
+IT-PA,T.EUR.EUS.IT.IT-82.IT-PA,Palermo,,metropolitan city,Palermo
+IT-RC,T.EUR.EUS.IT.IT-78.IT-RC,Reggio Calabria,,metropolitan city,Reggio Calabria
+IT-RM,T.EUR.EUS.IT.IT-62.IT-RM,Roma,,metropolitan city,Rome
+IT-TO,T.EUR.EUS.IT.IT-21.IT-TO,Torino,,metropolitan city,Turin
+IT-VE,T.EUR.EUS.IT.IT-34.IT-VE,Venezia,,metropolitan city,Venice

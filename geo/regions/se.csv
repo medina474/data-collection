@@ -1,0 +1,23 @@
+code,hierarchie,region,francais,administration,capitale
+SE,T.EUR.EUN.SCD.SE,Suède,,1,Stockholm
+SE-AB,T.EUR.EUN.SCD.SE.SE-AB,Stockholms,,11,Stockholm
+SE-AC,T.EUR.EUN.SCD.SE.SE-AC,Västerbottens,Botnie occidentale,11,Umeå
+SE-BD,T.EUR.EUN.SCD.SE.SE-BD,Norrbottens,Botnie septentrionale,11,Luleå
+SE-C,T.EUR.EUN.SCD.SE.SE-C,Uppsala,,11,Uppsala
+SE-D,T.EUR.EUN.SCD.SE.SE-D,Södermanlands,,11,Nyköping
+SE-E,T.EUR.EUN.SCD.SE.SE-E,Östergötlands,,11,Linköping
+SE-F,T.EUR.EUN.SCD.SE.SE-F,Jönköpings,,11,Jönköping
+SE-G,T.EUR.EUN.SCD.SE.SE-G,Kronobergs,,11,Växjö
+SE-H,T.EUR.EUN.SCD.SE.SE-H,Kalmar,,11,Kalmar
+SE-I,T.EUR.EUN.SCD.SE.SE-I,Gotlands,,11,Visby
+SE-K,T.EUR.EUN.SCD.SE.SE-K,Blekinge,,11,Karlskrona
+SE-M,T.EUR.EUN.SCD.SE.SE-M,Skåne,,11,Malmö
+SE-N,T.EUR.EUN.SCD.SE.SE-N,Hallands,,11,Halmstad
+SE-O,T.EUR.EUN.SCD.SE.SE-O,Västra Götaland,,11,Göteborg
+SE-S,T.EUR.EUN.SCD.SE.SE-S,Värmlands,,11,Karlstad
+SE-T,T.EUR.EUN.SCD.SE.SE-T,Örebro,,11,Örebro
+SE-U,T.EUR.EUN.SCD.SE.SE-U,Västmanlands,,11,Västerås
+SE-W,T.EUR.EUN.SCD.SE.SE-W,Dalarna,,11,Falun
+SE-X,T.EUR.EUN.SCD.SE.SE-X,Gävleborgs,,11,Gävle
+SE-Y,T.EUR.EUN.SCD.SE.SE-Y,Västernorrlands,,11,Härnösand
+SE-Z,T.EUR.EUN.SCD.SE.SE-Z,Jämtlands,,11,Östersund

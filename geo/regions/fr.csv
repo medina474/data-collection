@@ -1,0 +1,124 @@
+code,hierarchie,region,francais,administration,capitale
+FR,T.EUR.EUO.FR,France,,1,Paris
+FR-20R,T.EUR.EUO.FR.FR-20R,Corse,,collectivité métropolitaine,Ajaccio
+FR-6AE,T.EUR.EUO.FR.FR-6AE,Alsace,,collectivité européenne,Strasbourg
+FR-ARA,T.EUR.EUO.FR.FR-ARA,Auvergne-Rhône-Alpes,,2,Lyon
+FR-BFC,T.EUR.EUO.FR.FR-BFC,Bourgogne-Franche-Comté,,2,Dijon
+FR-BRE,T.EUR.EUO.FR.FR-BRE,Bretagne,,2,Rennes
+FR-CVL,T.EUR.EUO.FR.FR-CVL,Centre-Val de Loire,,2,Orléans
+FR-GES,T.EUR.EUO.FR.FR-GES,Grand Est,,2,Strasbourg
+FR-HDF,T.EUR.EUO.FR.FR-HDF,Hauts-de-France,,2,Lille
+FR-IDF,T.EUR.EUO.FR.FR-IDF,Île-de-France,,2,Paris
+FR-NAQ,T.EUR.EUO.FR.FR-NAQ,Nouvelle-Aquitaine,,2,Bordeaux
+FR-NOR,T.EUR.EUO.FR.FR-NOR,Normandie,,2,Rouen
+FR-OCC,T.EUR.EUO.FR.FR-OCC,Occitanie,,2,Toulouse
+FR-PAC,T.EUR.EUO.FR.FR-PAC,Provence-Alpes-Côte d’Azur,,2,Marseille
+FR-PDL,T.EUR.EUO.FR.FR-PDL,Pays de la Loire,,2,Nantes
+FR-01,T.EUR.EUO.FR.FR-ARA.FR-01,Ain,,3,Bourg-en-Bresse
+FR-02,T.EUR.EUO.FR.FR-HDF.FR-02,Aisne,,3,Laon
+FR-03,T.EUR.EUO.FR.FR-ARA.FR-03,Allier,,3,Moulins
+FR-04,T.EUR.EUO.FR.FR-PAC.FR-04,Alpes-de-Haute-Provence,,3,Digne-les-Bains
+FR-05,T.EUR.EUO.FR.FR-PAC.FR-05,Hautes-Alpes,,3,Gap
+FR-06,T.EUR.EUO.FR.FR-PAC.FR-06,Alpes-Maritimes,,3,Nice
+FR-07,T.EUR.EUO.FR.FR-ARA.FR-07,Ardèche,,3,Privas
+FR-08,T.EUR.EUO.FR.FR-GES.FR-08,Ardennes,,3,Charleville-Mézières
+FR-09,T.EUR.EUO.FR.FR-OCC.FR-09,Ariège,,3,Foix
+FR-10,T.EUR.EUO.FR.FR-GES.FR-10,Aube,,3,Troyes
+FR-11,T.EUR.EUO.FR.FR-OCC.FR-11,Aude,,3,Carcassonne
+FR-12,T.EUR.EUO.FR.FR-OCC.FR-12,Aveyron,,3,Rodez
+FR-13,T.EUR.EUO.FR.FR-PAC.FR-13,Bouches-du-Rhône,,3,Marseille
+FR-14,T.EUR.EUO.FR.FR-NOR.FR-14,Calvados,,3,Caen
+FR-15,T.EUR.EUO.FR.FR-ARA.FR-15,Cantal,,3,Aurillac
+FR-16,T.EUR.EUO.FR.FR-NAQ.FR-16,Charente,,3,Angoulême
+FR-17,T.EUR.EUO.FR.FR-NAQ.FR-17,Charente-Maritime,,3,La Rochelle
+FR-18,T.EUR.EUO.FR.FR-CVL.FR-18,Cher,,3,Bourges
+FR-19,T.EUR.EUO.FR.FR-NAQ.FR-19,Corrèze,,3,Tulle
+FR-21,T.EUR.EUO.FR.FR-BFC.FR-21,Côte-d'Or,,3,Dijon
+FR-22,T.EUR.EUO.FR.FR-BRE.FR-22,Côtes-d'Armor,,3,Saint-Brieuc
+FR-23,T.EUR.EUO.FR.FR-NAQ.FR-23,Creuse,,3,Guéret
+FR-24,T.EUR.EUO.FR.FR-NAQ.FR-24,Dordogne,,3,Périgueux
+FR-25,T.EUR.EUO.FR.FR-BFC.FR-25,Doubs,,3,Besançon
+FR-26,T.EUR.EUO.FR.FR-ARA.FR-26,Drôme,,3,Valence
+FR-27,T.EUR.EUO.FR.FR-NOR.FR-27,Eure,,3,Évreux
+FR-28,T.EUR.EUO.FR.FR-CVL.FR-28,Eure-et-Loir,,3,Chartres
+FR-29,T.EUR.EUO.FR.FR-BRE.FR-29,Finistère,,3,Quimper
+FR-2A,T.EUR.EUO.FR.FR-20R.FR-2A,Corse-du-Sud,,3,Ajaccio
+FR-2B,T.EUR.EUO.FR.FR-20R.FR-2B,Haute-Corse,,3,Bastia
+FR-30,T.EUR.EUO.FR.FR-OCC.FR-30,Gard,,3,Nîmes
+FR-31,T.EUR.EUO.FR.FR-OCC.FR-31,Haute-Garonne,,3,Toulouse
+FR-32,T.EUR.EUO.FR.FR-OCC.FR-32,Gers,,3,Auch
+FR-33,T.EUR.EUO.FR.FR-NAQ.FR-33,Gironde,,3,Bordeaux
+FR-34,T.EUR.EUO.FR.FR-OCC.FR-34,Hérault,,3,Montpellier
+FR-35,T.EUR.EUO.FR.FR-BRE.FR-35,Ille-et-Vilaine,,3,Rennes
+FR-36,T.EUR.EUO.FR.FR-CVL.FR-36,Indre,,3,Châteauroux
+FR-37,T.EUR.EUO.FR.FR-CVL.FR-37,Indre-et-Loire,,3,Tours
+FR-38,T.EUR.EUO.FR.FR-ARA.FR-38,Isère,,3,Grenoble
+FR-39,T.EUR.EUO.FR.FR-BFC.FR-39,Jura,,3,Lons-le-Saunier
+FR-40,T.EUR.EUO.FR.FR-NAQ.FR-40,Landes,,3,Mont-de-Marsan
+FR-41,T.EUR.EUO.FR.FR-CVL.FR-41,Loir-et-Cher,,3,Blois
+FR-42,T.EUR.EUO.FR.FR-ARA.FR-42,Loire,,3,Saint-Étienne
+FR-43,T.EUR.EUO.FR.FR-ARA.FR-43,Haute-Loire,,3,Le Puy-en-Velay
+FR-44,T.EUR.EUO.FR.FR-PDL.FR-44,Loire-Atlantique,,3,Nantes
+FR-45,T.EUR.EUO.FR.FR-CVL.FR-45,Loiret,,3,Orléans
+FR-46,T.EUR.EUO.FR.FR-OCC.FR-46,Lot,,3,Cahors
+FR-47,T.EUR.EUO.FR.FR-NAQ.FR-47,Lot-et-Garonne,,3,Agen
+FR-48,T.EUR.EUO.FR.FR-OCC.FR-48,Lozère,,3,Mende
+FR-49,T.EUR.EUO.FR.FR-PDL.FR-49,Maine-et-Loire,,3,Angers
+FR-50,T.EUR.EUO.FR.FR-NOR.FR-50,Manche,,3,Saint-Lô
+FR-51,T.EUR.EUO.FR.FR-GES.FR-51,Marne,,3,Châlons-en-Champagne
+FR-52,T.EUR.EUO.FR.FR-GES.FR-52,Haute-Marne,,3,Chaumont
+FR-53,T.EUR.EUO.FR.FR-PDL.FR-53,Mayenne,,3,Laval
+FR-54,T.EUR.EUO.FR.FR-GES.FR-54,Meurthe-et-Moselle,,3,Nancy
+FR-55,T.EUR.EUO.FR.FR-GES.FR-55,Meuse,,3,Bar-le-Duc
+FR-56,T.EUR.EUO.FR.FR-BRE.FR-56,Morbihan,,3,Vannes
+FR-57,T.EUR.EUO.FR.FR-GES.FR-57,Moselle,,3,Metz
+FR-58,T.EUR.EUO.FR.FR-BFC.FR-58,Nièvre,,3,Nevers
+FR-59,T.EUR.EUO.FR.FR-HDF.FR-59,Nord,,3,Lille
+FR-60,T.EUR.EUO.FR.FR-HDF.FR-60,Oise,,3,Beauvais
+FR-61,T.EUR.EUO.FR.FR-NOR.FR-61,Orne,,3,Alençon
+FR-62,T.EUR.EUO.FR.FR-HDF.FR-62,Pas-de-Calais,,3,Arras
+FR-63,T.EUR.EUO.FR.FR-ARA.FR-63,Puy-de-Dôme,,3,Clermont-Ferrand
+FR-64,T.EUR.EUO.FR.FR-NAQ.FR-64,Pyrénées-Atlantiques,,3,Pau
+FR-65,T.EUR.EUO.FR.FR-OCC.FR-65,Hautes-Pyrénées,,3,Tarbes
+FR-66,T.EUR.EUO.FR.FR-OCC.FR-66,Pyrénées-Orientales,,3,Perpignan
+FR-67,T.EUR.EUO.FR.FR-6AE.FR-67,Bas-Rhin,,3,Strasbourg
+FR-68,T.EUR.EUO.FR.FR-6AE.FR-68,Haut-Rhin,,3,Colmar
+FR-69,T.EUR.EUO.FR.FR-ARA.FR-69,Rhône,,3,Lyon
+FR-70,T.EUR.EUO.FR.FR-BFC.FR-70,Haute-Saône,,3,Vesoul
+FR-71,T.EUR.EUO.FR.FR-BFC.FR-71,Saône-et-Loire,,3,Mâcon
+FR-72,T.EUR.EUO.FR.FR-PDL.FR-72,Sarthe,,3,Le Mans
+FR-73,T.EUR.EUO.FR.FR-ARA.FR-73,Savoie,,3,Chambéry
+FR-74,T.EUR.EUO.FR.FR-ARA.FR-74,Haute-Savoie,,3,Annecy
+FR-75C,T.EUR.EUO.FR.FR-IDF.FR-75C,Paris,,collectivité métropolitaine,Paris
+FR-76,T.EUR.EUO.FR.FR-NOR.FR-76,Seine-Maritime,,3,Rouen
+FR-77,T.EUR.EUO.FR.FR-IDF.FR-77,Seine-et-Marne,,3,Melun
+FR-78,T.EUR.EUO.FR.FR-IDF.FR-78,Yvelines,,3,Versailles
+FR-79,T.EUR.EUO.FR.FR-NAQ.FR-79,Deux-Sèvres,,3,Niort
+FR-80,T.EUR.EUO.FR.FR-HDF.FR-80,Somme,,3,Amiens
+FR-81,T.EUR.EUO.FR.FR-OCC.FR-81,Tarn,,3,Albi
+FR-82,T.EUR.EUO.FR.FR-OCC.FR-82,Tarn-et-Garonne,,3,Montauban
+FR-83,T.EUR.EUO.FR.FR-PAC.FR-83,Var,,3,Toulon
+FR-84,T.EUR.EUO.FR.FR-PAC.FR-84,Vaucluse,,3,Avignon
+FR-85,T.EUR.EUO.FR.FR-PDL.FR-85,Vendée,,3,La Roche-sur-Yon
+FR-86,T.EUR.EUO.FR.FR-NAQ.FR-86,Vienne,,3,Poitiers
+FR-87,T.EUR.EUO.FR.FR-NAQ.FR-87,Haute-Vienne,,3,Limoges
+FR-88,T.EUR.EUO.FR.FR-GES.FR-88,Vosges,,3,Épinal
+FR-89,T.EUR.EUO.FR.FR-BFC.FR-89,Yonne,,3,Auxerre
+FR-90,T.EUR.EUO.FR.FR-BFC.FR-90,Territoire de Belfort,,3,Belfort
+FR-91,T.EUR.EUO.FR.FR-IDF.FR-91,Essonne,,3,Évry
+FR-92,T.EUR.EUO.FR.FR-IDF.FR-92,Hauts-de-Seine,,3,Nanterre
+FR-93,T.EUR.EUO.FR.FR-IDF.FR-93,Seine-Saint-Denis,,3,Bobigny
+FR-94,T.EUR.EUO.FR.FR-IDF.FR-94,Val-de-Marne,,3,Créteil
+FR-95,T.EUR.EUO.FR.FR-IDF.FR-95,Val-d'Oise,,3,Pontoise
+FR-69M,T.EUR.EUO.FR.FR.ARA.FR-69M,Métropole de Lyon,,collectivité métropolitaine,Lyon
+FR-971,T.AME.AML.CRB.FR-971,Guadeloupe,,collectivité départementale d'outre-mer,Basse-Terre
+FR-972,T.AME.AML.CRB.FR-972,Martinique,,collectivité territoriale unique,Fort-de-France
+FR-MF,T.AME.AML.CRB.FR-MF,Saint-Martin,,collectivité d'outre-mer,Marigot
+FR-973,T.AME.AML.AMS.FR-973,Guyane,,collectivité territoriale unique d'outre-mer,Cayenne
+FR-974,T.AFR.AFS.AFE.FR-974,La Réunion,,département et région d'outre-mer,Saint-Denis
+FR-976,T.AFR.AFS.AFE.FR-976,Mayotte,,département et région d’outre-mer,Mamoudzou
+FR-NC,T.OCE.MLN.FR-NC,Nouvelle-Calédonie,,collectivité d’outre-mer à statut particulier,Nouméa
+FR-PF,T.OCE.PLN.FR-PF,Polynésie française,,collectivité d'outre-mer,Papeete
+FR-WF,T.OCE.PLN.FR-WF,Îles Wallis-et-Futuna,,collectivité d'outre-mer,Mata Utu
+FR-PM,T.AME.AMN.FR-PM,Saint-Pierre-et-Miquelon,,collectivité d'outre-mer,Saint-Pierre
+FR-TF,T.AFR.AFS.AFE.FR-TF,Terres australes françaises,,territoire d'outre-mer,

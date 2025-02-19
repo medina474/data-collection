@@ -1,0 +1,53 @@
+code,hierarchie,region,francais,administration,capitale
+CH,T.EUR.EUO.CH,Switzerland,Suisse,1,Berne
+CH-01,T.EUR.EUO.CH.CH-01,Genferseeregion,Région lémanique,2,
+CH-02,T.EUR.EUO.CH.CH-02,Espace Mittelland,Espace Mittelland,2,
+CH-03,T.EUR.EUO.CH.CH-03,Nordwestschweiz,Suisse du Nord-Ouest,2,
+CH-04,T.EUR.EUO.CH.CH-04,Grossregion Zürich,Zurich (grande région),2,
+CH-05,T.EUR.EUO.CH.CH-05,Ostschweiz,Suisse orientale,2,
+CH-06,T.EUR.EUO.CH.CH-06,Zentralschweiz,Suisse centrale,2,
+CH-07,T.EUR.EUO.CH.CH-07,Ticino,Tessin,2,
+CH-VD,T.EUR.EUO.CH.CH-01.CH-VD,Vaud,,5,Lausanne
+CH-VS,T.EUR.EUO.CH.CH-01.CH-VS,Valais,,5,Sion
+CH-GE,T.EUR.EUO.CH.CH-01.CH-GE,Geneva,,5,Geneva
+CH-BE,T.EUR.EUO.CH.CH-02.CH-BE,Bern,,5,Bern
+CH-FR,T.EUR.EUO.CH.CH-02.CH-FR,Fribourg,,5,Fribourg
+CH-SO,T.EUR.EUO.CH.CH-02.CH-SO,Solothurn,,5,Solothurn
+CH-NE,T.EUR.EUO.CH.CH-02.CH-NE,Neuchâtel,,5,Neuchâtel
+CH-JU,T.EUR.EUO.CH.CH-02.CH-JU,Jura,,5,Delémont
+CH-BS,T.EUR.EUO.CH.CH-03.CH-BS,Basel-Stadt,Bâle-Ville,5,Basel
+CH-BL,T.EUR.EUO.CH.CH-03.CH-BL,Basel-Landschaft,Bâle-Campagne,5,Liestal
+CH-AG,T.EUR.EUO.CH.CH-03.CH-AG,Aargau,Argovie,5,Aarau
+CH-ZH,T.EUR.EUO.CH.CH-04.CH-ZH,Zürich,,5,Zürich
+CH-GL,T.EUR.EUO.CH.CH-05.CH-GL,Glarus,,5,Glarus
+CH-SH,T.EUR.EUO.CH.CH-05.CH-SH,Schaffhausen,Schaffhouse,5,Schaffhausen
+CH-AR,T.EUR.EUO.CH.CH-05.CH-AR,Appenzell Ausserrhoden,Appenzell Rhodes-Extérieures,5,Herisau
+CH-AI,T.EUR.EUO.CH.CH-05.CH-AI,Appenzell Innerrhoden,Appenzell Rhodes-Intérieures,5,Appenzell
+CH-SG,T.EUR.EUO.CH.CH-05.CH-SG,Sankt Gallen,,5,Sankt Gallen
+CH-GR,T.EUR.EUO.CH.CH-05.CH-GR,Graubunden,,5,Chur
+CH-TG,T.EUR.EUO.CH.CH-05.CH-TG,Thurgau,,5,Frauenfeld
+CH-LU,T.EUR.EUO.CH.CH-06.CH-LU,Lucerne,,5,Lucerne
+CH-UR,T.EUR.EUO.CH.CH-06.CH-UR,Uri,,5,Altdorf
+CH-SZ,T.EUR.EUO.CH.CH-06.CH-SZ,Schwyz,Schwytz,5,Schwyz
+CH-OW,T.EUR.EUO.CH.CH-06.CH-OW,Obwalden,Obwald,5,Sarnen
+CH-NW,T.EUR.EUO.CH.CH-06.CH-NW,Nidwalden,Nidwald,5,Stans
+CH-ZG,T.EUR.EUO.CH.CH-06.CH-ZG,Zug,,5,Zug
+CH-TI,T.EUR.EUO.CH.CH-07.CH-TI,Ticino,,5,Bellinzona
+CH-B1906,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906,Laufenburg,Laufenburg,district,Laufenburg
+CH-4185,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4185,Böztal,,commune,
+CH-4161,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4161,Eiken,,commune,
+CH-4163,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4163,Frick,,commune,
+CH-4164,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4164,Gansingen,,commune,
+CH-4165,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4165,Gipf-Oberfrick,,commune,
+CH-4186,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4186,Herznach-Ueken,,commune,
+CH-4169,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4169,Kaisten,,commune,
+CH-4170,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4170,Laufenburg,,commune,
+CH-4184,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4184,Mettauertal,,commune,
+CH-4172,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4172,Münchwilen,,commune,
+CH-4173,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4173,Oberhof,,commune,
+CH-4175,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4175,Oeschgen,,commune,
+CH-4176,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4176,Schwaderloch,,commune,
+CH-4177,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4177,Sisseln,,commune,
+CH-4181,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4181,Wittnau,,commune,
+CH-4182,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4182,Wölflinswil,,commune,
+CH-4183,T.EUR.EUO.CH.CH-03.CH-AG.CH-B1906.CH-4183,Zeihen,,commune,

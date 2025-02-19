@@ -1,0 +1,52 @@
+devise_code,num4217,symbole,nom,format,division,minor,minors
+ATS,40,,Schilling autrichien,"S #.###,##",100,Groschen,
+AUD,36,,Dollar australien,$# ###.##,100,cent,cents
+BEF,56,,Franc belge,BEF #.###,100,centime,centimes
+BGN,975,Лв.,Lev bulgare,#,100,stotinki,
+CAD,124,,Dollar canadien,"$#,###.##",100,cent,cents
+CHF,756,CHf,Franc suisse,#,100,centime,centimes
+CYP,196,,Livre chypriote,"?#.###,##",100,cent,cents
+CZK,203,Kč,Couronne tchèque,"#.###,## Kč",100,haléřů,
+DEM,276,,Mark allemand,"#.###,##DM",100,Pfennig,
+DKK,208,,Couronne danoise,"kr.#.###,##",100,øre,
+EEK,233,,Couronne estonienne,"# ###,## EEK",100,sents,
+ESP,724,,Peseta espagnole,#,100,céntimos,
+EUR,978,€,Euro,#,100,centime,centimes
+FIM,246,,Mark finlandais,"# ###,## mk",100,penni,
+FRF,250,,Franc français,"# ###,## FRF",100,centimes,centime
+GBP,826,£,Livre sterling,#,100,penny,pence
+GRD,300,,Drachme grecque,#,100,leptae,
+HUF,348,Ft,Forint hongrois,#,100,fillér,
+IEP,372,,Livre irlandaise,#,100,penny,pence
+ILS,376,₪,Nouveau sheqel israélien,#,100,agorots,
+INR,356,₹,Roupie indienne,#,100,paise,
+ISK,352,,Couronne islandaise,#,100,eyrir,aurar
+ITL,380,₤,Lire italienne,₤ #,100,centesimi,
+JPY,392,¥,Yen japonais,#,,,
+KRW,410,₩,Won coréen,#,100,jeon,
+LTL,440,,Litas lituanien,#,,,
+LUF,442,,Franc luxembourgeois,#,100,centime,centimes
+LVL,428,,Lats letton,#,100,santimes,
+MTL,470,,Livre maltaise,#,100,cents / 1000 mils,
+NLG,528,,Florin néerlandais,"f #.###,##",100,cents,
+NOK,578,kr,Couronne norvégienne,#,100,øre,
+NZD,554,,Dollar néo-zélandais,#,100,cents,
+PLN,985,zł,Zloty,#,,,
+PTE,620,,Escudo portugais,##,100,centavo,centavos
+ROL,642,leu,Leu roumain,#,100,ban,bani
+RON,946,leu,Leu roumain,#,100,ban,bani
+SEK,752,kr,Couronne suédoise,#,100,öre,
+SIT,705,,Tolar slovène,#,100,haliers,
+SKK,703,,Couronne slovaque,#,100,haliers,
+THB,764,฿,Baht thaïlandais,#,100,satang,
+TRL,792,,Livre turque,#,100,kuruş,
+TRY,949,₺,Nouvelle livre turque,#,100,kuruş,
+TWD,901,,Nouveau dollar de Taïwan,#,,,
+UAH,980,₴,Hryvnia ukrainien,#,100,kopiykas,
+USD,840,$,Dollar des Etats-Unis,"$#,###.##",100,cent,cents
+XOF,952,F.CFA,Franc CFA Ouest BCEAO,#,,,
+HKD,344,,Dollar de Hong Kong,#,,,
+SGD,702,,Dollar de Singapour,#,100,cent,cents
+MXN,484,,Peso mexicain,#,100,centavo,centavos
+MAD,504,,Dirham marocain,#,100,centime,centimes
+BRL,986,,Real brésilien,"R$ #.###,##",100,centavo,centavos

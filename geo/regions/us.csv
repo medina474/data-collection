@@ -1,0 +1,65 @@
+code,hierarchie,region,francais,administration,capitale
+US,T.AME.AMN.US,United States of America,États-Unis d'Amérique,1,Washington
+US-AK,T.AME.AMN.US.US-AK,Alaska,,7,Juneau
+US-AL,T.AME.AMN.US.US-AL,Alabama,,7,Montgomery
+US-AR,T.AME.AMN.US.US-AR,Arkansas,,7,Little Rock
+US-AZ,T.AME.AMN.US.US-AZ,Arizona,,7,Phoenix
+US-CA,T.AME.AMN.US.US-CA,California,,7,Sacramento
+US-CO,T.AME.AMN.US.US-CO,Colorado,,7,Denver
+US-CT,T.AME.AMN.US.US-CT,Connecticut,,7,Hartford
+US-DC,T.AME.AMN.US.US-DC,District of Columbia,,district,Washington
+US-DE,T.AME.AMN.US.US-DE,Delaware,,7,Dover
+US-FL,T.AME.AMN.US.US-FL,Florida,,7,Tallahassee
+US-GA,T.AME.AMN.US.US-GA,Georgia,,7,Atlanta
+US-HI,T.AME.AMN.US.US-HI,Hawaii,,7,Honolulu
+US-IA,T.AME.AMN.US.US-IA,Iowa,,7,Des Moines
+US-ID,T.AME.AMN.US.US-ID,Idaho,,7,Boise
+US-IL,T.AME.AMN.US.US-IL,Illinois,,7,Springfield
+US-IN,T.AME.AMN.US.US-IN,Indiana,,7,Indianapolis
+US-KS,T.AME.AMN.US.US-KS,Kansas,,7,Topeka
+US-KY,T.AME.AMN.US.US-KY,Kentucky,,7,Frankfort
+US-LA,T.AME.AMN.US.US-LA,Louisiana,,7,Baton Rouge
+US-MA,T.AME.AMN.US.US-MA,Massachusetts,,7,Boston
+US-MD,T.AME.AMN.US.US-MD,Maryland,,7,Annapolis
+US-ME,T.AME.AMN.US.US-ME,Maine,,7,Augusta
+US-MI,T.AME.AMN.US.US-MI,Michigan,,7,Lansing
+US-MN,T.AME.AMN.US.US-MN,Minnesota,,7,Saint Paul
+US-MO,T.AME.AMN.US.US-MO,Missouri,,7,Jefferson City
+US-MS,T.AME.AMN.US.US-MS,Mississippi,,7,Jackson
+US-MT,T.AME.AMN.US.US-MT,Montana,,7,Helena
+US-NC,T.AME.AMN.US.US-NC,North Carolina,,7,Raleigh
+US-ND,T.AME.AMN.US.US-ND,North Dakota,,7,Bismarck
+US-NE,T.AME.AMN.US.US-NE,Nebraska,,7,Lincoln
+US-NH,T.AME.AMN.US.US-NH,New Hampshire,,7,Concord
+US-NJ,T.AME.AMN.US.US-NJ,New Jersey,,7,Trenton
+US-NM,T.AME.AMN.US.US-NM,New Mexico,,7,Santa Fe
+US-NV,T.AME.AMN.US.US-NV,Nevada,,7,Carson City
+US-NY,T.AME.AMN.US.US-NY,New York,,7,Albany
+US-OH,T.AME.AMN.US.US-OH,Ohio,,7,Columbus
+US-OK,T.AME.AMN.US.US-OK,Oklahoma,,7,Oklahoma City
+US-OR,T.AME.AMN.US.US-OR,Oregon,,7,Salem
+US-PA,T.AME.AMN.US.US-PA,Pennsylvania,,7,Harrisburg
+US-RI,T.AME.AMN.US.US-RI,Rhode Island,,7,Providence
+US-SC,T.AME.AMN.US.US-SC,South Carolina,,7,Columbia
+US-SD,T.AME.AMN.US.US-SD,South Dakota,,7,Pierre
+US-TN,T.AME.AMN.US.US-TN,Tennessee,,7,Nashville
+US-TX,T.AME.AMN.US.US-TX,Texas,,7,Austin
+US-UT,T.AME.AMN.US.US-UT,Utah,,7,Salt Lake City
+US-VA,T.AME.AMN.US.US-VA,Virginia,,7,Richmond
+US-VT,T.AME.AMN.US.US-VT,Vermont,,7,Montpelier
+US-WA,T.AME.AMN.US.US-WA,Washington,,7,Olympia
+US-WI,T.AME.AMN.US.US-WI,Wisconsin,,7,Madison
+US-WV,T.AME.AMN.US.US-WV,West Virginia,,7,Charleston
+US-WY,T.AME.AMN.US.US-WY,Wyoming,,7,Cheyenne
+US-GU,T.AME.AMN.US.US-GU,Guam,,territory,
+US-AS,T.AME.AMN.US.US-AS,American Samoa,,territory,
+US-MP,T.AME.AMN.US.US-MP,Northern Mariana Islands,,territory,
+US-PR,T.AME.AMN.US.US-PR,Puerto Rico,,territory,
+US-UM,T.AME.AMN.US.US-UM,S. Minor Outlying Islands,,territory,
+US-VI,T.AME.AMN.US.US-VI,Virgin Islands of the U.S.,,territory,
+MP,T.OCE.MCN.MP,Îles Mariannes du Nord,,territoire non-incorporé et organisé,Saipan
+VI,T.AME.AML.CRB.VI,Îles Vierges américaines,,territoire non-incorporé et organisé,Charlotte-Amélie
+GU,T.OCE.MCN.GU,Guam,,territoire non-incorporé et organisé,Hagåtña
+UM,T.OCE.MCN.UM,Îles mineures éloignées des États-Unis,,territoire non-incorporé et non-organisé,
+AS,T.OCE.PLN.AS,Samoa américaines,,territoire non-incorporé et non-organisé,Pago Pago
+PR,T.AME.AML.CRB.PR,Porto Rico,,territoire non-incorporé et organisé,San Juan
