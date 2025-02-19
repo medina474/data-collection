@@ -9,3 +9,11 @@ create role iutsd with
   password 'motdepasse';
 
 create database iutsd owner iutsd;
+
+\connect iutsd;
+
+create schema extensions;
+
+create extension postgis schema extensions;
+
+

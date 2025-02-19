@@ -1,12 +1,14 @@
 \connect iutsd;
 
+set search_path to public, extensions;
+
 create table cinema.etablissement (
   id integer not null,
   nom text,
   voie text,
   codepostal text,
   ville text,
-  coordonnees public.geometry(Point, 4326) default null::geometry,
+  coordonnees geometry(Point, 4326) default null::geometry,
   constraint cinema_pkey primary key (id)
 );
 
@@ -22,6 +24,7 @@ alter table cinema.etablissement
 
 create temporary table etablissement_tmp
 (
+  region smallint,
   nauto integer,
   nom text,
   région_administrative text,
@@ -65,8 +68,8 @@ create temporary table etablissement_tmp
 );
 
 copy etablissement_tmp
-  from '/docker-entrypoint-initdb.d/cnc-données-cartographie-2021.csv'
-  delimiter ','
+  from '/docker-entrypoint-initdb.d/cnc-données-cartographie-2023.csv'
+  delimiter ';'
   csv header
   quote '"'
   encoding 'utf8';

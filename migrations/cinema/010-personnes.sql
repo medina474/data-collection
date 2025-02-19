@@ -1,10 +1,9 @@
 \connect iutsd;
 
-drop table if exists cinema.personne;
+drop table if exists cinema.personnes;
 
-create table cinema.personne
-(
-  id uuid default gen_random_uuid() not null,
+create table cinema.personnes (
+  personne_id int not null,
   nom text,
   prenom text,
   naissance date,
@@ -12,24 +11,35 @@ create table cinema.personne
   nationalite text,
   artiste text,
   photo text,
-  constraint personne_pkey primary key (id)
+  popularite decimal default 0,
+  constraint personne_pkey primary key (personne_id)
 );
 
-alter table cinema.personne
-  add constraint personne_naissance check (naissance > '1900-01-01') NOT VALID;
+alter table cinema.personnes
+  add constraint personne_naissance
+  check (naissance > '1730-01-01') not valid;
 
-alter table cinema.personne
-  add constraint personne_deces check (deces > naissance) NOT VALID;
+alter table cinema.personnes
+  add constraint personne_deces
+  check (deces > naissance) not valid;
 
-alter table cinema.personne
-  add constraint personne_nationalite check (char_length(nationalite) = 2) NOT VALID;
+alter table cinema.personnes
+  add constraint personne_nationalite
+  check (char_length(nationalite) = 2) not valid;
 
-alter table if exists cinema.personne owner to iutsd;
+create unique index personnes_unique
+  on cinema.personnes using btree (nom, prenom);
 
-alter table cinema.personne
+alter table cinema.personnes
+  add constraint personnes_unique unique
+  using index personnes_unique;
+
+alter table if exists cinema.personnes owner to iutsd;
+
+alter table cinema.personnes
   add column created_at timestamp with time zone default now(),
   add column updated_at timestamp with time zone;
 
-copy cinema.personne (id, nom, prenom, naissance, deces, nationalite, artiste, photo)
+copy cinema.personnes (personne_id, nom, prenom, naissance, deces, nationalite, artiste, photo)
   from '/docker-entrypoint-initdb.d/010-personnes.csv'
   delimiter ',' csv header quote '"' encoding 'utf8';

@@ -9,7 +9,7 @@ create table if not exists cinema.equipe (
   alias text,
   constraint equipe_film_fk foreign key (film) references cinema.film(id)
     on update no action on delete no action not valid,
-  constraint equipe_personne_fk foreign key (personne) references cinema.personne(id)
+  constraint equipe_personne_fk foreign key (personne) references cinema.personnes(id)
     on update no action on delete no action not valid
 );
 

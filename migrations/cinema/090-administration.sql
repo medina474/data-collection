@@ -6,7 +6,7 @@ CREATE OR REPLACE VIEW cinema.personne_sans_role
     personne.prenom,
     personne.nom,
     count(equipe.personne) AS nb
-   FROM cinema.personne
+   FROM cinema.personnes
      LEFT JOIN cinema.equipe ON equipe.personne = personne.id
   GROUP BY personne.id, personne.prenom, personne.nom
  HAVING count(equipe.personne) = 0;

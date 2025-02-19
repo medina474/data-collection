@@ -16,7 +16,7 @@ CREATE MATERIALIZED VIEW cinema.acteur AS
   p.photo,
   count(c.*) AS nb_film
   FROM (cinema.equipe c
-    JOIN cinema.personne p ON (c.personne = p.id))
+    JOIN cinema.personnes p ON (c.personne = p.id))
   WHERE ((c.role)::text = 'acteur'::text)
   GROUP BY p.id
 WITH NO DATA;

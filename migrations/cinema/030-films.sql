@@ -8,36 +8,37 @@ create table  if not exists cinema.serie (
 );
 
 copy cinema.serie
-  from '/docker-entrypoint-initdb.d/41-serie.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/041-serie.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 
 
 drop table if exists cinema.film;
 
-create table cinema.film (
-  id uuid default gen_random_uuid() not null,
+create table cinema.films (
+  film_id int not null,
   titre text not null,
   titre_original text,
   annee integer,
   sortie date,
   duree integer,
-  serie integer,
-  constraint film_pkey primary key (id)
+  franchise_id integer,
+  slogan text,
+  pays text[]
 );
 
-alter table cinema.film
+alter table cinema.films
   add column created_at timestamp with time zone default now(),
   add column updated_at timestamp with time zone;
 
-alter table cinema.film add
+alter table cinema.films add
   constraint film_serie_fk foreign key (serie)
     references cinema.serie (id) match simple
     on update no action
     on delete no action
     not valid;
 
-copy cinema.film (id,titre,titre_original,annee,sortie, duree,serie)
-  from '/docker-entrypoint-initdb.d/30-film.csv' delimiter ','
+copy cinema.films (film_id,titre,titre_original,annee,sortie,duree,franchise_id, pays)
+  from '/docker-entrypoint-initdb.d/030-films.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
