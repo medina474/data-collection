@@ -6,7 +6,7 @@ create role iutsd with
   noinherit
   noreplication
   connection limit -1
-  password 'motdepasse';
+  password '5678';
 
 create database iutsd owner iutsd;
 
@@ -15,5 +15,3 @@ create database iutsd owner iutsd;
 create schema extensions;
 
 create extension postgis schema extensions;
-
-

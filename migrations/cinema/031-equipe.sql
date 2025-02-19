@@ -1,7 +1,3 @@
-\connect iutsd;
-
-drop table if exists cinema.equipe;
-
 create table if not exists cinema.equipe (
   film uuid not null,
   personne uuid not null,

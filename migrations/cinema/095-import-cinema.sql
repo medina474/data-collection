@@ -27,7 +27,7 @@ do $$
 begin
    for counter in 1..1000 loop
 	INSERT INTO cinema.seance (film, salle, seance)
-  	VALUES ((SELECT id FROM cinema.film WHERE random() > 0.9 ORDER BY random() LIMIT 1)
+  	VALUES ((SELECT id FROM cinema.films WHERE random() > 0.9 ORDER BY random() LIMIT 1)
     , (FLOOR(random()*77)+1)
     , (date(now() + trunc(random()  * 14) * '1 day'::interval)+ '21hour'::interval));
    end loop;

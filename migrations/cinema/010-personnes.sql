@@ -1,5 +1,3 @@
-drop table if exists cinema.personnes;
-
 create table cinema.personnes (
   personne_id int not null,
   nom text,
@@ -38,6 +36,4 @@ alter table cinema.personnes
   add column created_at timestamp with time zone default now(),
   add column updated_at timestamp with time zone;
 
-copy cinema.personnes (personne_id, nom, prenom, naissance, deces, nationalite, artiste, photo)
-  from '/docker-entrypoint-initdb.d/010-personnes.csv'
-  delimiter ',' csv header quote '"' encoding 'utf8';
+\copy cinema.personnes (personne_id, nom, prenom, naissance, deces, nationalite, artiste, photo) from '010-personnes.csv' delimiter ',' csv header quote '"' encoding 'utf8';

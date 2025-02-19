@@ -1,7 +1,3 @@
-\connect iutsd;
-
-drop table if exists cinema.synopsis;
-
 create table if not exists cinema.resume (
   film uuid not null,
   langue text not null,
@@ -15,7 +11,7 @@ CREATE INDEX resume_texte_idx ON cinema.resume USING GIN (ts);
 
 alter table cinema.resume
 add  CONSTRAINT resume_film_fk FOREIGN KEY (film)
-        REFERENCES cinema.film (id) MATCH SIMPLE
+        REFERENCES cinema.films (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID;
@@ -30,11 +26,6 @@ add  CONSTRAINT resume_langue_fk FOREIGN KEY (langue)
         ON DELETE NO ACTION
         NOT VALID;
 
-
-
-copy cinema.resume (film, langue, texte)
-  from '/docker-entrypoint-initdb.d/44-resume.csv' delimiter ','
-  csv header quote '"' escape ''''
-  encoding 'utf8';
+\copy cinema.resume (film, langue, texte) from './44-resume.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
 -- SELECT * from cinema.resume WHERE ts @@ to_tsquery('french', 'romancier');

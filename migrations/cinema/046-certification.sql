@@ -1,7 +1,3 @@
-\connect iutsd;
-
-drop table if exists cinema.certification;
-
 create table if not exists cinema.certification
 (
   id integer,
@@ -12,11 +8,9 @@ create table if not exists cinema.certification
 );
 
 copy cinema.certification (pays,ordre,certification,description)
-  from '/docker-entrypoint-initdb.d/46-certification.csv' delimiter ','
+  from './46-certification.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
-
-drop table if exists cinema.film_certification;
 
 create table if not exists cinema.film_certification
 (

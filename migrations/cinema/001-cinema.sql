@@ -1,5 +1,3 @@
-\connect iutsd;
-
 create schema if not exists cinema
   authorization iutsd;
 

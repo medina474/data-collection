@@ -18,7 +18,7 @@ CREATE OR REPLACE VIEW cinema.film_sans_role
  AS
  SELECT film.titre,
     count(equipe.film) AS nb
-   FROM cinema.film
+   FROM cinema.films
      LEFT JOIN cinema.equipe ON equipe.film = film.id
   GROUP BY film.titre
  HAVING count(equipe.film) = 0;

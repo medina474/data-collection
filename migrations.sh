@@ -6,8 +6,10 @@ if [ ! -d "$1" ]; then
   exit 1
 fi
 
+cd $1
+ls
 # Exécutez chaque fichier SQL dans le répertoire
-for sql_file in "$1"/*.sql;
+for sql_file in ./*.sql;
 do
   if [ -f "$sql_file" ]; then
     echo "Exécution de $sql_file..."

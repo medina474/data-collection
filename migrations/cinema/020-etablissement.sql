@@ -1,5 +1,3 @@
-\connect iutsd;
-
 set search_path to public, extensions;
 
 create table cinema.etablissement (
@@ -67,12 +65,7 @@ create temporary table etablissement_tmp
   longitude float
 );
 
-copy etablissement_tmp
-  from '/docker-entrypoint-initdb.d/cnc-données-cartographie-2023.csv'
-  delimiter ';'
-  csv header
-  quote '"'
-  encoding 'utf8';
+\copy etablissement_tmp from 'cnc-données-cartographie-2023.csv' delimiter ';' csv header quote '"' encoding 'utf8';
 
 insert into cinema.etablissement (id, nom, voie, ville, coordonnees)
 select nauto, nom, adresse, commune, st_makepoint(longitude, latitude)
