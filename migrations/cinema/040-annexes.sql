@@ -7,7 +7,7 @@ create table if not exists cinema.genre
 );
 
 copy cinema.genre
-  from '/tmp/40-genre.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/40-genre.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 
@@ -19,6 +19,6 @@ create table if not exists cinema.societe
 );
 
 copy cinema.societe
-  from '/tmp/40-societe.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/40-societe.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';

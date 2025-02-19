@@ -33,7 +33,7 @@ add  CONSTRAINT resume_langue_fk FOREIGN KEY (langue)
 
 
 copy cinema.resume (film, langue, texte)
-  from '/tmp/44-resume.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/44-resume.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 

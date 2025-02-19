@@ -31,5 +31,5 @@ alter table cinema.personne
   add column updated_at timestamp with time zone;
 
 copy cinema.personne (id, nom, prenom, naissance, deces, nationalite, artiste, photo)
-  from '/tmp/10-personne.csv'
+  from '/docker-entrypoint-initdb.d/010-personnes.csv'
   delimiter ',' csv header quote '"' encoding 'utf8';

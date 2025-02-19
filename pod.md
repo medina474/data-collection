@@ -17,7 +17,7 @@ podman build -f postgresql/Dockerfile --tag medina5/postgres:2025-04
 ```
 
 ```shell
-podman run --detach --pod Jardins --name PostgreSQL -e POSTGRES_PASSWORD=1234 -v ./migrations/jardins/:/docker-entrypoint-initdb.d/:z -v ./backup/:/backup/:z medina5/postgres:2025-04
+podman run --detach --pod Jardins --name PostgreSQL -e POSTGRES_PASSWORD=1234 -v ./migrations/cinema/:/docker-entrypoint-initdb.d/:z -v ./backup/:/backup/:z medina5/postgres:2025-04
 ```
 
 ### PostgREST

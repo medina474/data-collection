@@ -65,7 +65,7 @@ create temporary table etablissement_tmp
 );
 
 copy etablissement_tmp
-  from '/tmp/cnc-données-cartographie-2021.csv'
+  from '/docker-entrypoint-initdb.d/cnc-données-cartographie-2021.csv'
   delimiter ','
   csv header
   quote '"'

@@ -15,7 +15,7 @@ create table if not exists cinema.salle (
 );
 
 copy cinema.salle (etablissement, salle, sieges)
-  from '/tmp/43-salle.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/43-salle.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 

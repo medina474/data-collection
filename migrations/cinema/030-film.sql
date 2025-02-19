@@ -8,7 +8,7 @@ create table  if not exists cinema.serie (
 );
 
 copy cinema.serie
-  from '/tmp/41-serie.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/41-serie.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 
@@ -38,6 +38,6 @@ alter table cinema.film add
     not valid;
 
 copy cinema.film (id,titre,titre_original,annee,sortie, duree,serie)
-  from '/tmp/30-film.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/30-film.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';

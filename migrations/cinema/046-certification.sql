@@ -12,7 +12,7 @@ create table if not exists cinema.certification
 );
 
 copy cinema.certification (pays,ordre,certification,description)
-  from '/tmp/46-certification.csv' delimiter ','
+  from '/docker-entrypoint-initdb.d/46-certification.csv' delimiter ','
   csv header quote '"' escape ''''
   encoding 'utf8';
 
