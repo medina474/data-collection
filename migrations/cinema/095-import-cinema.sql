@@ -1,7 +1,7 @@
 \connect iutsd;
 
-CREATE MATERIALIZED VIEW cinema.acteur AS
-  SELECT p.id,
+CREATE MATERIALIZED VIEW cinema.acteurs AS
+  SELECT p.personne_id,
   CASE
     WHEN (p.artiste IS NOT NULL) THEN (p.artiste)::text
     ELSE (((p.prenom)::text || ' '::text) || (p.nom)::text)
@@ -13,21 +13,20 @@ CREATE MATERIALIZED VIEW cinema.acteur AS
   END AS age,
   p.deces,
   p.nationalite,
-  p.photo,
-  count(c.*) AS nb_film
-  FROM (cinema.equipes c
-    JOIN cinema.personnes p ON (c.personne = p.id))
-  WHERE ((c.role)::text = 'acteur'::text)
-  GROUP BY p.id
+  count(e.*) AS nb_film
+  FROM (cinema.equipes e
+    JOIN cinema.personnes p ON (e.personne_id = p.personne_id))
+  WHERE ((e.role)::text = 'acteur'::text)
+  GROUP BY p.personne_id
 WITH NO DATA;
 
-REFRESH MATERIALIZED VIEW cinema.acteur WITH DATA;
+REFRESH MATERIALIZED VIEW cinema.acteurs WITH DATA;
 
 do $$
 begin
    for counter in 1..1000 loop
-	INSERT INTO cinema.seance (film, salle, seance)
-  	VALUES ((SELECT id FROM cinema.films WHERE random() > 0.9 ORDER BY random() LIMIT 1)
+	INSERT INTO cinema.seances (film_id, salle_id, seance)
+  	VALUES ((SELECT film_id FROM cinema.films WHERE random() > 0.9 ORDER BY random() LIMIT 1)
     , (FLOOR(random()*77)+1)
     , (date(now() + trunc(random()  * 14) * '1 day'::interval)+ '21hour'::interval));
    end loop;

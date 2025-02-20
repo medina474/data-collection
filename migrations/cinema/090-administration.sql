@@ -1,27 +1,27 @@
 \connect iutsd;
 
-CREATE OR REPLACE VIEW cinema.personne_sans_role
+CREATE VIEW cinema.personnes_sans_role
  AS
- SELECT personne.id,
-    personne.prenom,
-    personne.nom,
-    count(equipe.personne) AS nb
-   FROM cinema.personnes
-     LEFT JOIN cinema.equipes ON equipe.personne = personne.id
-  GROUP BY personne.id, personne.prenom, personne.nom
- HAVING count(equipe.personne) = 0;
+ SELECT p.personne_id,
+    p.prenom,
+    p.nom,
+    count(e.personne_id) AS nb
+   FROM cinema.personnes p
+     LEFT JOIN cinema.equipes e ON e.personne_id = p.personne_id
+  GROUP BY p.personne_id, p.prenom, p.nom
+ HAVING count(e.personne_id) = 0;
 
-ALTER TABLE cinema.personne_sans_role
+ALTER TABLE cinema.personnes_sans_role
     OWNER TO iutsd;
 
-CREATE OR REPLACE VIEW cinema.film_sans_role
+CREATE VIEW cinema.films_sans_role
  AS
- SELECT film.titre,
-    count(equipe.film) AS nb
-   FROM cinema.films
-     LEFT JOIN cinema.equipes ON equipe.film = film.id
-  GROUP BY film.titre
- HAVING count(equipe.film) = 0;
+ SELECT f.titre,
+    count(e.film_id) AS nb
+   FROM cinema.films f
+     LEFT JOIN cinema.equipes e ON e.film_id = f.film_id
+  GROUP BY f.titre
+ HAVING count(e.film_id) = 0;
 
-ALTER TABLE cinema.film_sans_role
+ALTER TABLE cinema.films_sans_role
     OWNER TO iutsd;

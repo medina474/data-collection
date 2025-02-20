@@ -20,9 +20,9 @@ alter table cinema.certifications
   add foreign key (pays_code)
     references pays (code2);
 
-\copy cinema.certification (pays,ordre,certification,description) from './046-certification.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+\copy cinema.certifications (pays_code,ordre,certification,description) from './046-certifications.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
-create table if not exists cinema.film_certification (
+create table if not exists cinema.films_certifications (
   film_id integer,
   pays text,
   ordre smallint,

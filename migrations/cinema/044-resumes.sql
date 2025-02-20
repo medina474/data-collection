@@ -18,12 +18,12 @@ create index resume_film_fki
   on cinema.resumes(film_id);
 
 alter table cinema.resumes
-add  CONSTRAINT resume_langue_fk FOREIGN KEY (langue)
-        REFERENCES i18n.langue ("code-3") MATCH SIMPLE
+add FOREIGN KEY (langue)
+        REFERENCES langues (code3) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID;
 
-\copy cinema.resumes (film, langue, texte) from './44-resumes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+\copy cinema.resumes (film_id, langue, resume) from './044-resumes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
 -- SELECT * from cinema.resume WHERE ts @@ to_tsquery('french', 'romancier');

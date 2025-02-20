@@ -1,6 +1,6 @@
 set search_path to public, extensions;
 
-create table cinema.etablissement (
+create table cinema.etablissements (
   id integer not null,
   nom text,
   voie text,
@@ -11,12 +11,12 @@ create table cinema.etablissement (
 );
 
 create index cinema_coordonnees_idx
-  on cinema.etablissement
+  on cinema.etablissements
   using GIST (coordonnees);
 
-alter table if exists cinema.etablissement owner to iutsd;
+alter table if exists cinema.etablissements owner to iutsd;
 
-alter table cinema.etablissement
+alter table cinema.etablissements
   add column created_at timestamp with time zone default now(),
   add column updated_at timestamp with time zone;
 
@@ -67,7 +67,7 @@ create temporary table etablissement_tmp
 
 \copy etablissement_tmp from 'cnc-données-cartographie-2023.csv' delimiter ';' csv header quote '"' encoding 'utf8';
 
-insert into cinema.etablissement (id, nom, voie, ville, coordonnees)
+insert into cinema.etablissements (id, nom, voie, ville, coordonnees)
 select nauto, nom, adresse, commune, st_makepoint(longitude, latitude)
 from etablissement_tmp;
 
