@@ -1,20 +1,29 @@
-create table if not exists cinema.certification
-(
-  id integer,
-  pays text,
+create table cinema.certifications (
+  pays_code text not null,
   ordre smallint,
-  certification text,
+  certification text not null,
   description text
 );
 
-copy cinema.certification (pays,ordre,certification,description)
-  from './46-certification.csv' delimiter ','
-  csv header quote '"' escape ''''
-  encoding 'utf8';
+create index certifications_pays_idx
+  on cinema.certifications
+  using btree (pays_code, ordre);
 
-create table if not exists cinema.film_certification
-(
-  id integer,
+create unique index certifications_pk
+  on cinema.certifications
+  using btree (pays_code, certification);
+
+alter table cinema.certifications
+  add primary key using index certifications_pk;
+
+alter table cinema.certifications
+  add foreign key (pays_code)
+    references pays (code2);
+
+\copy cinema.certification (pays,ordre,certification,description) from './046-certification.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+
+create table if not exists cinema.film_certification (
+  film_id integer,
   pays text,
   ordre smallint,
   certification text,

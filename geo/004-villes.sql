@@ -1,3 +1,5 @@
+set search_path to public, extensions;
+
 create temporary table villes_tmp (
   type_commune text,
   code_commune text,
@@ -21,3 +23,5 @@ from villes_tmp, regions
 where hierarchie ~ ('*.'||'FR-'||code_departement)::lquery;
 
 drop table villes_tmp;
+
+select '=============== WORLDCITIES' as msg;

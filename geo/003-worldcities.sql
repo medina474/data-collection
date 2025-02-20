@@ -1,3 +1,5 @@
+set search_path to public, extensions;
+
 create table villes (
   nom text,
   pays_code text,

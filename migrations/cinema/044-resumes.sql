@@ -1,20 +1,18 @@
-create table if not exists cinema.resume (
-  film uuid not null,
+create table if not exists cinema.resumes (
+  film_id int not null,
   langue text not null,
-  texte text not null
+  resume text not null
 );
 
-ALTER TABLE cinema.resume ADD COLUMN ts tsvector
-  GENERATED ALWAYS AS (to_tsvector('french', texte)) STORED;
+alter table cinema.resumes
+  add column ts tsvector
+  generated always as (to_tsvector('french', resume)) stored;
 
-CREATE INDEX resume_texte_idx ON cinema.resume USING GIN (ts);
+CREATE INDEX resume_texte_idx
+ON cinema.resume USING GIN (ts);
 
 alter table cinema.resume
-add  CONSTRAINT resume_film_fk FOREIGN KEY (film)
-        REFERENCES cinema.films (id) MATCH SIMPLE
-        ON UPDATE NO ACTION
-        ON DELETE NO ACTION
-        NOT VALID;
+add FOREIGN KEY (film_id) REFERENCES cinema.films;
 
 create index resume_film_fki
   on cinema.resume(film);

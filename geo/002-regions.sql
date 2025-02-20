@@ -51,4 +51,4 @@ alter table regions
 \copy regions FROM './regions/ua.csv' (FORMAT CSV, header, delimiter ',', ENCODING 'UTF8');
 \copy regions FROM './regions/us.csv' (FORMAT CSV, header, delimiter ',', ENCODING 'UTF8');
 
-select '=============== FIN IMPORTATION DATA REGIONS' as msg;
+select '=============== REGIONS' as msg;
