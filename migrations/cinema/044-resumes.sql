@@ -9,21 +9,21 @@ alter table cinema.resumes
   generated always as (to_tsvector('french', resume)) stored;
 
 CREATE INDEX resume_texte_idx
-ON cinema.resume USING GIN (ts);
+ON cinema.resumes USING GIN (ts);
 
-alter table cinema.resume
+alter table cinema.resumes
 add FOREIGN KEY (film_id) REFERENCES cinema.films;
 
 create index resume_film_fki
-  on cinema.resume(film);
+  on cinema.resumes(film_id);
 
-alter table cinema.resume
+alter table cinema.resumes
 add  CONSTRAINT resume_langue_fk FOREIGN KEY (langue)
         REFERENCES i18n.langue ("code-3") MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID;
 
-\copy cinema.resume (film, langue, texte) from './44-resume.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+\copy cinema.resumes (film, langue, texte) from './44-resumes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
 -- SELECT * from cinema.resume WHERE ts @@ to_tsquery('french', 'romancier');

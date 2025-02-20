@@ -10,7 +10,7 @@ create table if not exists cinema.salle (
         NOT VALID
 );
 
-\copy cinema.salle (etablissement, salle, sieges) from './43-salle.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+\copy cinema.salle (etablissement, salle, sieges) from './043-salles.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
 
 create table if not exists cinema.seance (

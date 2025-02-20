@@ -1,4 +1,4 @@
-create table cinema.equipe (
+create table cinema.equipes (
   film_id int not null,
   personne_id int not null,
   role cinema.role,
@@ -18,10 +18,10 @@ constraint equipe_film_fk foreign key (film) references cinema.films(id)
 */
 
 create index equipe_film_fki
-  on cinema.equipe(film);
+  on cinema.equipes(film_id);
 
 create index equipe_personne_fki
-  on cinema.equipe(personne);
+  on cinema.equipes(personne_id);
 
-comment on table cinema.equipe is
+comment on table cinema.equipes is
   e'@foreignkey (personne) references cinema.acteur(id)|@fieldname rolebyacteur';

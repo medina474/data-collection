@@ -1,20 +1,17 @@
-create table if not exists cinema.film_genre (
-  film uuid not null,
-  genre integer not null,
-  constraint film_genre_pkey primary key (film, genre),
-  constraint film_genre_film foreign key (film)
-    references cinema.films (id) match simple
-    on update no action
-    on delete no action
-    not valid,
-  constraint film_genre_genre foreign key (genre)
-    references cinema.genre (id) match simple
-    on update no action
-    on delete no action
-    not valid
+create table cinema.films_genres (
+  film_id int not null,
+  genre_id integer not null
 );
 
-\copy cinema.film_genre (film, genre) from './041-film_genre.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+create unique index film_genres_pkey
+  on cinema.films_genres
+  using btree (film_id, genre_id);
+
+alter table cinema.films_genres
+  add primary key
+  using index film_genres_pkey;
+
+\copy cinema.films_genres (film_id, genre_id) from './041-films_genres.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
 -- Productions
 
@@ -34,7 +31,7 @@ alter table cinema.productions
 
 alter table cinema.productions
 add constraint productions_film_id_fkey
-  foreign key (film_id) references cinema.films
+  foreign key (film_id) references cinema.films(film_id)
   on delete cascade;
 
 alter table cinema.productions
@@ -42,4 +39,4 @@ add constraint productions_societe_id_fkey
   foreign key (societe_id) references cinema.societes(societe_id)
   on delete cascade;
 
-\copy cinema.production (film, societe) from '041-productions.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+\copy cinema.productions (film_id, societe_id) from '041-productions.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
