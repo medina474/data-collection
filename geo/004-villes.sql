@@ -24,4 +24,4 @@ where hierarchie ~ ('*.'||'FR-'||code_departement)::lquery;
 
 drop table villes_tmp;
 
-select '=============== WORLDCITIES' as msg;
+select '=============== COMMUNES 2023' as msg;

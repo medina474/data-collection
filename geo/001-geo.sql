@@ -1,15 +1,24 @@
 -- pays
 
 create table pays (
-  code2 character(2) not null,
-  code3 character(3) not null,
-  code_num character(3) not null,
+  code2 text not null,
+  code3 text not null,
+  code_num text not null,
   pays text not null,
+  forme_longue text,
   nom_eng text,
   nom_spa text,
-  drapeau_unicode character(2),
-  forme_longue text
+  drapeau_unicode character(2)
 );
+
+comment on column pays.code2
+  is 'code ISO 3166-1 alpha 2';
+
+comment on column pays.code3
+  is 'code ISO 3166-1 alpha 3';
+
+comment on column pays.code_num
+  is 'code ISO 3166-1 numérique. Identique à la division statistique des Nations Unies UN M.49';
 
 create index pays_nom
   on pays using btree (pays asc nulls last);
@@ -87,7 +96,7 @@ alter table pays_langues
 -- devises
 
 create table devises (
-  devise_code character(3) not null,
+  devise_code text not null,
   num4217 integer default null,
   symbole character varying(5) default null,
   nom text default null,
@@ -101,8 +110,8 @@ alter table devises
   add check (devise_code ~ '^[A-Z]{3}$');
 
 create table pays_devises (
-  pays_code character(2) not null,
-  devise_code character(3) not null,
+  pays_code text not null,
+  devise_code text not null,
   valide daterange default null
 );
 

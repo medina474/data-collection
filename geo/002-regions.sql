@@ -3,15 +3,15 @@ set search_path to public, extensions;
 create extension ltree schema extensions;
 
 create table regions (
-  region_code character varying(8),
+  region_code text,
   hierarchie ltree,
   region text not null,
-  division text,
+  francais text,
   administration text,
   capitale text
 );
 
-comment on column regions.region_code is 'UN Standard country or area codes for statistical use (M49)';
+comment on column regions.region_code is 'code ISO 3166-2. Codes pour la représentation des noms de pays et de leurs subdivisions – Partie 2';
 
 create index path_gist_idx
   on regions using gist (hierarchie);

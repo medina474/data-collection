@@ -1,12 +1,12 @@
 set search_path to public, extensions;
 
 create table villes (
-  nom text,
+  nom text not null,
   pays_code text,
   admin_name text,
   capital text,
   population int,
-  coordonnees geometry
+  coordonnees geometry(Point, 4326) default null::geometry
 );
 
 create temporary table villes_tmp (
