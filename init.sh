@@ -6,7 +6,7 @@ set +a
 
 export PGPASSWORD
 
-psql -h $PGHOST -p $PGPORT -U $PGUSER -d $DB_NAME -c "drop schema cinema cascade;"
+psql -h $PGHOST -p $PGPORT -U $PGUSER -d $DB_NAME -c "drop schema $1 cascade;"
 
 # Vérifie si le répertoire existe
 if [ ! -d "$1" ]; then

@@ -1,109 +1,104 @@
-\connect jardins;
 
-alter table abonnements enable row level security;
+
+alter table jardins.abonnements enable row level security;
 
 create policy "Lecture publique"
-on abonnements
+on jardins.abonnements
 as permissive
 for select
 to public
 using (true);
 
 
-alter table calendriers enable row level security;
+alter table jardins.calendriers enable row level security;
 
 create policy "Lecture publique"
-on calendriers
+on jardins.calendriers
 as permissive
 for select
 to public
 using (true);
 
-alter table distributions enable row level security;
+alter table jardins.distributions enable row level security;
 
 create policy "Lecture publique"
-on distributions
+on jardins.distributions
 as permissive
 for select
 to public
 using (true);
 
-alter table frequences enable row level security;
+alter table jardins.frequences enable row level security;
 
 create policy "Lecture publique"
-on frequences
+on jardins.frequences
 as permissive
 for select
 to public
 using (true);
 
-alter table modes_paiement enable row level security;
+alter table jardins.modes_paiement enable row level security;
 
 create policy "Lecture publique"
-on modes_paiement
+on jardins.modes_paiement
 as permissive
 for select
 to public
 using (true);
 
-alter table plannings enable row level security;
+alter table jardins.plannings enable row level security;
 
 create policy "Lecture publique"
-on plannings
+on jardins.plannings
 as permissive
 for select
 to public
 using (true);
 
-alter table preparations enable row level security;
+alter table jardins.preparations enable row level security;
 
 create policy "Lecture publique"
-on preparations
+on jardins.preparations
 as permissive
 for select
 to public
 using (true);
 
-alter table tournees enable row level security;
+alter table jardins.tournees enable row level security;
 
 create policy "Lecture publique"
-on tournees
-as permissive
-for select
-to public
-using (true);
-
-
-alter table cotisations enable row level security;
-
-create policy "Lecture publique"
-on cotisations
+on jardins.tournees
 as permissive
 for select
 to public
 using (true);
 
 
-alter table profils enable row level security;
+alter table jardins.cotisations enable row level security;
 
 create policy "Lecture publique"
-on profils
+on jardins.cotisations
 as permissive
 for select
 to public
 using (true);
 
 
-alter table propositions enable row level security;
+alter table jardins.profils enable row level security;
 
 create policy "Lecture publique"
-on propositions
+on jardins.profils
 as permissive
 for select
 to public
 using (true);
 
 
+alter table jardins.propositions enable row level security;
 
-
-
+create policy "Lecture publique"
+on jardins.propositions
+as permissive
+for select
+to public
+using (true);

@@ -1,12 +1,4 @@
-create database jardins;
-\connect jardins;
-
-create schema extensions;
-
-set search_path to public, extensions;
-show search_path;
-
-create extension postgis schema extensions;
+create schema jardins;
 
 -- Role public
 create role role_web nologin;

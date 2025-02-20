@@ -8,5 +8,5 @@ create table rh.employes
   naissance date
 );
 
-alter table only rh.employes
+alter table rh.employes
   add primary key (employe_id);
