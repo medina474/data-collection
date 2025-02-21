@@ -28,7 +28,7 @@ BA,BIH,070,Bosnie-Herzégovine,🇧🇦,Bosnie et Herzégovine
 BW,BWA,072,Botswana,🇧🇼,République du Botswana
 BR,BRA,076,Brésil,🇧🇷,République fédérative du Brésil
 BN,BRN,096,Brunei,🇧🇳,Brunei Darussalam
-BG,BGR,100,Bulgarie,🇧🇬,République de Bulgarie 
+BG,BGR,100,Bulgarie,🇧🇬,République de Bulgarie
 BF,BFA,854,Burkina,🇧🇫,Burkina Faso
 BI,BDI,108,Burundi,🇧🇮,République du Burundi
 KH,KHM,116,Cambodge,🇰🇭,Royaume du Cambodge
@@ -37,7 +37,7 @@ CA,CAN,124,Canada,🇨🇦,
 CV,CPV,132,Cap-Vert,🇨🇻,
 CF,CAF,140,Centrafrique,🇨🇫,République centrafricaine
 CL,CHL,152,Chili,🇨🇱,
-CN,CHN,156,Chine,🇨🇳,République populaire de Chine 
+CN,CHN,156,Chine,🇨🇳,République populaire de Chine
 CY,CYP,196,Chypre,🇨🇾,
 CO,COL,170,Colombie,🇨🇴,
 KM,COM,174,Comores,🇰🇲,Union des Comores
@@ -58,7 +58,7 @@ EC,ECU,218,Équateur,🇪🇨,
 ER,ERI,232,Érythrée,🇪🇷,
 ES,ESP,724,Espagne,🇪🇸,Royaume d'Espagne
 EE,EST,233,Estonie,🇪🇪,République d'Estonie
-US,USA,840,États-Unis,🇺🇸,États-Unis d’Amérique 
+US,USA,840,États-Unis,🇺🇸,États-Unis d’Amérique
 ET,ETH,231,Éthiopie,🇪🇹,
 FJ,FJI,242,Fidji,🇫🇯,
 FI,FIN,246,Finlande,🇫🇮,République de Finlande
@@ -81,11 +81,11 @@ CK,COK,184,Îles Cook,🇨🇰,
 IN,IND,356,Inde,🇮🇳,
 ID,IDN,360,Indonésie,🇮🇩,
 IQ,IRQ,368,Irak,🇮🇶,
-IR,IRN,364,Iran,🇮🇷,République islamique d’Iran 
+IR,IRN,364,Iran,🇮🇷,République islamique d’Iran
 IE,IRL,372,Irlande,🇮🇪,République d'Irlande
 IS,ISL,352,Islande,🇮🇸,
 IL,ISR,376,Israël,🇮🇱,
-IT,ITA,380,Italie,🇮🇹,République italienne 
+IT,ITA,380,Italie,🇮🇹,République italienne
 JM,JAM,388,Jamaïque,🇯🇲,
 JP,JPN,392,Japon,🇯🇵,
 JO,JOR,400,Jordanie,🇯🇴,
@@ -173,7 +173,7 @@ SE,SWE,752,Suède,🇸🇪,Royaume de Suède
 CH,CHE,756,Suisse,🇨🇭,Confédération helvétique
 SR,SUR,740,Suriname,🇸🇷,
 SZ,SWZ,748,Swaziland,🇸🇿,
-SY,SYR,760,Syrie,🇸🇾,République arabe syrienne 
+SY,SYR,760,Syrie,🇸🇾,République arabe syrienne
 TJ,TJK,762,Tadjikistan,🇹🇯,
 TZ,TZA,834,Tanzanie,🇹🇿,République-Unie de Tanzanie
 TD,TCD,148,Tchad,🇹🇩,
@@ -205,7 +205,7 @@ YT,MYT,175,Mayotte,🇾🇹,Département et région d’outre-mer de Mayotte
 MQ,MQT,474,Martinique,🇲🇶,Collectivité territoriale unique de Martinique
 GP,GLP,312,Guadeloupe,🇬🇵,Département et région d'outre-mer de Guadeloupe
 RE,REU,638,La Réunion,🇷🇪,Collectivité départementale d'outre-mer de La Réunion
-PM,SPM,021,Saint-Pierre-et-Miquelon,🇵🇲,collectivité d'outre-mer de Saint-Pierre-et-Miquelon
+PM,SPM,021,Saint-Pierre-et-Miquelon,🇵🇲,Collectivité d'outre-mer de Saint-Pierre-et-Miquelon
 GF,GUF,254,Guyane,🇬🇫,Collectivité territoriale unique de Guyane
 NC,NCL,540,Nouvelle-Calédonie,🇳🇨,Collectivité d’outre-mer de Nouvelle-Calédonie
 WF,WLF,876,Wallis-et-Futuna,🇼🇫,Collectivité d'outre-mer Wallis et Futuna

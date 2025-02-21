@@ -1,8 +1,6 @@
 
 
-insert into jardins.jardins (jardin_id,jardin,tva) values
-(1,'Jardins de Cocagne Thaon les Vosges','FR42400245775'),
-(2,'IUT de Saint Dié des Vosges',NULL);
+
 
 insert into jardins.contacts (contact_id,jardin_id,contact,telephone,email) values
 (1,1,'Christophine Séchion','0699880001','cs@gmail.com'),

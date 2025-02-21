@@ -32,8 +32,12 @@ alter table pays
 alter table pays
   add check (code_num ~ '^[0-9]{3}$');
 
+create unique index pays_pk
+  on pays
+  using btree (code2);
+
 alter table pays
-  add primary key (code2);
+  add primary key using index pays_pk;
 
 \copy pays (code2, code3, code_num, pays, drapeau_unicode, forme_longue) from './pays.csv' (FORMAT CSV, header, delimiter ',', ENCODING 'UTF8');
 
@@ -71,8 +75,12 @@ comment on table langues is 'ISO 639-3';
 alter table langues
   add check (code3 ~ '^[a-z]{3}$');
 
+create unique index langues_pk
+  on langues
+  using btree (code3);
+
 alter table langues
-  add primary key (code3);
+  add primary key using index langues_pk;
 
 create table pays_langues (
   pays_code char(2) not null,
@@ -121,8 +129,12 @@ alter table pays_devises
 alter table pays_devises
   add check (devise_code ~ '^[A-Z]{3}$');
 
+create unique index devises_pk
+  on devises
+  using btree (devise_code);
+
 alter table devises
-  add primary key (devise_code);
+  add primary key using index devises_pk;
 
 \copy devises from './devises.csv' (FORMAT CSV, header, delimiter ',', ENCODING 'UTF8');
 \copy pays_devises from './pays_devises.csv' (FORMAT CSV, header, delimiter ',', ENCODING 'UTF8');

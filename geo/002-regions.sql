@@ -1,7 +1,5 @@
 set search_path to public, extensions;
 
-create extension ltree schema extensions;
-
 create table regions (
   region_code text,
   hierarchie ltree,
