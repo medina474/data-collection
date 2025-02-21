@@ -13,7 +13,7 @@ podman logs PostgreSQL
 ### PostgreSQL
 
 ```shell
-podman build -f postgresql/Dockerfile --tag medina5/postgres:2025-04
+podman build -f postgresql/Dockerfile --tag medina5/postgres:2025-05
 ```
 
 ```shell

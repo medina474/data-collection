@@ -1,0 +1,41 @@
+personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
+17e007a8-7b36-4047-8a21-55606c4ca15a,Bayley,Blaze,1963-05-29,,gb,,0
+5cce2f12-576c-435e-9db5-7f616de50eba,Blackmore,Ritchie,1945-04-14,,gb,,0
+6366cd59-fbd4-401a-9ded-0bdd6ec31c74,Burr,Clive,1957-03-08,2013-03-12,gb,,0
+10a457dd-20ac-4d9a-8bf2-da7e596d8046,Burton,Cliff,1962-02-10,1986-09-27,gb,,0
+3dd8ecb3-4724-49c5-a057-165b3d493802,Butler,Geezer,1949-07-17,,gb,,0
+47cd90d9-a6c0-45c9-ac91-d42ab5424a02,Byford,Biff,1951-01-15,,gb,,0
+73e65a7a-7b46-4cd6-81ec-57b235736f90,Di'Anno,Paul,1958-05-17,,gb,,0
+51d9c565-b57e-4be0-9d58-d454c019a478,Dickinson,Bruce,1958-08-07,,gb,,0
+2875319b-5c15-4964-94bd-80c2086b5531,Dio,Ronnie James,1942-07-10,2010-05-16,us,,0
+5bc04333-8945-4f7f-ac35-f30657c97d8d,Dirkschneider,Udo,1952-04-06,,de,,0
+4ed9956d-54fa-47f5-8432-4f90de4649af,Eco,Umberto,,,,,0
+089155ed-1f55-4638-8d9b-da84a48e23a6,Gers,Janick,1957-01-27,,gb,,0
+3756341e-46dd-4baf-9059-e9bb85b4f2f6,Gillen,Ray,1959-05-12,,gb,,0
+503d6e8a-5752-44b2-a0d2-ed660e322508,Gilmour,David,1946-03-06,,gb,,0
+da0fbbd0-267a-4b38-9b6c-5a0b753faa0a,Halford,Robert John Arthur,1951-08-25,,gb,Rob Halford,0
+f9383a75-7449-424d-9481-aa4aa15d92ba,Hammett,Kirk,1962-11-18,,us,,0
+2e16beb3-4f3a-4bfc-ad4f-86285b44bbdb,Harris,Steve,1956-03-12,,gb,,0
+071213ac-425d-43bb-9ee3-777d7e33835d,Hetfield,James,1963-08-03,,gb,,0
+abaf9ed2-210a-4101-af72-38ade18b197b,Hill,Ian,1951-01-20,,gb,,0
+68c8c29f-0071-4a5c-af0d-eb096964b592,Iommi,Tony,1948-02-19,,gb,,0
+3a3f4982-f328-44c4-a3d7-0c684f7dd8d9,Jabs,Matthias,1955-10-25,,gb,,0
+60ae3cad-d861-40a9-b76e-2f02a2f8807f,Joplin,Janis,1943-01-19,1970-10-04,us,,0
+7a23b17c-748e-45bd-b550-d9b0e0260c5c,Kilmister,Lemmy,1945-12-24,2015-12-28,gb,,0
+6639b4f9-6bb9-4dd1-a3f9-b5b47cc8c3b2,Lawless,Blackie,1956-09-04,,gb,,0
+d6039574-97d3-477b-b520-4ab058a086fa,Lee,Jake E.,1957-02-15,,gb,,0
+db03b2cf-64e5-4ac7-8ed2-3a2d746a9e7c,McBrain,Nicko,1952-06-05,,gb,,0
+2844cc9a-e417-4b7f-9a88-81f3b7b102ff,Meine,Klaus,1948-05-25,,de,,0
+e7293214-db75-427b-80a9-5503435631c7,Murray,Dave,1956-12-23,,gb,,0
+0a6dbd99-c365-4c45-8057-98cda6163feb,Newsted,Jason,1963-03-04,,gb,,0
+afa29b53-30c0-42a2-8336-de68b9195a66,Osbourne,John Michael,1948-12-03,,gb,Ozzy Osbourne,0
+42106bc6-c576-461f-801a-3b6075faf6f6,Pesch,Doro,1964-06-03,,de,,0
+568bfba7-21c0-468c-97d3-f45fb8058166,Rhoads,Randy,1956-12-06,1982-03-19,gb,,0
+9d2c7d10-6265-4e0b-ab48-af5c9703da2d,Schenker,Rudolf,1948-08-31,,de,,0
+dcb4810d-9500-453c-9e33-7477e67a009d,Schenker,Michael,1955-01-10,,gb,,0
+ae7b597a-0a61-44aa-8211-b6521546e63d,Singer,Eric,1958-05-12,,gb,,0
+b04b28ee-b861-45b8-93ed-6a86009ca18e,Smith,Adrian,1957-02-27,,gb,,0
+46b03d27-ac76-4b51-83fd-3f3332439c8d,Tipton,Glenn,1947-10-25,,gb,,0
+b5275133-3d93-4636-9227-8d0c84d2bff9,Trujillo Veracruz,Roberto Agustín,1964-10-23,,us,Robert Trujillo,0
+f706ac9d-1da5-44a1-a99d-b5ce3d8c6089,Ulrich,Lars,1963-12-26,,dk,,0
+8d7c281f-c383-4bc5-8023-26cd1f578621,Ward,Bill,1948-05-05,,gb,,0
