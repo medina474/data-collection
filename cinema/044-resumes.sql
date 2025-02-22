@@ -27,10 +27,7 @@ alter table cinema.resumes
   add FOREIGN KEY (film_id) REFERENCES cinema.films;
 
 alter table cinema.resumes
-add FOREIGN KEY (langue) REFERENCES langues (code3) MATCH SIMPLE
-        ON UPDATE NO ACTION
-        ON DELETE NO ACTION
-        NOT VALID;
+  add FOREIGN KEY (langue) REFERENCES langues (code3);
 
 \copy cinema.resumes (film_id, langue, resume) from './044-resumes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
