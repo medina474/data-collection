@@ -5,10 +5,6 @@ create table cinema.certifications (
   description text
 );
 
-create index certifications_pays_idx
-  on cinema.certifications
-  using btree (pays_code, ordre);
-
 create unique index certifications_pk
   on cinema.certifications
   using btree (pays_code, certification);
@@ -16,16 +12,28 @@ create unique index certifications_pk
 alter table cinema.certifications
   add primary key using index certifications_pk;
 
+create index certifications_pays_idx
+  on cinema.certifications
+  using btree (pays_code, ordre);
+
+
 alter table cinema.certifications
   add foreign key (pays_code)
     references pays (code2);
 
 \copy cinema.certifications (pays_code,ordre,certification,description) from './046-certifications.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
 
-create table if not exists cinema.films_certifications (
+create table cinema.films_certifications (
   film_id integer,
-  pays text,
-  ordre smallint,
+  pays_code text,
   certification text,
   description text
 );
+
+alter table cinema.films_certifications
+  add foreign key (film_id)
+    references cinema.films;
+
+alter table cinema.films_certifications
+  add foreign key (pays_code, certification)
+    references cinema.certifications;

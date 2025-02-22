@@ -17,11 +17,22 @@ constraint equipe_film_fk foreign key (film) references cinema.films(id)
     on update no action on delete no action not valid
 */
 
-create index equipe_film_fki
-  on cinema.equipes(film_id);
 
-create index equipe_personne_fki
-  on cinema.equipes(personne_id);
+-- equipes -> films
+create index on cinema.equipes(film_id);
+
+alter table cinema.equipes
+add foreign key (film_id)
+  references cinema.films
+  on delete cascade;
+
+-- equipes -> personnes
+create index on cinema.equipes(personne_id);
+
+alter table cinema.equipes
+add foreign key (personne_id)
+  references cinema.personnes
+  on delete cascade;
 
 comment on table cinema.equipes is
   e'@foreignkey (personne) references cinema.acteur(id)|@fieldname rolebyacteur';

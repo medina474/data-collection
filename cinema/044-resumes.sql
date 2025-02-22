@@ -9,17 +9,25 @@ alter table cinema.resumes
   generated always as (to_tsvector('french', resume)) stored;
 
 CREATE INDEX resume_texte_idx
-ON cinema.resumes USING GIN (ts);
+  ON cinema.resumes USING GIN(ts);
+
+-- Clé primaire composée
+
+create unique index resumes_pk
+  on cinema.resumes
+  using btree (film_id, langue);
 
 alter table cinema.resumes
-add FOREIGN KEY (film_id) REFERENCES cinema.films;
+  add primary key using index resumes_pk;
 
 create index resume_film_fki
   on cinema.resumes(film_id);
 
 alter table cinema.resumes
-add FOREIGN KEY (langue)
-        REFERENCES langues (code3) MATCH SIMPLE
+  add FOREIGN KEY (film_id) REFERENCES cinema.films;
+
+alter table cinema.resumes
+add FOREIGN KEY (langue) REFERENCES langues (code3) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID;

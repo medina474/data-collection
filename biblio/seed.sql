@@ -12,4 +12,4 @@ from biblio.oeuvres;
 select setval(pg_get_serial_sequence('biblio.editions', 'edition_id'), MAX(edition_id))
 from biblio.editions;
 
-\COPY biblio.incorpore FROM './incorpore.csv' (FORMAT CSV, header, ENCODING 'UTF8');
+\COPY biblio.incorpore FROM './incorpore-timpowers.csv' (FORMAT CSV, header, ENCODING 'UTF8');

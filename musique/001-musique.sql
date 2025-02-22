@@ -1,5 +1,7 @@
 create schema musique;
 
+create extension pg_idkit schema extensions;
+
 set search_path to public, musique, extensions;
 
 create table musique.song (

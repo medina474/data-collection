@@ -1,13 +1,13 @@
 set search_path to public, extensions;
 
 create table cinema.etablissements (
-  id integer not null,
+  etablissement_id integer not null,
   nom text,
   voie text,
   codepostal text,
   ville text,
   coordonnees geometry(Point, 4326) default null::geometry,
-  constraint cinema_pkey primary key (id)
+  constraint cinema_pkey primary key (etablissement_id)
 );
 
 create index cinema_coordonnees_idx
@@ -67,7 +67,7 @@ create temporary table etablissement_tmp
 
 \copy etablissement_tmp from 'cnc-données-cartographie-2023.csv' delimiter ';' csv header quote '"' encoding 'utf8';
 
-insert into cinema.etablissements (id, nom, voie, ville, coordonnees)
+insert into cinema.etablissements (etablissement_id, nom, voie, ville, coordonnees)
 select nauto, nom, adresse, commune, st_makepoint(longitude, latitude)
 from etablissement_tmp;
 

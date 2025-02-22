@@ -10,7 +10,7 @@ create table codepostal (
 );
 
 create index codepostal_coordonnees_idx
-  on codepostals
+  on codepostal
   using GIST (coordonnees);
 
 create temporary table temp (
